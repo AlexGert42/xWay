@@ -1,0 +1,150 @@
+
+
+// .wrapper {
+//     width: 100%;
+//     height: 100%;
+//     .fone {
+//         position: fixed;
+//         background-image: url('../../img/fone.png');
+//         background-repeat: no-repeat;
+//         background-size: cover;
+//         background-position: 50% 0;
+       
+//         width: 100%;
+//         min-height: 100vh;
+
+//         .fone__arrow {
+//             display: flex;
+//             align-items: center;
+//             justify-content: space-around;
+//         }
+//     }
+// }
+
+
+
+
+
+
+
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    
+    
+    
+
+   
+    .fone {
+        background-color: #fff;
+        animation: showFone 1s ease;
+        opacity: 1;
+        
+        width: 100%;
+       
+       
+
+
+        display: flex;
+        .fone__left {
+            background-image: url('../../img/fone-left.png');
+            width: 100%;
+            min-height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 0;          
+            font-family: 'Gilroy-Bold';
+           
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            &:hover,  &:active  {
+                width: 110%;
+                transition: all 1s ease 0s;
+                .fit-zone {
+                    animation: showText 1s ease;
+                    opacity: 1;
+                }
+            }
+            .fit-zone {
+                font-family: 'Gilroy-Bold';
+                margin: 5rem 1rem;
+                font-size: 5rem;
+                color: #fff;
+                
+                text-transform: uppercase;
+                text-shadow: 5px 5px 8px #000;
+                opacity: 0;
+                cursor: pointer;
+            }
+        }
+    
+        .fone__right {
+           
+            background-image: url('../../img/fone-right.png');
+            width: 100%;
+            min-height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 0;
+
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            &:hover,  &:active  {
+                width: 110%;
+                transition: all 1s ease 0s;
+                .beauty-zone {
+                    animation: showText 1s ease;
+                    opacity: 1;
+                }
+            }
+
+            .beauty-zone {
+                font-family: 'Gilroy-Bold';
+                margin: 5rem 1rem;
+                font-size: 5rem;
+                color: #000;
+                text-transform: uppercase;
+                text-shadow: 5px 5px 8px #000;
+                opacity: 0;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.about {
+    
+
+}
+
+
+
+
+
+
+
+@keyframes showText {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes showFone {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    }
+}

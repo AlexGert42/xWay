@@ -1,0 +1,287 @@
+
+.logo {
+
+}
+
+
+
+$colorText: #fff;
+$colorFone: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    animation: showHeader 1s ease;
+    opacity: 1;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background: $colorFone;
+        z-index: 2;
+    }
+    .header__inner {
+        position: relative;
+       
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+
+        //BURGER
+        .header__burger {
+            display: none;
+        }
+
+        //MENU
+        .header__menu {
+            width: 50%;
+            z-index: 3;
+            position: relative;
+            
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            white-space: nowrap;
+            align-items: center;
+            
+           
+            .header__items {
+                z-index: 3;
+                position: relative;
+                color: $colorText;
+                text-shadow: 5px 5px 8px $colorFone;
+                margin: 0 10px 0 0;
+                
+                &:hover {
+                    border-bottom: 2px solid #fff;
+                    transition: padding-bottom 1s ease .1s;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+        //LOGO
+        .header__logo {
+            z-index: 3;
+            margin: 5px 90px;
+            flex: 0 0 100px;
+           
+            img {
+                max-width: 100%;
+                display: block;
+            }
+        }
+        //CONTACT
+        .header__contacts {
+            z-index: 3;
+            position: relative;
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: nowrap;
+            white-space: nowrap;
+            .header__number {
+               
+               
+                color: $colorText;
+                margin: 0 0 0 10px;
+                text-shadow: 5px 5px 8px $colorFone;
+                &:hover {
+                    border-bottom: 2px solid $colorText;
+                    transition: padding-bottom 1s ease .1s;
+                    padding-bottom: 10px;
+                }
+            }
+
+            .header__btn {
+                
+                color: $colorText;
+                text-shadow: 5px 10px 10px $colorFone;
+                margin: 0 0 0 10px;
+                padding: 10px;
+                background-color: rgba($color: #000000, $alpha: 0);
+                border: 1px solid #fff;
+                cursor: pointer;
+                &:hover {
+                    color: #000;
+                    background-color: rgba($color: #fff, $alpha: 1.0);
+                    transition: all 1s ease .1s;
+                }
+            }
+            .header__links {
+               
+                display: flex;
+                .header__link {
+                    flex: 0 0 35px;
+                    min-width: 35px;
+                    min-height: 35px;
+                    background-repeat: no-repeat;
+                    margin: 0 0 0 10px;
+                    background-size: 100%;
+                    background-position: center;
+                }
+                .instagram {
+                    background-image: url('../../img/inst.png');
+                }
+                .whatsapp {
+                    background-image: url('../../img/whatsap.png');
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1280px ) and (min-width: 960px) {
+    .header {
+        font-size: .8rem;
+        .header__inner {
+            .header__logo {
+                margin: 5px 50px;
+            }
+            .header__links {
+                .header__link {
+                    width: 30px;
+                    height: 30px;
+                    flex: 0 0 30px;
+                }
+            }
+        }
+        
+        
+        
+    }    
+   
+}
+
+@media (max-width: 960px) {
+
+    .header {
+        background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, .8) 100%);
+        .header__inner {
+
+           
+            //BURGER ICON
+            height: 60px;
+            .header__burger {
+                position: relative;
+                width: 35px;
+                height: 30px;
+                display: block;
+                z-index: 3;
+                span {
+                    top: 13px;
+                    position: absolute;
+                    background-color: $colorText;
+                    width: 100%;
+                    height: 2px;
+                    left: 0;
+                }
+
+                &::before, &::after {
+                    content: '';
+                    background-color: $colorText;
+                    position: absolute;
+                    width: 100%;
+                    height: 2px;
+                    left: 0;
+                }
+                &::before {
+                    top: 0;
+                }
+                &::after {
+                    bottom: 0;
+                }
+            }
+
+
+
+             //MENU
+            
+            .header__menu {
+                font-size: 1.5rem;
+                top: 4%;
+                margin-left: -20px;
+                width: 100%;
+                height: 78vh;
+                position: fixed;
+                background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, .8) 100%);
+                
+                display: flex;
+                flex-direction: column;
+                z-index: 1;
+                .header__items {
+                   margin: 10px 10px;
+                   &:first-child {
+                       padding-top: 40px;
+                   }
+                   &:last-child {
+                       padding-bottom: 30px;
+                   }
+                   &:hover {
+                       border: none;
+                       transition: none;
+                   }
+                    
+                  }
+                
+                
+               
+            }
+            .header__contacts {
+                top: 80%;
+                display: flex;
+                flex-direction: column;
+               
+                width: 100%;
+                height: 20vh;
+                position: fixed;
+                background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, .8) 100%);
+                right: 0;
+                z-index: 1;
+                .header__number {
+                    margin: 10px;
+                }
+                .header__btn {
+                    margin: 10px 10px 60px 10px;
+                }
+                .header__links {
+                    display: none;
+                }
+            }
+            .header__logo {
+                margin: 5px 0;
+                flex: 0 0 60px;
+            }
+        }
+
+       
+
+    }
+}
+
+
+
+
+
+@keyframes showHeader {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
