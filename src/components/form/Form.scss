@@ -1,0 +1,24 @@
+
+.form {
+    width: 100%;
+    z-index: 5;
+    position: relative;
+    padding: 50px;
+    .form__input {
+        color: #fff;
+        border: 1px solid #fff;
+        padding: 20px;
+        margin-right: 50px;
+        min-width: 300px;
+        background-color: #00000000;
+        &.alert {
+            border: 2px solid red;
+        }
+    }
+     
+    
+    .form__btn {
+        cursor: pointer;
+        padding: 20px;
+    }
+}

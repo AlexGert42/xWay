@@ -23,8 +23,8 @@
 
 
 
-
-
+$colorFone: #000;
+$colorText: #fff;
 
 
 
@@ -116,8 +116,37 @@
 }
 
 .about {
-    
+    background-color: $colorFone;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+   
+    .about__inner {
+        padding: 10% 10% 2% 10%;
+        display: flex;
+        
+        .about__text {
+            min-width: 50%;
+          
+            .about__title {
+                font-size: 36px;
+                padding-bottom: 15px; 
+                border-bottom: 2.5px solid #fff; 
+                margin-bottom: 40px; 
+                display: inline-block;
+            }
+            .about__discription {
+                font-size: 24px;
+            }
+        }
 
+        .about__img {
+            background-image: url('../../img/about.png');
+            background-repeat: no-repeat;
+            min-width: 50%;
+            min-height: 70vh;
+        }
+    }
 }
 
 

@@ -1,44 +1,62 @@
 import React from "react";
-import HeaderLogo from "../../img/logo_white.svg";
 
 import { NavLink } from "react-router-dom";
-import "./Header.scss";
 
 
 class Header extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      stateBurger: this.props.style.header__burger,
+      stateMenu: this.props.style.header__menu,
+      stateContact: this.props.style.header__contacts,
+
+
+    }
+  }
+
+  clickBurger = (e) => {
+
+    e.target.className === this.props.style.header__burger ? this.setState({
+      stateBurger: `${this.props.style.header__burger} ${this.props.style.active}`,
+      stateMenu: `${this.props.style.header__menu} ${this.props.style.active}`,
+      stateContact: `${this.props.style.header__contacts} ${this.props.style.active}`,
+    }) : this.setState({
+      stateBurger: this.props.style.header__burger,
+      stateMenu: this.props.style.header__menu,
+      stateContact: this.props.style.header__contacts,
+    })
+  }
+
+
   render() {
     return (
-      <header className="header">
+      <header className={this.props.style.header}>
         <div className="container">
-          <div className="header__inner">
-            <div className="header__menu">
-              <NavLink className="header__items" exact to="/fit/">
-                ГЛАВНАЯ
-            </NavLink>
-              <NavLink className="header__items" exact to="/fit/">
-                УСЛУГИ
-            </NavLink>
-              <NavLink className="header__items" exact to="/fit/">
-                ОТЗЫВЫ
-            </NavLink>
-              <NavLink className="header__items" exact to="/fit/">
-                КОНТАКТЫ
-            </NavLink>
+          <div className={this.props.style.header__inner}>
+            <div className={this.state.stateMenu}>
+              {this.props.menuList.map(el => {
+                return (
+                  <NavLink className={this.props.style.header__items} key={el.id} to={el.adresse}>
+                    {el.item}
+                  </NavLink>
+                )
+              })}
             </div>
-            <NavLink className="header__logo logo" to="/">
-              <img src={HeaderLogo} alt="logo" />
+            <NavLink className={this.props.style.header__logo} to={this.props.logo.adresse}>
+              <img src={this.props.logo.logoItem} alt={this.props.logo.item} />
             </NavLink>
-            <div className="header__contacts">
-              <a href="#" className="header__number">
+            <div className={this.state.stateContact}>
+              <a href="#" className={this.props.style.header__number}>
                 +7 (999) 999 - 82 - 83
             </a>
-              <button className="header__btn">ОБРАТНЫЙ ЗВОНОК</button>
-              <div className="header__links">
-                <a className="header__link instagram" href="#"></a>
-                <a className="header__link whatsapp" href="#"></a>
+              <button className={this.props.style.header__btn}>ОБРАТНЫЙ ЗВОНОК</button>
+              <div className={this.props.style.header__links}>
+                <a className={`${this.props.style.header__link} ${this.props.style.instagram}`} href="#"></a>
+                <a className={`${this.props.style.header__link} ${this.props.style.whatsapp}`} href="#"></a>
               </div>
             </div>
-            <div className="header__burger">
+            <div className={this.state.stateBurger} onClick={this.clickBurger}>
               <span></span>
             </div>
 
@@ -50,3 +68,78 @@ class Header extends React.Component {
 }
 
 export default Header;
+
+
+// class Header extends React.Component {
+//   constructor(props) {
+//     super(props)
+//     this.state = {
+//       stateBurger: style.header__burger,
+//       stateMenu: style.header__menu,
+//       stateContact: style.header__contacts,
+
+
+//     }
+//     // console.log(this.props);
+//   }
+
+//   clickBurger = (e) => {
+
+//     e.target.className === style.header__burger ? this.setState({
+//       stateBurger: `${style.header__burger} ${style.active}`,
+//       stateMenu: `${style.header__menu} ${style.active}`,
+//       stateContact: `${style.header__contacts} ${style.active}`,
+//     }) : this.setState({
+//       stateBurger: style.header__burger,
+//       stateMenu: style.header__menu,
+//       stateContact: style.header__contacts,
+//     })
+//   }
+
+
+//   render() {
+//     return (
+//       <header className={style.header}>
+//         <div className="container">
+//           <div className={style.header__inner}>
+//             <div className={this.state.stateMenu}>
+//               <NavLink className={style.header__items} exact to="/fit/">
+//                 ГЛАВНАЯ
+//             </NavLink>
+//               <NavLink className={style.header__items} exact to="/fit/">
+//                 УСЛУГИ
+//             </NavLink>
+//               <NavLink className={style.header__items} exact to="/fit/">
+//                 ОТЗЫВЫ
+//             </NavLink>
+//               <NavLink className={style.header__items} exact to="/fit/">
+//                 КОНТАКТЫ
+//             </NavLink>
+//             </div>
+//             <NavLink className={style.header__logo} to="/">
+//               <img src={HeaderLogo} alt="logo" />
+//             </NavLink>
+//             <div className={this.state.stateContact}>
+//               <a href="#" className={style.header__number}>
+//                 +7 (999) 999 - 82 - 83
+//             </a>
+//               <button className={style.header__btn}>ОБРАТНЫЙ ЗВОНОК</button>
+//               <div className={style.header__links}>
+//                 <a className={`${style.header__link} ${style.instagram}`} href="#"></a>
+//                 <a className={`${style.header__link} ${style.whatsapp}`} href="#"></a>
+//               </div>
+//             </div>
+//             <div className={this.state.stateBurger} onClick={this.clickBurger}>
+//               <span></span>
+//             </div>
+
+//           </div>
+//         </div>
+//       </header>
+//     );
+//   }
+// }
+
+// export default Header;
+
+

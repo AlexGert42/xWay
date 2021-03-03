@@ -3,13 +3,16 @@
 @import '../components/base/Base.scss';
 @import '../components/fitZone/fit.scss';
 @import 'button.scss';
+@import '../components/form/Form.scss';
 
 @import 'font.scss';
 
 
 //========================================================================
 
-
+// body {
+//     overflow: hidden;
+// }
 
 
 
@@ -21,9 +24,13 @@
     padding: 0 20px;   
     margin: 0 auto; 
     
-    @media screen and (max-width: 1280px) {
+    @media (max-width: 1280px) {
         max-width: 1140px;
-        // font-size: 80%;
+        padding: 0 15px;   
+    }
+    @media (max-width: 767px) {
+        max-width: none;
+        padding: 0 10px;   
     }
     // @media screen {
     //     min-width: 1800px;

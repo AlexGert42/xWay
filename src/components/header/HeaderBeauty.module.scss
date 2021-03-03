@@ -5,11 +5,13 @@
 
 
 
-$colorText: #fff;
-$colorFone: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+
+$colorText: #000;
+$colorFone: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 145.74%);
 
 
 .header {
+   
     position: fixed;
     width: 100%;
     top: 0;
@@ -35,7 +37,7 @@ $colorFone: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 80px;
+        height: 95px;
 
         //BURGER
         .header__burger {
@@ -56,15 +58,19 @@ $colorFone: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
             
            
             .header__items {
+                font-family: 'Gilroy-Bold';
                 z-index: 3;
                 position: relative;
                 color: $colorText;
                 text-shadow: 5px 5px 8px $colorFone;
-                margin: 0 10px 0 0;
-                
+                margin: 0 10px 0 0; 
                 &:hover {
-                    border-bottom: 2px solid #fff;
-                    transition: padding-bottom 1s ease .1s;
+                    background: linear-gradient(90deg, #DD5E89 0%, #F7BB97 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    color: #DD5E89;
+                    border-bottom: 2px solid #DD5E89;
+                    transition: padding-bottom .3s ease .1s;
                     padding-bottom: 10px;
                 }
             }
@@ -73,7 +79,7 @@ $colorFone: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
         .header__logo {
             z-index: 3;
             margin: 5px 90px;
-            flex: 0 0 100px;
+            flex: 0 0 70px;
            
             img {
                 max-width: 100%;
@@ -91,31 +97,38 @@ $colorFone: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
             flex-wrap: nowrap;
             white-space: nowrap;
             .header__number {
-               
+                font-family: 'Gilroy-Bold';
                
                 color: $colorText;
                 margin: 0 0 0 10px;
                 text-shadow: 5px 5px 8px $colorFone;
                 &:hover {
-                    border-bottom: 2px solid $colorText;
-                    transition: padding-bottom 1s ease .1s;
+                    background: linear-gradient(90deg, #DD5E89 0%, #F7BB97 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    color: #DD5E89;
+                    border-bottom: 2px solid #DD5E89;
+                    transition: padding-bottom .3s ease .1s;
                     padding-bottom: 10px;
                 }
             }
 
             .header__btn {
-                
+                font-family: 'Gilroy-Bold';
                 color: $colorText;
                 text-shadow: 5px 10px 10px $colorFone;
                 margin: 0 0 0 10px;
                 padding: 10px;
-                background-color: rgba($color: #000000, $alpha: 0);
-                border: 1px solid #fff;
+                background-color: #fffdfd00;
+                border: 1px solid #000;
+                border-radius: 20px;
                 cursor: pointer;
                 &:hover {
-                    color: #000;
-                    background-color: rgba($color: #fff, $alpha: 1.0);
-                    transition: all 1s ease .1s;
+                    color: #fff;
+                    background: linear-gradient(90deg, #DD5E89 0%, #F7BB97 100%);
+                    transition: all .7s ease .1s;
+                    border: none;
+                    animation: showBackground 1s ease;
                 }
             }
             .header__links {
@@ -131,10 +144,10 @@ $colorFone: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
                     background-position: center;
                 }
                 .instagram {
-                    background-image: url('../../img/inst.png');
+                    background-image: url('../../img/Instagram_beauty.svg');
                 }
                 .whatsapp {
-                    background-image: url('../../img/whatsap.png');
+                    background-image: url('../../img/WhatsApp_beauty.svg');
                 }
             }
         }
@@ -167,10 +180,14 @@ $colorFone: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
 @media (max-width: 960px) {
 
     .header {
-        background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, .8) 100%);
+        background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 145.74%);
         .header__inner {
-
-           
+            
+            //LOGO
+            .header__logo {
+                margin: 5px 0;
+                flex: 0 0 60px;
+            }  
             //BURGER ICON
             height: 60px;
             .header__burger {
@@ -186,6 +203,7 @@ $colorFone: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
                     width: 100%;
                     height: 2px;
                     left: 0;
+                    transition: all .3s ease 0s;
                 }
 
                 &::before, &::after {
@@ -195,6 +213,7 @@ $colorFone: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
                     width: 100%;
                     height: 2px;
                     left: 0;
+                    transition: all .3s ease 0s;
                 }
                 &::before {
                     top: 0;
@@ -202,71 +221,96 @@ $colorFone: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
                 &::after {
                     bottom: 0;
                 }
+
+                &.active {
+                    &::before {
+                        transform: rotate(45deg);
+                        top: 14px;
+                    }
+                    &::after {
+                        transform: rotate(-45deg);
+                        bottom: 14px;
+                    }
+                    span {
+                        display: none;
+                    }
+                }
             }
 
 
 
-             //MENU
-            
+             //MENU close
+             .header__menu, .header__contacts {
+                 display: none;
+                 
+             }
+
+
+             //MENU open
+
+
             .header__menu {
-                font-size: 1.5rem;
-                top: 4%;
-                margin-left: -20px;
-                width: 100%;
-                height: 78vh;
-                position: fixed;
-                background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, .8) 100%);
-                
-                display: flex;
-                flex-direction: column;
-                z-index: 1;
-                .header__items {
-                   margin: 10px 10px;
-                   &:first-child {
-                       padding-top: 40px;
-                   }
-                   &:last-child {
-                       padding-bottom: 30px;
-                   }
-                   &:hover {
-                       border: none;
-                       transition: none;
-                   }
+                &.active {
+                    animation: showHeader .5s ease;
+                    overflow: auto;
+                    font-size: 1.5rem;
+                    top: 4%;
+                    margin-left: -20px;
+                    width: 102%;
+                    height: 70vh;
+                    position: fixed;
+                    background-color: #fff;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    z-index: 1;
+                   
+                    .header__items {
                     
-                  }
-                
-                
-               
+                        margin: 10px 10px;
+                        &:first-child {
+                            padding-top: 40px;
+                        }
+                        &:last-child {
+                            padding-bottom: 30px;
+                        }
+                        &:hover {
+                            border: none;
+                            transition: none;
+                        }  
+                    }
+                }
+
+
             }
+
             .header__contacts {
-                top: 80%;
-                display: flex;
-                flex-direction: column;
-               
-                width: 100%;
-                height: 20vh;
-                position: fixed;
-                background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, .8) 100%);
-                right: 0;
-                z-index: 1;
-                .header__number {
-                    margin: 10px;
+                &.active {
+                    animation: showHeader .5s ease;
+                    justify-content: center;
+                    bottom: 0;
+                    left: 0;
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    height: 30vh;
+                    position: fixed;
+                    background-color: #fff;
+                    right: 0;
+                    z-index: 1;
+                    .header__number {
+                        margin: 10px;
+                    }
+                    .header__btn {
+                        margin: 0 10px 60px 10px;
+                    }
+                    .header__links {
+                        display: none;
+                    }
                 }
-                .header__btn {
-                    margin: 10px 10px 60px 10px;
-                }
-                .header__links {
-                    display: none;
-                }
-            }
-            .header__logo {
-                margin: 5px 0;
-                flex: 0 0 60px;
             }
         }
-
-       
-
     }
 }
 
@@ -278,10 +322,21 @@ $colorFone: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
     0% {
         opacity: 0;
     }
+    25% {
+        opacity: .25;
+    }
     50% {
         opacity: .5;
+    }
+    75% {
+        opacity: .75;
     }
     100% {
         opacity: 1;
     }
+}
+
+
+@keyframes showBackground {
+    
 }
