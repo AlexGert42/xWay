@@ -50,7 +50,7 @@ class Header extends React.Component {
               <a href="#" className={this.props.style.header__number}>
                 +7 (999) 999 - 82 - 83
             </a>
-              <button className={this.props.style.header__btn}>ОБРАТНЫЙ ЗВОНОК</button>
+              <button className={this.props.style.header__btn} onClick={() => this.props.openModal(true)}>ОБРАТНЫЙ ЗВОНОК</button>
               <div className={this.props.style.header__links}>
                 <a className={`${this.props.style.header__link} ${this.props.style.instagram}`} href="#"></a>
                 <a className={`${this.props.style.header__link} ${this.props.style.whatsapp}`} href="#"></a>

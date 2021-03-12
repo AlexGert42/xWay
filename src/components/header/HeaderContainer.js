@@ -5,6 +5,8 @@ import Header from "./Header"
 import headerfitStyle from './HeaderFit.module.scss'
 import headerBeautyStyle from "./HeaderBeauty.module.scss"
 
+import {chengeStateModal} from "../../store/madal/actions"
+
 
 
 
@@ -39,7 +41,7 @@ class HeaderContainer extends React.Component {
   }
 
   render() {
-    return <Header style={this.state.style} menuList={this.state.menuList} logo={this.state.logo} />
+    return <Header style={this.state.style} menuList={this.state.menuList} logo={this.state.logo} openModal={this.props.chengeStateModal} />
   }
 }
 
@@ -54,6 +56,8 @@ const mapStateToProps = state => {
 
 }
 
-const mapDispatchToProps = {}
+const mapDispatchToProps = {
+  chengeStateModal,
+}
 
 export default connect(mapStateToProps, mapDispatchToProps)(HeaderContainer)

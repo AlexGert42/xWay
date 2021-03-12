@@ -6,8 +6,9 @@ import Base from './components/base/Base'
 import Beauty from './components/beautyZone/Beauty'
 import Fit from './components/fitZone/Fit'
 
+
 import { Provider } from "react-redux"
-import {store} from './store/reducers'
+import { store } from './store/reducers'
 
 
 
@@ -18,6 +19,7 @@ class App extends React.Component {
     return (
       <Provider store={store}>
         <BrowserRouter>
+          
           <Switch>
             <Route path={"/"} exact component={Base} />
             <Route path={"/beauty"} component={Beauty} />

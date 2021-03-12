@@ -64,18 +64,6 @@
     }
     
 }
-.home-fit {
-    .xxx {
-        padding: 100px 50px;
-        background-color: #000;
-        color: #fff;
-        position: relative;
-        z-index: 3;
-        
-    }
-}
-
-
 
 
 @media (max-width: 767px) {
@@ -121,19 +109,6 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 @keyframes btn {
     0% {
         box-shadow: 0 0 70px -100px #E6DADA inset,
@@ -142,9 +117,6 @@
         box-shadow: 0 -200px 70px -100px #E6DADA inset,
     }
 }
-
-
-
 
 @keyframes blureFone {
     0% {
@@ -158,3 +130,180 @@
     }
 }
 
+
+$colorText: #fff;
+
+.home-fit {
+    color: $colorText;
+    .services {
+        padding: 100px 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background-color: #000;
+        position: relative;
+        .services__card {
+            display: flex;
+            opacity: .7;
+            &:hover {
+                opacity: 1;
+                transition: all 1.5s ease;
+                .card__img {
+                    min-width: 60%;
+                    min-height: 60vh;
+                    transition: all 1.5s ease;
+                    
+                }
+            }
+            .card__img {
+                min-width: 50%;
+                min-height: 50vh;
+                background-repeat: no-repeat;
+                background-size: cover;
+               
+                &.ems {
+                    background-image: url('../../../img/homeFit/ems_pic.jpg');
+
+                }
+                &.bms {
+                    background-image: url('../../../img/homeFit/bms_pic.jpg');
+                    background-position: 50% 0;
+                }
+                &.mma {
+                    background-image: url('../../../img/homeFit/mma_pic.jpg');
+                }
+                &.str {
+                    background-image: url('../../../img/homeFit/str_pic.jpg');
+                    background-position: 50% 0;
+                }
+            }
+            .card__text {
+                padding: 20px 20px 50px 20px;
+                margin: auto;
+               
+                .card__title {
+                    font-size: 3rem;
+                    margin-bottom: 40px;
+                    font-family: Gilroy-Bold;
+                    padding-bottom: 5px;
+                    border-bottom: 2px solid $colorText;
+                    display: inline-block;
+                }
+                .card__dicription {
+                    font-size: 1.5rem;
+                    margin-bottom: 30px;
+                    line-height: 28px;
+                    letter-spacing: .2px;
+                }
+                .card__link {
+                    cursor: pointer;
+                    color: $colorText;
+                    font-size: 20px;
+                    background-image: url('../../../img/homeFit/arrow.png');
+                    background-repeat: no-repeat;
+                    background-position: right 3px;
+                    padding: 0 22px 14px 0;
+                    border-bottom: 2px solid $colorText;
+                    opacity: .7;
+                    &:hover {
+                        transition: all 1s ease;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 1280px) {
+    .home-fit {
+       
+        .services {
+            
+            .services__card {
+                
+                
+                .card__text {
+                   
+                    .card__title {
+                        font-size: 2.5rem; 
+                        margin-bottom: 30px;
+                    }
+                    .card__dicription {
+                        font-size: 1.2rem;
+                        line-height: 22px;
+                        letter-spacing: .2px;
+                    }
+                    .card__link {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 960px) {
+    .home-fit {
+       
+        .services {
+            
+            .services__card {
+                
+                &:nth-child(1) {
+                    flex-direction: column;
+                }
+                &:nth-child(2) {
+                    flex-direction: column-reverse;
+                }
+                &:nth-child(3) {
+                    flex-direction: column;
+                }
+                &:nth-child(4) {
+                    flex-direction: column-reverse;
+                }
+                .card__text {
+                    margin: 0;
+                    padding: 30px 0 50px 0;
+                    .card__title {
+                       
+                    }
+                    .card__dicription {
+
+                    }
+                    .card__link {
+
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 420px) {
+    .home-fit {
+       
+        .services {
+            
+            .services__card {
+                .card__text {
+                    .card__title {
+                        display: block;
+                        text-align: center;
+                        font-size: 2rem; 
+                        margin-bottom: 30px;
+                    }
+                    .card__dicription {
+                        font-size: 1rem;
+                        line-height: 20px;
+                        letter-spacing: .2px;
+                    }
+                    .card__link {
+                        font-size: 16px;
+                    }
+                }
+                
+            }
+        }
+    }
+}
