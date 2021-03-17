@@ -16,7 +16,7 @@ class HeaderContainer extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      colorTheme: sessionStorage.getItem('ThemeHeader'),
+      colorTheme: sessionStorage.getItem('Theme'),
       style: {},
       menuList:{},
       logo: {}

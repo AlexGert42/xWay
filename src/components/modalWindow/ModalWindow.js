@@ -1,5 +1,5 @@
 import React from "react";
-
+import logo from "../../img/logo_text.png"
 
 
 
@@ -80,7 +80,7 @@ class modalWindow extends React.Component {
             <div className={this.props.style.modal}>
                 <div className={this.props.style.modal__overlay} title="overlay" onClick={this.close}>
                     <div className={this.props.style.modal__window}>
-                        {/* <h3 class="style modal__title"></h3> */}
+                        <h3 className={this.props.style.modal__title} ><img src={logo} alt="logo" /></h3>
                         <form className={this.props.style.modal__form} onSubmit={this.handleSubmit}>
                             <input
                                 className={this.props.style.modal__input && this.state.nameLable ? `${this.props.style.modal__input} ${this.props.style.alert}` : this.props.style.modal__input}

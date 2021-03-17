@@ -1,4 +1,12 @@
 
+
+$colorFone: #000;
+$colorText: #fff;
+$colorAlert: #f70202;
+$colorShadow: #292929;
+$background: rgba(0, 0, 0, .6);
+
+
 .modal {
    
 
@@ -14,35 +22,44 @@
         height: 100%;
         top: 0;
         left: 0;
-        background-color: rgba(0, 0, 0, .6);
+        background-color: $background;
 
         animation: showModal 1s ease;
         opacity: 1;
     
         
         .modal__window {
-               
-                width: 800px;
+                padding: 10px;
+                max-width: 800px;
                 min-height: 300px;
-                background-color: #000;
-                margin: 15% auto;
+                background-color: $colorFone;
+                margin: 20vh auto;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
                 font-family: Geneva, Tahoma, sans-serif;
-                box-shadow: 0 0 10px 5px #292929;
-                animation: showModalWindow .5s ease;
-            
+                box-shadow: 0 0 10px 5px $colorShadow;
+                animation: showModalWindow .5s ease-in;
+                .modal__title {
+                    width: 185px;
+                    margin: 35px auto;
+
+                    img {
+                        width: 100%;
+                    }
+                }
 
             .modal__form {
-                padding: 50px;
+                padding: 0 50px 30px 50px;
                 display: flex;
                 flex-direction: column;
-                
+                @media (max-width: 420px) {
+                    padding: 30px;
+                }
                 .modal__input {
-                    color: #fff;
-                    background-color: #000;
-                    border-bottom: 2px solid #fff;
+                    color: $colorText;
+                    background-color: $colorFone;
+                    border-bottom: 2px solid $colorText;
                     padding: 15px;
                    
                     &:hover {
@@ -50,9 +67,9 @@
                         transition: all 1s ease;
                     }
                     &.alert {
-                        border-bottom: 2px solid red;
+                        border-bottom: 2px solid $colorAlert;
                         &::placeholder {
-                            color: red;
+                            color: $colorAlert;
                         }
                     }
                 }
@@ -60,17 +77,17 @@
                 .modal__action {
                     cursor: pointer;
                     padding: 20px;
-                    background-color: #000;
-                    border: 2px solid #fff;
-                    color: #fff;
+                    background-color: $colorFone;
+                    border: 2px solid $colorText;
+                    color: $colorText;
                     margin: 30px 0;
                     text-transform: uppercase;
                     font-family: Gilroy-Bold;
                     white-space: nowrap;
                     &:hover {
                         
-                        background-color: #fff;
-                        color: #000;
+                        background-color: $colorText;
+                        color: $colorFone;
                         transition: all 1s ease;
                     }
                 }
@@ -87,14 +104,14 @@
         background-color: rgba(0, 0, 0, 0);
     }
     100% {
-        background-color: rgba(0, 0, 0, .6);
+        background-color: $background;
     }
 }
 @keyframes showModalWindow {
     0% {
-        width: 0px;
+        max-width: 0px;
     }
     100% {
-        width: 800px;
+        max-width: 800px;
     }
 }

@@ -5,6 +5,7 @@ import ModalWindow from "./ModalWindow"
 import { chengeStateModal, setNameInput, setPhoneInput, setClient } from "../../store/madal/actions"
 
 import ModalWindowFit from "./ModalWindowFit.module.scss"
+import ModalWindowBeauty from "./ModalWindowBeauty.module.scss"
 
 
 
@@ -15,7 +16,7 @@ class ModalWindowContainer extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            colorTheme: sessionStorage.getItem('ThemeHeader'),
+            colorTheme: sessionStorage.getItem('Theme'),
             style: {},
 
         }
@@ -29,7 +30,7 @@ class ModalWindowContainer extends React.Component {
             })
         } else if (state.colorTheme === 'BeautyZone') {
             return ({
-                style: ModalWindowFit,
+                style: ModalWindowBeauty,
             })
         }
 

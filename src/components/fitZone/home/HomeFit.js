@@ -1,25 +1,33 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import FormContainer from '../../form/FormContainer'
+import logo from "../../../img/logo_text_white.png"
+import {chengeStateModal} from "../../../store/madal/actions"
+import { connect } from "react-redux";
+
+
+
+import Contacts from "../contacts/Contacts"
 
 
 class HomeFit extends React.Component {
   render() {
     return (
       <section className="home-fit">
-        <div className="home-fit__fone">
+        <div className="home-fit__fone" >
           <div className="home-fit__promo">
             <h1 className="home-fit__title">
-              ДОБРО ПОЖАЛОВАТЬ В<span>X-WAY</span>
+              ДОБРО ПОЖАЛОВАТЬ В<span><img src={logo} alt="logo" /></span>
             </h1>
             <div className="home-fit__discription">
               это не просто новая концепция фитнеса, <br />
               это инновационный подход к Вашему телу. <br />
               Персональные тренировки, нацеленные на 100% результат <br />
             </div>
-            <button className="home-fit__king-btn">ПОСЕТИТЬ ПРОБНОЕ ЗАНЯТИЕ</button>
+            <button className="home-fit__king-btn" onClick={() => this.props.chengeStateModal(true)}>ПОСЕТИТЬ ПРОБНОЕ ЗАНЯТИЕ</button>
           </div>
         </div>
+
+        
         <div className="container">
           <div className="services">
 
@@ -32,7 +40,7 @@ class HomeFit extends React.Component {
                    максимально эффективную тренировку <br />
                     и прокачать все группы мышц за считанные минуты.
                 </p>
-                <NavLink className="card__link" to="/">ПОДРОБНЕЕ</NavLink>
+                <NavLink className="card__link" to="/fit/ems">ПОДРОБНЕЕ</NavLink>
               </div>
             </div>
             <div className="services__card card">
@@ -80,9 +88,20 @@ class HomeFit extends React.Component {
 
           </div>
         </div>
+        <Contacts />
       </section>
     );
   }
 }
 
-export default HomeFit;
+
+const mapStateToProps = state => {}
+
+const mapDispatchToProps = {
+  chengeStateModal,
+}
+
+
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(HomeFit)

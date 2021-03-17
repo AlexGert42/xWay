@@ -1,0 +1,122 @@
+$colorFone: #000;
+$colorText: #fff;
+
+
+.ems {
+    width: 100%;
+    height: 100%;
+    .ems__fone {
+        width: 100%;
+        height: 100vh;
+        background-image: url('../../../img/ems/ems_fone.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: 60% 0;   
+
+        .ems__promo {
+           
+            height: 100%;
+            z-index: 0;
+            position: fixed;
+            margin-top: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            .ems__promo_inner {
+                padding: 50px 50px 50px 150px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                @media (max-width: 960px) {
+                    padding: 50px;
+                }
+                .ems__title {
+                    font-size: 12.5rem;
+                    font-family: Gilroy-Bold;
+                    letter-spacing: 15px;
+                }
+                .ems__discription {
+                    margin: 0 10px 50px 10px;
+                    font-size: 1.5rem;
+                    span {
+                        margin: 10px;
+                        display: block;
+                        text-align: center;
+                    }
+                }
+                .ems__king_btn {
+                    cursor: pointer;
+                    margin: 20px;
+                    padding: 25px;
+                    font-size: 1.5rem;
+                    color: $colorText;
+                    font-family: Gilroy-Bold;
+                    background-color: #DC3A3E;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+    .ems {
+
+        .ems__fone {
+            
+            .ems__promo {
+                width: 100%;
+                height: 100%;
+                margin: 0 auto;
+                margin-left: -10px;
+                overflow: auto;
+                .ems__promo_inner {
+                    .ems__title {
+                        font-size: 8rem;
+                        margin: 0 10px 30px 15px;
+                    }
+                    .ems__discription {
+                        text-align: center;
+                        font-size: 1.2rem;
+                        margin: 0 10px 30px 10px;
+                    }
+                    .ems__king_btn {
+                        padding: 15px;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+// @media (max-width: 960px) {
+//     .ems {
+
+//         .ems__fone {
+
+//             .ems__promo {
+
+//                 .ems__promo_inner {
+
+//                     .ems__title {
+
+//                     }
+//                     .ems__discription {
+
+//                     }
+//                     .ems__king_btn {
+
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
