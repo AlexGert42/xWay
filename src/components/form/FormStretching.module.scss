@@ -1,0 +1,107 @@
+.form {
+    width: 100%;
+    background: linear-gradient(89.92deg, #D2CCCC 33.33%, #DCDCDC 44.48%, #D2CCCC 33.33%);
+    .form__content {
+        width: 100%;
+        background-image: url('../../img/stretching/form_fone.jpg');
+        background-repeat: no-repeat;
+        background-position: top right 20%;
+        background-size: cover;
+        min-height: 642px;
+        max-width: 1920px;
+        margin: 0 auto;
+        
+        
+        
+        padding: 100px 20px;
+        display: flex;
+        
+        .form__inner {
+            display: flex;
+            flex-direction: column;
+            margin: 20px 70px 20px 160px;
+            .from__title {
+                font-size: 36px;
+                font-family: Gilroy-Bold;
+                margin-bottom: 50px;
+                span {
+                    white-space: nowrap;
+                    font-family: Gilroy-Bold;
+                }
+            }
+            .form__input {
+                max-width: 700px;
+                color: #fff;
+                font-size: 20px;
+                background-color: rgba($color: #000000, $alpha: 0);
+                padding: 10px;
+                border-bottom: 2px solid #fff;
+                margin-bottom: 40px;
+                &::placeholder {
+                    color: #fff;
+                    font-size: 20px;
+                }
+            }
+           
+            .form__btn {
+                cursor: pointer;
+                display: inline-block;
+                padding: 20px;
+                background: linear-gradient(90deg, #DD5E89 0%, #F7BB97 100%);
+                font-family: Gilroy-Bold;
+                color: #fff;
+                font-size: 1.5rem;
+                margin-top: 50px;
+                &:hover {
+                    box-shadow: 10px 10px 100px inset #8a1971;
+                    animation: formFitBtnActiveStr 1s ease;
+                }
+            }
+        }
+    }
+}
+
+
+@keyframes formFitBtnActiveStr {
+    0% {
+        box-shadow: none;
+    }
+    100% {
+        box-shadow: 10px 10px 100px inset #8a1971;
+    }
+}
+
+@media (max-width: 960px) {
+    .form {
+        .form__content {
+            .form__inner {
+                margin: 0;
+                width: 100%;
+                .form__input {
+                    max-width: 100%;
+                }
+            }
+        }
+        
+    }
+}
+
+@media (max-width: 420px) {
+    .form {
+        .form__content {
+            padding: 0;
+            .form__inner {
+                margin: 0;
+                width: 100%;
+                padding: 50px 10px;
+                background-color: rgba($color: #000000, $alpha: .5);
+                .from__title {
+                    font-size: 2.5rem;
+                }
+                .form__input {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}

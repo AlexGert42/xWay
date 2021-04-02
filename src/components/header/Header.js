@@ -37,9 +37,9 @@ class Header extends React.Component {
             <div className={this.state.stateMenu}>
               {this.props.menuList.map(el => {
                 return (
-                  <NavLink className={this.props.style.header__items} key={el.id} to={el.adresse}>
+                  <a className={this.props.style.header__items} key={el.id} href={el.adresse} >
                     {el.item}
-                  </NavLink>
+                  </a>
                 )
               })}
             </div>
@@ -47,7 +47,7 @@ class Header extends React.Component {
               <img src={this.props.logo.logoItem} alt={this.props.logo.item} />
             </NavLink>
             <div className={this.state.stateContact}>
-              <a href="#" className={this.props.style.header__number}>
+              <a href="tel:+79999998283" className={this.props.style.header__number}>
                 +7 (999) 999 - 82 - 83
             </a>
               <button className={this.props.style.header__btn} onClick={() => this.props.openModal(true)}>ОБРАТНЫЙ ЗВОНОК</button>
