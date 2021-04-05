@@ -2,7 +2,11 @@
 import React from "react";
 import { connect } from "react-redux";
 import ModalWindow from "./ModalWindow"
-import { chengeStateModal, setNameInput, setPhoneInput, setClient } from "../../store/madal/actions"
+import { chengeStateModal, setNameInput, setPhoneInput, setClient, showRsponse } from "../../store/form/actions"
+
+import ModalSuccess from "./ModalSuccess"
+import ModalSuccessFit from "./ModalSuccessFit.module.scss"
+import ModalSuccessBeauty from "./ModalSuccessBeauty.module.scss"
 
 import ModalWindowFit from "./ModalWindowFit.module.scss"
 import ModalWindowBeauty from "./ModalWindowBeauty.module.scss"
@@ -18,7 +22,7 @@ class ModalWindowContainer extends React.Component {
         this.state = {
             colorTheme: sessionStorage.getItem('Theme'),
             style: {},
-
+            styleSuccess: {},
         }
 
     }
@@ -27,19 +31,21 @@ class ModalWindowContainer extends React.Component {
         if (state.colorTheme === 'fitZone') {
             return ({
                 style: ModalWindowFit,
+                styleSuccess: ModalSuccessFit
             })
         } else if (state.colorTheme === 'BeautyZone') {
             return ({
                 style: ModalWindowBeauty,
+                styleSuccess: ModalSuccessBeauty
             })
         }
 
     }
 
     render() {
-        if (!this.props.showModal) {
+        if (!this.props.showModal && !this.props.success) {
             return null
-        } else {
+        } else if (this.props.showModal) {
             return <ModalWindow
                 style={this.state.style}
                 closeModal={this.props.chengeStateModal}
@@ -49,9 +55,11 @@ class ModalWindowContainer extends React.Component {
                 setNameInput={this.props.setNameInput}
                 setPhoneInput={this.props.setPhoneInput}
                 setClient={this.props.setClient}
+                showRsponse={this.props.showRsponse}
             />
+        } else if (this.props.success) {
+            return <ModalSuccess style={this.state.styleSuccess} showRsponse={this.props.showRsponse} />
         }
-
     }
 
 }
@@ -61,9 +69,10 @@ class ModalWindowContainer extends React.Component {
 
 const mapStateToProps = state => {
     return {
-        showModal: state.modal.showModal,
-        name: state.modal.name,
-        phone: state.modal.phone,
+        showModal: state.form.showModal,
+        name: state.form.name,
+        phone: state.form.phone,
+        success: state.form.success,
     }
 
 }
@@ -73,6 +82,7 @@ const mapDispatchToProps = {
     setNameInput,
     setPhoneInput,
     setClient,
+    showRsponse,
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(ModalWindowContainer)

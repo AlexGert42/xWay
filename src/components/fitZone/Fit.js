@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-import ScrollableAnchor from 'react-scrollable-anchor'
+
 
 import HeaderContainer from "../header/HeaderContainer";
 import ModalWindowContainer from '../modalWindow/ModalWindowContainer';
@@ -12,7 +12,8 @@ import HomeFit from "./home/HomeFit";
 import Ems from "./ems/Ems";
 import Stretching from "./stretching/Stretching";
 import Fight from "./fight/Fight";
-
+import Functional from "./functional/Functional";
+import Workout from "./workout/Workout"
 
 class Fit extends React.Component {
   render() {
@@ -27,6 +28,8 @@ class Fit extends React.Component {
             <Route path={"/fit/ems"} exact component={Ems} />
             <Route path={"/fit/stretching"} exact component={Stretching} />
             <Route path={"/fit/fight"} exact component={Fight} />
+            <Route path={"/fit/functional"} exact component={Functional} />
+            <Route path={"/fit/workout"} exact component={Workout} />
           </Switch>
 
          

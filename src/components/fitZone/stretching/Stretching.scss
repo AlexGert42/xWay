@@ -175,7 +175,7 @@
 
 .stretching_about {
     width: 100%;
-    // min-height: 100vh;
+    height: 100vh;
     
     .stretching_about__inner {
         padding: 100px 80px;
@@ -213,7 +213,6 @@
                         min-width: 50%;
                         animation: stretchingShowBlockImg .5s ease;
                        img {
-                           
                             width: 100%;
                        }
                     }
@@ -235,7 +234,7 @@
 
 @media (max-width: 1280px) {
     .stretching_about {
-
+        height: 100%;
         .stretching_about__inner {
             padding: 50px 35px;
             .stretching_about__menu {
@@ -253,9 +252,6 @@
                             justify-content: space-between;
                             .stretching_about__vid {
                                 margin-top: 30px;
-                            }
-                            .stretching_about__vid {
-                               
                             }
                             .stretching_about__text {
                                 font-size: 1.5rem; 
@@ -284,7 +280,9 @@
                     .stretching_about__block {
                         &.active {
                             .stretching_about__vid {
-                                margin-top: 30px;
+                                img {
+                                    width: 100%;
+                                }
                             }
                             .stretching_about__vid {
                                
@@ -359,7 +357,7 @@
 .stretching { 
     position: relative;
     .stretching_prices {
-        box-shadow: 0 100px 200px inset #000;
+        box-shadow: 0 100px 300px inset #000;
         width: 100%;
         background-image: url('../../../img/stretching/price_fone.jpg');
         background-size: cover;
@@ -497,6 +495,7 @@
         background-position-x: 70%;
         box-shadow: 0 50px 150px inset #000;
         background-image: url('../../../img/stretching/adv_fone.jpg');
+        box-shadow: 50px -50px  200px inset #D2CCCC;
         @media (max-width: 420px) {
             // background-image: none
         }
@@ -613,7 +612,7 @@
                 border-right: 2px solid #000;
                 box-shadow: 100px 0 100px 0  inset #000;
                 &.img_1 {
-                    background-image: url('../../../img/stretching/before_after_1.JPG'); 
+                    background-image: url('../../../img/stretching/before_after_1.jpg'); 
                 }
                 &.img_2 {
                     background-image: url('../../../img/stretching/before_after_2.jpg');
@@ -691,30 +690,32 @@
         .stretching_res {
            
             .stretching_res__inner {
-               
-                padding: 50px 0;
+                margin-bottom: 0;
+                padding: 0;
                 
-                .stretching_res__content {
+                
                     .stretching_res__title {
-                        margin-bottom: 20px;
+                        margin-top: 50px;
+                        
                     }
                 
                     .stretching_res__text {
                        
-                        font-size: 1.2rem;
+                        display: none;
                     }
-                }
+                
             }
             .stretching_res__slider {
-                // height: 500px;
+                
                 
                 position: relative;
                 .stretching_res__back {
-                    
+                    box-shadow: none;
+                    height: 100vh;
                     background-position: center;
                    
                     width: 100%;
-                    background-size: contain;
+                    background-size: cover;
                 }
             }
         }

@@ -1,6 +1,6 @@
 
 import logoWhite from '../../img/logo_white.svg'
-import logoBlack from '../../img/logo_black.svg'
+import logoBlack from '../../img/logo_black.png'
 
 
 const initialState = {

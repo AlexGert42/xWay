@@ -1,6 +1,6 @@
 import React from "react";
 
-import { chengeStateModal } from "../../../store/madal/actions"
+import { chengeStateModal } from "../../../store/form/actions"
 import { connect } from "react-redux";
 
 import ScrollableAnchor from 'react-scrollable-anchor';
@@ -23,7 +23,7 @@ class Fight extends React.Component {
         return (
             <section className="fight">
                 <ScrollableAnchor id={"fight-start"}>
-                    <Carousel className="fight__fone" showThumbs={false} autoPlay showStatus={false} showArrows={false} infiniteLoop interval={3000}>
+                    <Carousel className="fight__fone" showThumbs={false} autoPlay showStatus={false} showArrows={false} infiniteLoop interval={5000}>
 
                         <div className="fight__promo img_1">
                             <div className="container">
@@ -70,6 +70,17 @@ class Fight extends React.Component {
                         <div className="fight__promo img_4">
                             <div className="container">
                                 <div className="fight__promo_inner right">
+                                    <h1 className="fight__title">MMA</h1>
+                                    <div className="fight__discription">
+                                        Смешанные боевые искусства. Лучшие техники боя в стойке и партере, соединенные в молодом и невероятно популярном единоборстве. Минимум ограничений, максимум возможностей раскрыть свой бойцовский потенциал.
+                                    </div>
+                                    <button className="fight__king-btn" onClick={() => this.props.chengeStateModal(true)}>ПОСЕТИТЬ ПРОБНОЕ ЗАНЯТИЕ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="fight__promo img_5">
+                            <div className="container">
+                                <div className="fight__promo_inner right">
                                     <h1 className="fight__title">ГРЭППЛИНГ</h1>
                                     <div className="fight__discription">
                                         Создан на базе наиболее эффективных техник бразильского джиу-джитсу, вольной борьбы, боевого самбо и дзюдо.
@@ -81,7 +92,7 @@ class Fight extends React.Component {
                         </div>
 
 
-                        <div className="fight__promo img_5">
+                        <div className="fight__promo img_6">
                             <div className="container">
                                 <div className="fight__promo_inner right">
                                     <h1 className="fight__title">АЙКИДО</h1>
@@ -94,8 +105,8 @@ class Fight extends React.Component {
                             </div>
                         </div>
 
-                        
-                        <div className="fight__promo img_6">
+
+                        <div className="fight__promo img_7">
                             <div className="container">
                                 <div className="fight__promo_inner right">
                                     <h1 className="fight__title">ЕДИНОБОРСТВА ДЛЯ ДЕТЕЙ</h1>
@@ -206,7 +217,7 @@ class Fight extends React.Component {
                     </div>
                 </section>
 
-                <Form/>
+                <Form />
 
             </section>
         );

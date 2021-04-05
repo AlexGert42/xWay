@@ -2,15 +2,16 @@ import React from "react";
 
 import Form from "../../form/FormContainer"
 
-import { chengeStateModal } from "../../../store/madal/actions"
+import { chengeStateModal } from "../../../store/form/actions"
 import { connect } from "react-redux";
 import ScrollableAnchor from 'react-scrollable-anchor';
 import foneVideo from "../../../img/vid/stretching_fone.mp4"
 import { Carousel } from 'react-responsive-carousel';
 
-import img2 from "../../../img/stretching/pilates.jpg"
-import img3 from "../../../img/stretching/ioga.jpg"
-import img4 from "../../../img/stretching/aero.jpg"
+import img1 from "../../../img/stretching/bms.png"
+import img2 from "../../../img/stretching/pilates.png"
+import img3 from "../../../img/stretching/ioga.png"
+import img4 from "../../../img/stretching/aero.png"
 
 import imgAdvantage1 from "../../../img/stretching/icon_1.png"
 import imgAdvantage2 from "../../../img/stretching/icon_2.png"
@@ -109,7 +110,7 @@ class Stretching extends React.Component {
                                         </p>
                                     </div>
                                     <div className="stretching_about__vid">
-                                        <img src={img2} alt="" />
+                                        <img src={img1} alt="img" style={{width: '65%'}}/>
                                     </div>
                                 </li>
                                 <li className={this.state.blocks[1].block}>
@@ -130,7 +131,7 @@ class Stretching extends React.Component {
                                         </p>
                                     </div>
                                     <div className="stretching_about__vid">
-                                        <img src={img3} alt="" />
+                                        <img src={img2} alt="img" style={{width: '100%'}} />
                                     </div>
                                 </li>
                                 <li className={this.state.blocks[2].block}>
@@ -149,7 +150,7 @@ class Stretching extends React.Component {
                                        </p>
                                     </div>
                                     <div className="stretching_about__vid">
-                                        <img src={img4} alt="" />
+                                        <img src={img3} alt="img" style={{width: '65%', margin: '0 0 0 100px'}} />
                                     </div>
                                 </li>
                                 <li className={this.state.blocks[3].block}>
@@ -165,7 +166,7 @@ class Stretching extends React.Component {
                                        </p>
                                     </div>
                                     <div className="stretching_about__vid">
-                                        <img src={img2} alt="" />
+                                        <img src={img4} alt="img" style={{width: '70%', margin: '0 0 0 100px'}} />
                                     </div>
                                 </li>
                             </ul>

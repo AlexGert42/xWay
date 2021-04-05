@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../../../img/logo_text_white.png"
-import { chengeStateModal } from "../../../store/madal/actions"
+import { chengeStateModal } from "../../../store/form/actions"
 import { connect } from "react-redux";
 import { Parallax } from "react-parallax";
 import ScrollableAnchor from 'react-scrollable-anchor';
@@ -85,7 +85,7 @@ class HomeFit extends React.Component {
                   <p className="card__dicription">
                     Функциональный фитнес — это микс из кардионагрузки и силовых упражнений, он вовлекает в работу все группы мышц комплексно, включая самые труднодоступные. В функциональных тренировках приоритет — гармоничное развитие мускулатуры и слаженная работа всех групп мышц, повышение силы и выносливости.
                 </p>
-                  <NavLink className="card__link" to="/">ПОДРОБНЕЕ</NavLink>
+                  <NavLink className="card__link" to="/fit/functional/#functional-start">ПОДРОБНЕЕ</NavLink>
                 </div>
                 <div className="card__img str_home"></div>
               </div>
@@ -96,7 +96,7 @@ class HomeFit extends React.Component {
                   <p className="card__dicription">
                     Тренировки на улице — это идеальный вид физической активности в теплое время года. И воздух свежий, и хорошая погода — все способствует отличному настроению и эффективной тренировке.
                 </p>
-                  <NavLink className="card__link" to="/">ПОДРОБНЕЕ</NavLink>
+                  <NavLink className="card__link" to="/fit/workout/#workout-start">ПОДРОБНЕЕ</NavLink>
                 </div>
               </div>
 

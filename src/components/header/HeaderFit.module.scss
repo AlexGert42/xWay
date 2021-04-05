@@ -244,13 +244,13 @@ $colorFone: linear-gradient(180deg, #000000 20%, rgba(0, 0, 0, 0) 100%);
                     
                     animation: showHeader .5s ease;
                     overflow: auto;
-                    font-size: 1.5rem;
+                    font-size: 1rem;
                     top: 4%;
                     margin-left: -20px;
                     width: 105%;
-                    height: 70vh;
+                    height: 65vh;
                     position: fixed;
-                    background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, .8) 100%); 
+                    background: #000;
                     display: flex;
                     flex-direction: column;
                     z-index: 1;
@@ -286,7 +286,7 @@ $colorFone: linear-gradient(180deg, #000000 20%, rgba(0, 0, 0, 0) 100%);
                     width: 100%;
                     height: 30vh;
                     position: fixed;
-                    background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, .8) 100%);
+                    background: #000;
                     right: 0;
                     z-index: 1;
                     .header__number {

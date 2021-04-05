@@ -1,11 +1,13 @@
 import React from "react";
 import { connect } from "react-redux";
 import Form from "./Form"
+import { setNameInput, setPhoneInput, setClient, showRsponse } from "../../store/form/actions"
 
 import formHomeStyle from "./FormHome.module.scss"
 import formStretchingStyle from "./FormStretching.module.scss"
 import formFightStyle from "./FormFight.module.scss"
-
+import formFunctionalStyle from "./FormFunctional.module.scss"
+import formWorkout from "./FormWorkout.module.scss"
 
 
 
@@ -33,26 +35,47 @@ class FormContainer extends React.Component {
       return ({
         style: formFightStyle,
       })
+    } else if (state.colorTheme === 'fitFunctional') {
+      return ({
+        style: formFunctionalStyle,
+      })
+    } else if (state.colorTheme === 'fitWorkout') {
+      return ({
+        style: formWorkout,
+      })
     }
 
   }
 
 
   render() {
-    return <Form style={this.state.style} />
+    return <Form
+      style={this.state.style}
+      name={this.props.name}
+      phone={this.props.phone}
+      setNameInput={this.props.setNameInput}
+      setPhoneInput={this.props.setPhoneInput}
+      setClient={this.props.setClient}
+      showRsponse={this.props.showRsponse}
+    />
   }
 }
 
 
 const mapStateToProps = state => {
   return {
-
+    name: state.form.name,
+    phone: state.form.phone,
+    success: state.form.success,
   }
 
 }
 
 const mapDispatchToProps = {
-
+  setNameInput,
+  setPhoneInput,
+  setClient,
+  showRsponse,
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(FormContainer)

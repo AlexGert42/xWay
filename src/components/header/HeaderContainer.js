@@ -5,7 +5,7 @@ import Header from "./Header"
 import headerfitStyle from './HeaderFit.module.scss'
 import headerBeautyStyle from "./HeaderBeauty.module.scss"
 
-import {chengeStateModal} from "../../store/madal/actions"
+import {chengeStateModal} from "../../store/form/actions"
 
 
 

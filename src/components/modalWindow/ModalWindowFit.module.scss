@@ -16,7 +16,6 @@ $background: rgba(0, 0, 0, .6);
         
         z-index: 1000;
         position: relative;
-
         position: fixed;
         width: 100%;
         height: 100%;
@@ -47,6 +46,11 @@ $background: rgba(0, 0, 0, .6);
                     img {
                         width: 100%;
                     }
+                }
+                .modal__subtitle {
+                    font-size: 1.2rem;
+                    color: $colorAlert;
+                    text-align: center;
                 }
 
             .modal__form {

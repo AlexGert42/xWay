@@ -15,19 +15,24 @@ class modalWindow extends React.Component {
             placeholderName: "Введите Имя",
             placeholderPhone: "Введите Номер Телефона",
 
+            errorData: '',
         }
     }
 
     handleSubmit = e => {
         e.preventDefault()
-        const reg = /^([+]?[\s0-9]+)?(\d{3}|[(]?[0-9]+[)])?([-]?[\s]?[0-9])+$/
+        const reg = /(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?/
         if (this.props.name.length > 0 && reg.test(String(this.props.phone))) {
             this.props.setClient({
                 name: this.props.name,
                 phone: this.props.phone
             })
+            this.setState({errorData: ''})
             this.props.closeModal(false)
-        } 
+            this.props.showRsponse(true)
+        } else {
+            this.setState({errorData: 'Некоректные данные'})
+        }
     }
 
     blureHandle = e => {
@@ -64,7 +69,7 @@ class modalWindow extends React.Component {
 
 
     close = e => {
-        if (e.target.title === "overlay") {
+        if (e.target.accessKey === "overlay") {
             this.props.closeModal(false)
         }
     }
@@ -78,9 +83,10 @@ class modalWindow extends React.Component {
 
         return (
             <div className={this.props.style.modal}>
-                <div className={this.props.style.modal__overlay} title="overlay" onClick={this.close}>
+                <div className={this.props.style.modal__overlay} accessKey="overlay" onClick={this.close}>
                     <div className={this.props.style.modal__window}>
                         <h3 className={this.props.style.modal__title} ><img src={logo} alt="logo" /></h3>
+                        <div className={this.props.style.modal__subtitle} >{this.state.errorData}</div>
                         <form className={this.props.style.modal__form} onSubmit={this.handleSubmit}>
                             <input
                                 className={this.props.style.modal__input && this.state.nameLable ? `${this.props.style.modal__input} ${this.props.style.alert}` : this.props.style.modal__input}

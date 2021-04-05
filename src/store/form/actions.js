@@ -1,20 +1,41 @@
-export const CHANGE_NAME = 'CHANGE_NAME';
-export const CHANGE_PHONE = 'CHANGE_PHONE';
-export const SET_USER = 'SET_USER';
+export const CHENGE_MODAL = "CHENGE_MODAL"
 
-export const setChangeName = text => ({
-    type: CHANGE_NAME,
+
+export const chengeStateModal = state => {
+    return {
+        type: CHENGE_MODAL,
+        payload: state
+    }
+} 
+
+export const CHENGE_NAME = 'CHENGE_NAME'
+export const CHENGE_PHONE = 'CHENGE_PHONE'
+
+
+export const setNameInput = text => ({
+    type: CHENGE_NAME,
     payload: text
 })
-export const setChangePhone = number => ({
-    type: CHANGE_PHONE,
-    payload: number
+export const setPhoneInput = num => ({
+    type: CHENGE_PHONE,
+    payload: num
 })
 
+export const CHENGE_CLIENT = 'CHENGE_CLIENT'
 
-export const setUserThunkCreator = () => {
-    console.log('++++');
+export const setClient = client => {
+    
     return {
-        type: SET_USER,
+        type: CHENGE_CLIENT,
+        payload: client
     }
 }
+
+export const SUCCESS_RESPONSE = 'SUCCESS_RESPONSE'
+
+export const showRsponse = state => ({
+    type: SUCCESS_RESPONSE,
+    payload: state
+})
+ 
+

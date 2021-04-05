@@ -165,15 +165,29 @@
                     justify-content: space-between;
                     .quate__nav_item {
                         display: block;
-                        margin: 30px 0;
-                        
-                        font-size: 70px;
-                        color: #000;
+                        margin: 30px 15px;
+                        width: 60px;
+                        height: 60px;
+                        background-repeat: no-repeat;
+                        &:active {
+                            width: 70px;
+                            height: 70px;
+                        }
                         &.left {
-    
+                            background-image: url('../../../../img/homeFit/qeats_arrow.svg');
+                            -webkit-transform: rotate(-90deg);
+                            -moz-transform: rotate(-90deg);
+                            -ms-transform: rotate(-90deg);
+                            -o-transform: rotate(-90deg);
+                            transform: rotate(-90deg);
                         }  
                         &.right {
-                           
+                            background-image: url('../../../../img/homeFit/qeats_arrow.svg');
+                            -webkit-transform: rotate(90deg);
+                            -moz-transform: rotate(90deg);
+                            -ms-transform: rotate(90deg);
+                            -o-transform: rotate(90deg);
+                            transform: rotate(90deg);
                         }
                     }
                 }
@@ -197,16 +211,19 @@
                         margin: 0;
                         animation: quateShow 1s ease;
                         min-width: 100%;
+                        video {
+                            width: 100%;
+                        }
                         &.active {
                             display: block;
                             
                         }
                     }
                     .quate__block_2 {
-                        min-width: 100%;
+                        // min-width: 100%;
                         display: none;
                         padding: 0;
-                        margin: 0;
+                        margin: 0 auto;
                         animation: quateShow 1s ease;
                         &.active {
                             display: block;

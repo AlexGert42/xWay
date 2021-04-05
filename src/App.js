@@ -19,7 +19,6 @@ class App extends React.Component {
     return (
       <Provider store={store}>
         <BrowserRouter>
-          
           <Switch>
             <Route path={"/"} exact component={Base} />
             <Route path={"/beauty"} component={Beauty} />

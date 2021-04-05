@@ -1,6 +1,7 @@
 .form {
     width: 100%;
     background: linear-gradient(89.92deg, #D2CCCC 33.33%, #DCDCDC 44.48%, #D2CCCC 33.33%);
+    
     .form__content {
         width: 100%;
         background-image: url('../../img/stretching/form_fone.jpg');
@@ -12,7 +13,7 @@
         margin: 0 auto;
         
         
-        
+        // box-shadow: 200px 200px -200px 200px inset #000;
         padding: 100px 20px;
         display: flex;
         

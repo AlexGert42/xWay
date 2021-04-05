@@ -253,11 +253,11 @@ $colorFone: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 145.74%);
                 &.active {
                     animation: showHeader .5s ease;
                     overflow: auto;
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
                     top: 4%;
                     margin-left: -20px;
                     width: 102%;
-                    height: 70vh;
+                    height: 65vh;
                     position: fixed;
                     background-color: #fff;
                     display: flex;

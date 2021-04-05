@@ -1,0 +1,144 @@
+.workout {
+    background-image: url('../../../img/workout/fone.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    .workout__fone {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+       
+        
+        
+        .workout__promo {
+            width: 40%;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            position: relative;
+            animation: showPromo 2s ease;
+            background-color: rgba($color: #000000, $alpha: .5);
+            @media (max-width: 1280px) {
+                width: 50%;
+            }
+            .workout__promo_inner {
+                height: 100vh;
+                padding: 0 20px 20px 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: nowrap;
+                box-shadow: 1px 1px 5px #000;
+                .workout__title {
+                    font-size: 3rem;
+                    font-family: Gilroy-Bold;
+                    text-align: center;
+                    margin-bottom: 30px;
+                }
+                .workout__discription {
+                    font-size: 1.5rem;
+                    text-align: center;
+                    line-height: 30px;
+                    margin-bottom: 60px; 
+                }
+                .workout__king_btn {
+                    cursor: pointer;
+                    padding: 25px;
+                    color: #fff;
+                    font-size: 1.5rem;
+                    font-family: Gilroy-Bold;
+                    background: #DC3A3E ;
+                    &:hover {
+                        animation: ems_btn 1s ease;
+                        box-shadow: 1px 1px 50px rgb(63, 2, 2) inset;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    .workout {
+        .workout__fone {
+
+            .workout__promo {
+                width: 70%;
+                
+                .workout__promo_inner {
+                    
+                  
+                    .workout__title {
+                        margin: 0 0 20px 20px;;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .workout {
+        .workout__fone {
+            background-position: 50% center;
+            background-size: contain;
+            .workout__promo {
+                width: 100%;
+                .workout__promo_inner {
+                    padding: 0 20px;
+                    .workout__title {
+                        font-size: 2.5rem;
+                        
+                        margin: 0 0 20px 20px;
+                    }
+                    .workout__discription {
+                        font-size: 1.2rem;
+                        line-height: 30px;
+                    }
+                    .workout__king_btn {
+                        font-size: 1rem;
+                    }
+                }
+               
+            }
+        }
+    }
+}
+@media (max-width: 420px) {
+    .workout {
+        .workout__fone {
+
+            .workout__promo {
+                width: 100%;
+                .workout__promo_inner {
+                   padding: 0;
+                    .workout__title {
+                        font-size: 1.7rem;
+                    }
+                    .workout__discription {
+                        
+                        font-size: 1.2rem;
+                        margin-bottom: 20px;
+                    }
+                    .workout__king_btn {
+                        padding: 15px;
+                        font-size: 1.2rem;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+

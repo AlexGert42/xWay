@@ -72,8 +72,8 @@ class Quate extends React.Component {
             <div className="quate__list">
 
               <div className="quate__nav">
-                <div className="quate__nav_item left" onClick={this.chengeQuateBack} >-</div>
-                <div className="quate__nav_item right" onClick={this.chengeQuateNext} >+</div>
+                <div className="quate__nav_item left" onClick={this.chengeQuateBack} ></div>
+                <div className="quate__nav_item right" onClick={this.chengeQuateNext} ></div>
               </div>
 
               <div className={`quate__block_0 ${this.state.quates[0].quate}`}>

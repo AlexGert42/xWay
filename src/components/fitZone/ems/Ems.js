@@ -2,11 +2,11 @@ import React from "react";
 
 import Form from "../../form/FormContainer"
 
-import { chengeStateModal } from "../../../store/madal/actions"
+import { chengeStateModal } from "../../../store/form/actions"
 import { connect } from "react-redux";
 import { Carousel } from 'react-responsive-carousel';
 import ScrollableAnchor from 'react-scrollable-anchor';
-import foneVideo from "../../../img/vid/xbody_-_decided_for_life_with_mark_keller.e76W1_1.mp4"
+import foneVideo from "../../../img/vid/ems_fone.mp4"
 import about_ems from "../../../img/vid/about_ems.mp4"
 import about_poster from "../../../img/ems/ems_fone.jpg"
 
