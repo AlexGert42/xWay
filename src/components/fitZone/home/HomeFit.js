@@ -44,7 +44,7 @@ class HomeFit extends React.Component {
         </ScrollableAnchor>
 
         <ScrollableAnchor id={"prace-fit"}>
-          <div className="container" >
+          <div className="container">
             <div className="services">
 
               <div className="services__card card">
@@ -99,8 +99,6 @@ class HomeFit extends React.Component {
                   <NavLink className="card__link" to="/fit/workout/#workout-start">ПОДРОБНЕЕ</NavLink>
                 </div>
               </div>
-
-
             </div>
           </div>
         </ScrollableAnchor>

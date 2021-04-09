@@ -10,11 +10,16 @@ import imgAdvantage2 from "../../../img/homeBeauty/icon_2.svg"
 import imgAdvantage3 from "../../../img/homeBeauty/icon_3.svg"
 import imgAdvantage4 from "../../../img/homeBeauty/icon_4.svg"
 
+import cardFace from "../../../img/homeBeauty/card_1.jpg"
+import cardDepilation from "../../../img/homeBeauty/card_2.jpg"
+import cardMassage from "../../../img/homeBeauty/card_3.jpg"
+
 
 class HomeBeauty extends React.Component {
     render() {
         return (
             <section className="home-beauty" >
+
                 <ScrollableAnchor id={"home-beauty"}>
 
                     <div className="home-beauty__promo">
@@ -112,6 +117,89 @@ class HomeBeauty extends React.Component {
                         </div>
                     </div>
                 </section>
+
+
+
+                <section class="home-beauty_services">
+                    <div class="container">
+                        <div class="home-beauty_services__inner">
+                            <h2 class="home-beauty_services__title">Наши услуги</h2>
+                            <div class="home-beauty_services__cards">
+                                <div class="home-beauty_services__card">
+                                    <img class="home-beauty_services__img" src={cardFace} alt="card" />
+                                    <div class="home-beauty_services__discription">
+                                        <div>
+                                            <h3 class="home-beauty_services__subtitle">КОСМЕТОЛОГИЯ</h3>
+                                            <p class="home-beauty_services__text">
+                                                Естественная красота лица наш приоритет,  мы используем эффективные и экологичные методики для сохранения молодости лица.
+                                                Наша задача - максимальный эффект за короткое время: интенсивные уходы и безопасные аппараты.
+                                                Каждое лицо индивидуально, поэтому только персонализированный уход, индивидуальные формулы и сочетания ингредиентов.
+                                        </p>
+                                        </div>
+                                        <NavLink class="home-beauty_services__more" to="/">ПОДРОБНЕЕ</NavLink>
+                                    </div>
+                                </div>
+                                <div class="home-beauty_services__card">
+                                    <img class="home-beauty_services__img" src={cardDepilation} alt="card" />
+                                    <div class="home-beauty_services__discription">
+                                        <div>
+                                            <h3 class="home-beauty_services__subtitle">МАССАЖ</h3>
+                                            <p class="home-beauty_services__text">
+                                                Главным женским достоинством всегда была чистая, сияющая и упругая кожа лица, без признаков старения и морщин.
+                                                Для устранения возрастных изменений попробуйте массаж лица вместе со специалистами X-WAY. Стимуляция дермы насыщает ее питательными компонентами и кислородом, мышцы укрепляются, активизируются кровообращение и обмен веществ, выводятся токсины. В результате вы обретаете четкий и привлекательный контур лица.
+                                            </p>
+                                        </div>
+                                        <NavLink class="home-beauty_services__more" to="/">ПОДРОБНЕЕ</NavLink>
+                                    </div>
+                                </div>
+                                <div class="home-beauty_services__card">
+                                    <img class="home-beauty_services__img" src={cardMassage} alt="card" />
+                                    <div class="home-beauty_services__discription">
+                                        <div>
+                                            <h3 class="home-beauty_services__subtitle">ДЕПИЛЯЦИЯ</h3>
+                                            <p class="home-beauty_services__text">
+                                                Мы поможем Вам сделать ваше тело не только более красивым, но и гладким.  Идеально гладкие ножки и ухоженная зона бикини – мечта любой девушки. Кроме того, в нашей студии Вы можете удалить волоски из подмышечных впадин, с рук, живота, ягодиц, бикини и спины. Депиляция – это еще и неотъемлемая часть подготовки к пляжному сезону.  Шугаринг и восковая депиляция для мужчин и женщин.
+                                        </p>
+                                        </div>
+                                        <NavLink class="home-beauty_services__more" to="/">ПОДРОБНЕЕ</NavLink>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* <section className="home-beauty_services">
+                    <div className="container">
+                        <h2 className="home-beauty_services__title">УСЛУГИ</h2>
+                        <div className="home-beauty_services__inner">
+                            <div className="home-beauty_services__img img_cosmetology">
+                                <div className="home-beauty_services__text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, perferendis assumenda ipsa veniam omnis et ullam magni id, ducimus nesciunt neque harum eos! Placeat corrupti, harum commodi expedita cum ipsa.
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, perferendis assumenda ipsa veniam omnis et ullam magni id, ducimus nesciunt neque harum eos! Placeat corrupti, harum commodi expedita cum ipsa.
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, perferendis assumenda ipsa veniam omnis et ullam magni id, ducimus nesciunt neque harum eos! Placeat corrupti, harum commodi expedita cum ipsa.
+                                </p>
+                                </div>
+                                <div className="home-beauty_services__text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, perferendis assumenda ipsa veniam omnis et ullam magni id, ducimus nesciunt neque harum eos! Placeat corrupti, harum commodi expedita cum ipsa.
+                                </p>
+                                </div>
+                                <div className="home-beauty_services__text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, perferendis assumenda ipsa veniam omnis et ullam magni id, ducimus nesciunt neque harum eos! Placeat corrupti, harum commodi expedita cum ipsa.
+                                </p>
+                                </div>
+                            </div>
+                            <div className="home-beauty_services__discription">
+                                <div className="home-beauty_services__subtitle">Косметология</div>
+                                <div className="home-beauty_services__subtitle">Депиляция</div>
+                                <div className="home-beauty_services__subtitle">Массаж</div>
+                            </div>
+                        </div>
+                    </div>
+                </section> */}
 
             </section>
         );

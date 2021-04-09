@@ -48,10 +48,10 @@ class HeaderContainer extends React.Component {
 
 const mapStateToProps = state => {
   return {
-    menuFitZone: state.header.menuFitZone,
-    menuBeautyZone: state.header.menuBeautyZone,
-    logoFit: state.header.logoFit,
-    logoBeauty: state.header.logoBeauty
+    menuFitZone: state.nav.menuFitZone,
+    menuBeautyZone: state.nav.menuBeautyZone,
+    logoFit: state.nav.logoFit,
+    logoBeauty: state.nav.logoBeauty
   }
 
 }

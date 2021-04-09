@@ -296,6 +296,7 @@ $colorText: #fff;
         background-image: url('../../../img/ems/fone_price.jpeg');
         background-size: cover;
         background-repeat: no-repeat;
+        box-shadow: 0 100px 200px inset #000;
         .ems_prices__inner {
             padding: 100px;
             display: flex;
@@ -325,7 +326,7 @@ $colorText: #fff;
                     justify-content: center;
                }
                 .ems_card {
-                   
+                    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.63);
                     width: 500px;
                     min-width: 300px;
                     &:nth-child(1) {

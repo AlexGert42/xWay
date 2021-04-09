@@ -9,15 +9,12 @@ $colorText: #fff;
     color: $colorText;
     .footer__inner {
         padding: 70px 100px 20px 100px;
-        
-        
         .footer__menu {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
             flex-wrap: wrap;
             .footer__nav {
-           
                 .footer__logo {
                     display: block;
                     width: 185px;
@@ -28,7 +25,6 @@ $colorText: #fff;
                 }
                 .footer__social {
                     display: flex;
-                    
                     .footer__link {
                         cursor: pointer;
                         display: flex;
@@ -47,20 +43,14 @@ $colorText: #fff;
                         background-image: url('../../img/whatsap.png');
                     }
                 }
-                
             }
-
-
-
             .footer__cross {
                 display: none;
             }
             .footer__list {
-                
                 display: grid;
                 grid-template-rows: 70px 70px;
                 grid-template-columns: 1fr 1fr;
-                
                 .footer__item {
                     margin: 0 80px 50px 80px;
                     color: $colorText;
@@ -68,7 +58,6 @@ $colorText: #fff;
                 }
             }
             .footer__contacts {
-                
                 display: flex;
                 flex-direction: column;
                 .footer__number {
@@ -78,7 +67,6 @@ $colorText: #fff;
                 .footer__adresse {
                     margin: 0 30px 50px 0;
                     color: $colorText;
-                    
                     span {
                         white-space: nowrap;
                     }
@@ -86,37 +74,6 @@ $colorText: #fff;
             }
             .footer__popap {
                 display: block;
-            }
-            
-            .footer__feedback {
-                min-width: 400px;
-                display: flex;
-                flex-direction: column;
-                margin-bottom: 20px;
-                .footer__discription {
-                    margin-bottom: 15px;
-                    line-height: 25px;
-                }
-                .footer__input {
-                    padding: 15px;
-                    margin-bottom: 20px;
-                    background-color: $colorFone;
-                    color: $colorText;
-                    border: 2px solid $colorText;
-                }
-                .footer__btn {
-                    padding: 10px;
-                    background-color: $colorFone;
-                    color: $colorText;
-                    border: 2px solid $colorText;
-                    font-size: 1.2rem;
-                    &:hover {
-                        background-color: $colorText;
-                        color: $colorFone;
-                        transition: all 1s ease;
-                        font-family: Gilroy-Bold;
-                    }
-                }  
             }
         }
         .footer__order {      
@@ -132,7 +89,6 @@ $colorText: #fff;
     .footer {
         .footer__inner {
             padding: 40px 40px 20px 40px;
-           
             .footer__menu {
                 align-items: center;
                 justify-content: space-between;
@@ -142,12 +98,10 @@ $colorText: #fff;
                     }
                 }
                 .footer__list {
-                   
                     grid-template-rows: 70px 70px;
                     .footer__item {
                         margin: 10px 10px 10px 0;
                     }
-                    
                 }
                 .footer__contacts {
                     padding: 0;
@@ -158,25 +112,13 @@ $colorText: #fff;
                         margin: 0 10px 20px 0;
                     }
                 }
-                .footer__feedback {
-                    min-width: 200px; 
-                    width: 100%;     
-                    .footer__input {
-                        padding: 12px;
-                    } 
-                    .footer__btn {
-                       padding: 12px;
-                    }
-                }
             }
-            
         }
     }
 }
 
 
 @media (max-width: 420px) {
-  
     .footer {
         .footer__inner {
             padding: 20px;
@@ -207,7 +149,6 @@ $colorText: #fff;
                         }
                     }
                 }
-              
                 .footer__list {
                     display: none;
                     animation: showPopap 1s  ease ;
@@ -218,9 +159,7 @@ $colorText: #fff;
                             margin: 0;
                         }    
                     }
-                   
                 } 
-
                 .footer__contacts {
                     display: none;
                     animation: showPopap 1s ease; 
@@ -228,20 +167,6 @@ $colorText: #fff;
                         display: flex;
                         
                     }
-                }
-                
-                
-                .footer__feedback {
-                    display: none;
-                    animation: showPopap 1s  ease ;
-                    &.active {
-                        display: flex;
-                        
-                        .footer__btn {
-                            padding: 12px;
-                            font-size: 1rem;
-                        }
-                    }  
                 }
             }
         }

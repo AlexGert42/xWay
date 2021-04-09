@@ -21,7 +21,8 @@ class FormFit extends React.Component {
         if (this.props.name.length > 0 && reg.test(String(this.props.phone))) {
             this.props.setClient({
                 name: this.props.name,
-                phone: this.props.phone
+                phone: this.props.phone,
+                date: JSON.stringify(new Date)
             })
             this.props.showRsponse(true)
         } else {

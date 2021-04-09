@@ -18,7 +18,6 @@ class FooterContainer extends React.Component {
             menuList:{},
             logo: {}
         }
-
     }
 
     static getDerivedStateFromProps(props, state) {
@@ -50,10 +49,10 @@ class FooterContainer extends React.Component {
 
 const mapStateToProps = state => {
     return {
-        menuFitZone: state.footer.menuFitZone,
-        menuBeautyZone: state.footer.menuBeautyZone,
-        logoFit: state.footer.logoFit,
-        logoBeauty: state.footer.logoBeauty
+        menuFitZone: state.nav.menuFitZone,
+        menuBeautyZone: state.nav.menuBeautyZone,
+        logoFit: state.nav.logoFooterFit,
+        logoBeauty: state.nav.logoFooterBeauty
     }
 
 }

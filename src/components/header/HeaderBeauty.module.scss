@@ -78,7 +78,7 @@ $colorFone: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 145.74%);
         //LOGO
         .header__logo {
             z-index: 3;
-            margin: 5px 90px;
+            margin: 5px 50px;
             flex: 0 0 70px;
            
             img {
@@ -155,38 +155,18 @@ $colorFone: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 145.74%);
 }
 
 
-@media screen and (max-width: 1280px ) and (min-width: 960px) {
-    .header {
-        font-size: .8rem;
-        .header__inner {
-            .header__logo {
-                margin: 5px 50px;
-            }
-            .header__links {
-                .header__link {
-                    width: 30px;
-                    height: 30px;
-                    flex: 0 0 30px;
-                }
-            }
-        }
-        
-        
-        
-    }    
-   
-}
+
 
 @media (max-width: 960px) {
 
     .header {
-        background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 145.74%);
+        background: $colorFone;
         .header__inner {
             
             //LOGO
             .header__logo {
                 margin: 5px 0;
-                flex: 0 0 60px;
+                flex: 0 0 50px;
             }  
             //BURGER ICON
             height: 60px;
@@ -253,22 +233,22 @@ $colorFone: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 145.74%);
                 &.active {
                     animation: showHeader .5s ease;
                     overflow: auto;
-                    font-size: 1.2rem;
+                    font-size: 1.5rem;
                     top: 4%;
                     margin-left: -20px;
-                    width: 102%;
-                    height: 65vh;
+                    width: 104%;
+                    height: 100%;
                     position: fixed;
                     background-color: #fff;
                     display: flex;
                     flex-direction: column;
-                    justify-content: space-around;
+                    justify-content: flex-start;
                     align-items: center;
                     z-index: 1;
                    
                     .header__items {
                     
-                        margin: 10px 10px;
+                        margin: 20px 10px;
                         &:first-child {
                             padding-top: 40px;
                         }

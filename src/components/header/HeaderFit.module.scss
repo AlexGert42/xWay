@@ -244,20 +244,21 @@ $colorFone: linear-gradient(180deg, #000000 20%, rgba(0, 0, 0, 0) 100%);
                     
                     animation: showHeader .5s ease;
                     overflow: auto;
-                    font-size: 1rem;
+                    font-size: 1.5rem;
                     top: 4%;
                     margin-left: -20px;
                     width: 105%;
-                    height: 65vh;
+                    height: 100%;
                     position: fixed;
                     background: #000;
                     display: flex;
                     flex-direction: column;
+                    justify-content: flex-start;
                     z-index: 1;
                    
                     .header__items {
                     
-                        margin: 10px 10px;
+                        margin: 20px 10px;
                         &:first-child {
                             padding-top: 40px;
                         }
