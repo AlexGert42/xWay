@@ -9,6 +9,8 @@ import formFightStyle from "./FormFight.module.scss"
 import formFunctionalStyle from "./FormFunctional.module.scss"
 import formWorkout from "./FormWorkout.module.scss"
 
+import formDepilation from "./FormDepilation.module.scss"
+
 
 
 
@@ -43,8 +45,11 @@ class FormContainer extends React.Component {
       return ({
         style: formWorkout,
       })
+    } else if (state.colorTheme === 'beautyDepilation') {
+      return ({
+        style: formDepilation,
+      })
     }
-
   }
 
 

@@ -14,7 +14,7 @@ class Quate extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      count: 0,
+      count: 1,
       quates: [
         { id: 0, quate: "active" },
         { id: 1, quate: "" },
@@ -30,7 +30,7 @@ class Quate extends React.Component {
 
   chengeQuateBack = () => {
     this.setState({ count: this.state.count - 1 })
-    if (this.state.count <= 0) {
+    if (this.state.count <= 1) {
       this.setState({ count: 5 })
     }
     let array = this.state.quates
