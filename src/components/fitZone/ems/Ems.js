@@ -6,7 +6,7 @@ import { chengeStateModal } from "../../../store/form/actions"
 import { connect } from "react-redux";
 import { Carousel } from 'react-responsive-carousel';
 import ScrollableAnchor from 'react-scrollable-anchor';
-import foneVideo from "../../../img/vid/ems_fone.mp4"
+import foneVideo from "../../../img/vid/ems_fone_min.mp4"
 import about_ems from "../../../img/vid/about_ems.mp4"
 import about_poster from "../../../img/ems/ems_fone.jpg"
 
@@ -14,7 +14,7 @@ import about_poster from "../../../img/ems/ems_fone.jpg"
 class Ems extends React.Component {
 
     render() {
-        sessionStorage.setItem('ThemeForm', 'fitHome');
+        sessionStorage.setItem('ThemeForm', 'fitEms');
         return (
             <section className="ems">
                 <ScrollableAnchor id={"ems-start"}>
@@ -86,23 +86,22 @@ class Ems extends React.Component {
                     </div>
                 </section>
 
+
                 <section className="ems_res">
-                    <div className="container">
-                        <div className="ems_res__inner">
-                            <h3 className="ems_res__title">До После</h3>
-                            <div className="ems_res__content">
-                                <div className="ems_res__text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ex non deserunt tempore, aliquid accusantium ipsum. Sequi quaerat vel consequatur maiores voluptas laborum iusto minima eaque! Illum necessitatibus reiciendis ad?
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ex non deserunt tempore, aliquid accusantium ipsum. Sequi quaerat vel consequatur maiores voluptas laborum iusto minima eaque! Illum necessitatibus reiciendis ad?
-                                </div>
-                            </div>
+                    <div className="ems_res__inner">
+                        <h3 className="ems_res__title">До После</h3>
+                        <div className="ems_res__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ex non deserunt tempore, aliquid accusantium ipsum. Sequi quaerat vel consequatur maiores voluptas laborum iusto minima eaque! Illum necessitatibus reiciendis ad?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ex non deserunt tempore, aliquid accusantium ipsum. Sequi quaerat vel consequatur maiores voluptas laborum iusto minima eaque! Illum necessitatibus reiciendis ad?
                         </div>
                     </div>
-                    <Carousel className="ems_res__slider" showThumbs={false} autoPlay showStatus={false} showIndicators={false} infiniteLoop>
-                        <div className="ems_res__back img_1"></div>
-                        <div className="ems_res__back img_2"></div>
-                        <div className="ems_res__back img_3"></div>
-                        <div className="ems_res__back img_5"></div>
+                    <Carousel className="ems_res__slider" showThumbs={false} autoPlay showStatus={false} showIndicators={true} infiniteLoop>
+                        <div className="ems_res__back img_1"/>
+                        <div className="ems_res__back img_2"/>
+                        <div className="ems_res__back img_3"/>
+                        <div className="ems_res__back img_4"/>
+                        <div className="ems_res__back img_5"/>
+                        <div className="ems_res__back img_6"/>
                     </Carousel>
                 </section>
 

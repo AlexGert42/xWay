@@ -5,7 +5,10 @@ import { chengeStateModal } from "../../../store/form/actions"
 import { connect } from "react-redux";
 import ScrollableAnchor from 'react-scrollable-anchor';
 import { Carousel } from 'react-responsive-carousel';
+import { Parallax } from "react-parallax";
 import Contacts from "../../contacts/Contacts";
+import Form from "../../form/FormContainer"
+import fone from "../../../img/homeBeauty/foneBeauty.png"
 
 import imgAdvantage1 from "../../../img/homeBeauty/icon_1.svg";
 import imgAdvantage2 from "../../../img/homeBeauty/icon_2.svg";
@@ -15,21 +18,30 @@ import imgAdvantage4 from "../../../img/homeBeauty/icon_4.svg";
 
 class HomeBeauty extends React.Component {
     render() {
+        sessionStorage.setItem('ThemeForm', 'beautyHome');
         return (
             <section className="home-beauty" >
 
                 <ScrollableAnchor id={"home-beauty"}>
-                    <div className="home-beauty__promo">
-                        <div className="home-beauty__fone">
-                            <div className="home-beauty__promo-text">
-                                <h1 className="home-beauty__title">
-                                    ДОБРО ПОЖАЛОВАТЬ В<span><img src={logo} alt="logo" /></span>
-                                </h1>
-                                <div className="home-beauty__discription">Твой путь к совершенству</div>
-                                <button className="home-beauty__king-btn" onClick={() => this.props.chengeStateModal(true)} >посетить студию</button>
+                    <Parallax
+                        className="massage_start"
+                        strength={400}
+                        bgImage={fone}
+                        bgImageStyle={{ minHeight: '1024px', maxHeight: '2160px', minWidth: '1920px', maxWidth: '3840px' }}
+                        style={{ height: '100vh', width: '100%' }}
+                    >
+                        <div className="home-beauty__promo">
+                            <div className="home-beauty__fone">
+                                <div className="home-beauty__promo-text">
+                                    <h1 className="home-beauty__title">
+                                        ДОБРО ПОЖАЛОВАТЬ В<span><img src={logo} alt="logo" /></span>
+                                    </h1>
+                                    <div className="home-beauty__discription">Твой путь к совершенству</div>
+                                    <button className="home-beauty__king-btn" onClick={() => this.props.chengeStateModal(true)} >посетить студию</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </Parallax>
                 </ScrollableAnchor>
 
 
@@ -44,12 +56,13 @@ class HomeBeauty extends React.Component {
                                     <h3 className="home-beauty_advantage__title">Мы профессионалы</h3>
                                     <div className="home-beauty_advantage__text">
                                         <p>
-                                            Мы являемся большими экспертами
-                                            по правильному уходу за своей внешностью,
-                                            а именно за своей кожей.
-                                            У нас работают только профессионалы
-                                            с проверенной годами репутацией и чуткостью к потребностям наших клиенток.
-                                    </p>
+                                        Мы являемся большими экспертами
+по правильному уходу за своей внешностью,
+а именно за своей кожей.
+У нас работают только профессионалы
+с проверенной годами репутацией и чуткостью к потребностям наших клиенток.
+Вы можете нам доверять.
+                                        </p>
                                         <p>
                                             Вы можете нам доверять.
                                     </p>
@@ -62,12 +75,11 @@ class HomeBeauty extends React.Component {
                                     <h3 className="home-beauty_advantage__title">Косметика  класса люкс</h3>
                                     <div className="home-beauty_advantage__text">
                                         <p>
-                                            Мы являемся большими экспертами
-                                            по правильному уходу за своей внешностью,
-                                            а именно за своей кожей.
-                                            У нас работают только профессионалы
-                                            с проверенной годами репутацией и чуткостью к потребностям наших клиенток.
-                                    </p>
+                                        Косметологи нашей клиники используют только профессиональную косметику,
+отличающуюся особой эффективностью и безопасностью.
+Мы также поможем вам подобрать средства для домашнего ухода,
+подходящие именно вашему типу кожи.
+                                        </p>
                                         <p>
                                             Вы можете нам доверять.
                                     </p>
@@ -80,12 +92,8 @@ class HomeBeauty extends React.Component {
                                     <h3 className="home-beauty_advantage__title">Медицинское образование</h3>
                                     <div className="home-beauty_advantage__text">
                                         <p>
-                                            Мы являемся большими экспертами
-                                            по правильному уходу за своей внешностью,
-                                            а именно за своей кожей.
-                                            У нас работают только профессионалы
-                                            с проверенной годами репутацией и чуткостью к потребностям наших клиенток.
-                                    </p>
+                                        Сотрудники клиники постоянно совершенствуют своё мастерство: участвуют в конференциях и семинарах, обмениваются знаниями с коллегами и получают самую свежую информацию в области медицинской косметологии.
+                                        </p>
                                         <p>
                                             Вы можете нам доверять.
                                     </p>
@@ -98,12 +106,11 @@ class HomeBeauty extends React.Component {
                                     <h3 className="home-beauty_advantage__title">Новейшее оборудование</h3>
                                     <div className="home-beauty_advantage__text">
                                         <p>
-                                            Мы являемся большими экспертами
-                                            по правильному уходу за своей внешностью,
-                                            а именно за своей кожей.
-                                            У нас работают только профессионалы
-                                            с проверенной годами репутацией и чуткостью к потребностям наших клиенток.
-                                    </p>
+                                        Мы практикуем новое направление в косметологии — биомеханическую стимуляцию лиц, которая представляет
+собой нехирургическую подтяжку
+и позволяет предотвратить процессы старения путём поддержания лицевых
+мышц в тонусе.
+                                        </p>
                                         <p>
                                             Вы можете нам доверять.
                                     </p>
@@ -129,7 +136,7 @@ class HomeBeauty extends React.Component {
                                                     но и процедура, которая дарит большую пользу организму:
                                                     от кожного покрова до систем пищеварения и кровообращения.
                                                 </p>
-                                                <NavLink className="home-beauty_services__more" to="/beauty/massage">ПОДРОБНЕЕ</NavLink>
+                                                <NavLink className="home-beauty_services__more" to="/beauty/massage/#massage-start">ПОДРОБНЕЕ</NavLink>
                                             </div>
                                             <h3 className="home-beauty_services__subtitle">МАССАЖ ТЕЛА<span /></h3>
                                         </div>
@@ -145,7 +152,7 @@ class HomeBeauty extends React.Component {
                                                     Наша задача — максимальный эффект за короткое время: омолаживающий массаж, интенсивные уходы безопасные аппараты.
 
                                             </p>
-                                                <NavLink className="home-beauty_services__more"  to="/beauty/cosmetology">ПОДРОБНЕЕ</NavLink>
+                                                <NavLink className="home-beauty_services__more" to="/beauty/cosmetology/#cosmetology-start">ПОДРОБНЕЕ</NavLink>
                                             </div>
                                         </div>
                                     </div>
@@ -163,6 +170,17 @@ class HomeBeauty extends React.Component {
                                         </div>
 
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home-beauty_eyes">
+                            <div class="home-beauty_eyes__img" />
+                            <div class="home-beauty_eyes__text">
+                                <div class="home-beauty_eyes__inner">
+                                    <p class="home-beauty_eyes__disctiption">
+                                        Красивая форма бровей, окрашивание и ламинирование ресниц сделают ваш взгляд сексуальным и манящим.
+                                    </p>
+                                    <NavLink className="home-beauty_eyes__more" to="/beauty/dipilation/#xxx">ПОДРОБНЕЕ</NavLink>
                                 </div>
                             </div>
                         </div>
@@ -241,8 +259,9 @@ class HomeBeauty extends React.Component {
                 <ScrollableAnchor id={"contacts-beauty"}>
                     <Contacts />
                 </ScrollableAnchor>
-                
-               
+
+                <Form />
+
             </section>
         );
     }

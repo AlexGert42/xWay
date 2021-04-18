@@ -5,7 +5,7 @@ import Form from "../../form/FormContainer"
 import { chengeStateModal } from "../../../store/form/actions"
 import { connect } from "react-redux";
 import ScrollableAnchor from 'react-scrollable-anchor';
-import foneVideo from "../../../img/vid/stretching_fone.mp4"
+import foneVideo from "../../../img/vid/stretching_fone_min.mp4"
 import { Carousel } from 'react-responsive-carousel';
 
 import img1 from "../../../img/stretching/bms.png"
@@ -110,7 +110,7 @@ class Stretching extends React.Component {
                                         </p>
                                     </div>
                                     <div className="stretching_about__vid">
-                                        <img src={img1} alt="img" style={{width: '65%'}}/>
+                                        <img src={img1} alt="img" style={{ width: '65%' }} />
                                     </div>
                                 </li>
                                 <li className={this.state.blocks[1].block}>
@@ -131,7 +131,7 @@ class Stretching extends React.Component {
                                         </p>
                                     </div>
                                     <div className="stretching_about__vid">
-                                        <img src={img2} alt="img" style={{width: '100%'}} />
+                                        <img src={img2} alt="img" style={{ width: '100%' }} />
                                     </div>
                                 </li>
                                 <li className={this.state.blocks[2].block}>
@@ -150,7 +150,7 @@ class Stretching extends React.Component {
                                        </p>
                                     </div>
                                     <div className="stretching_about__vid">
-                                        <img src={img3} alt="img" style={{width: '65%', margin: '0 0 0 100px'}} />
+                                        <img src={img3} alt="img" style={{ width: '65%', margin: '0 0 0 100px' }} />
                                     </div>
                                 </li>
                                 <li className={this.state.blocks[3].block}>
@@ -166,7 +166,7 @@ class Stretching extends React.Component {
                                        </p>
                                     </div>
                                     <div className="stretching_about__vid">
-                                        <img src={img4} alt="img" style={{width: '70%', margin: '0 0 0 100px'}} />
+                                        <img src={img4} alt="img" style={{ width: '70%', margin: '0 0 0 100px' }} />
                                     </div>
                                 </li>
                             </ul>
@@ -207,23 +207,19 @@ class Stretching extends React.Component {
                         </div>
                     </div>
                 </section>
-                
+
                 <section className="stretching_res">
-                    <div className="container">
-                        <div className="stretching_res__inner">
-                            <h3 className="stretching_res__title">До После</h3>
-                            <div className="stretching_res__content">
-                                <div className="stretching_res__text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ex non deserunt tempore, aliquid accusantium ipsum. Sequi quaerat vel consequatur maiores voluptas laborum iusto minima eaque! Illum necessitatibus reiciendis ad?
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ex non deserunt tempore, aliquid accusantium ipsum. Sequi quaerat vel consequatur maiores voluptas laborum iusto minima eaque! Illum necessitatibus reiciendis ad?
-                                </div>
-                            </div>
+                    <div className="stretching_res__inner">
+                        <h3 className="stretching_res__title">До После</h3>
+                        <div className="stretching_res__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ex non deserunt tempore, aliquid accusantium ipsum. Sequi quaerat vel consequatur maiores voluptas laborum iusto minima eaque! Illum necessitatibus reiciendis ad?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ex non deserunt tempore, aliquid accusantium ipsum. Sequi quaerat vel consequatur maiores voluptas laborum iusto minima eaque! Illum necessitatibus reiciendis ad?
                         </div>
                     </div>
                     <Carousel className="stretching_res__slider" showThumbs={false} autoPlay showStatus={false} showIndicators={false} infiniteLoop>
-                        <div className="stretching_res__back img_1"></div>
-                        <div className="stretching_res__back img_2"></div>
-                        <div className="stretching_res__back img_3"></div>
+                        <div className="stretching_res__back img_1"/>
+                        <div className="stretching_res__back img_2"/>
+                        {/* <div className="stretching_res__back img_3"/> */}
                     </Carousel>
                 </section>
 
@@ -260,8 +256,8 @@ class Stretching extends React.Component {
                     </div>
                 </section>
 
-                <Form/>
-                
+                <Form />
+
             </section>
         );
     }

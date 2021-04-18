@@ -5,7 +5,7 @@ import { chengeStateModal } from "../../../store/form/actions"
 import { connect } from "react-redux";
 import { Carousel } from 'react-responsive-carousel';
 import ScrollableAnchor from 'react-scrollable-anchor';
-import foneVideo from "../../../img/vid/functional_fone.mp4";
+import foneVideo from "../../../img/vid/functional_fone_min.mp4";
 
 
 

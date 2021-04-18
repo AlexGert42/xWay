@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 // import ScrollableAnchor from 'react-scrollable-anchor';
 
+
 import HeaderContainer from "../header/HeaderContainer";
 import ModalWindowContainer from "../modalWindow/ModalWindowContainer"
 import FooterContainer from "../footer/FooterContainer"

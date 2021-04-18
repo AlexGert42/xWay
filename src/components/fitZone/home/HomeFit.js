@@ -26,7 +26,7 @@ class HomeFit extends React.Component {
 
             strength={400}
             bgImage={fone}
-            bgImageStyle={{ height: '100vh', width: '50%', minWidth: '1920px' }}
+            bgImageStyle={{ minHeight: '1024px', minWidth: '1920px' }}
             style={{ height: '100vh', width: '100%' }}
           >
             <div className="home-fit__promo">

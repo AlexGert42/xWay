@@ -4,7 +4,8 @@ import { chengeStateModal } from "../../../store/form/actions"
 import { connect } from "react-redux";
 import ScrollableAnchor from 'react-scrollable-anchor';
 import { Parallax } from "react-parallax";
-import fone from "../../../img/massage/fone.jpg"
+import fone from "../../../img/massage/fone.jpg";
+import Form from "../../form/FormContainer";
 
 import imgAdvantage1 from "../../../img/massage/icon_1.png"
 import imgAdvantage2 from "../../../img/massage/icon_2.png"
@@ -14,6 +15,7 @@ import imgAdvantage4 from "../../../img/massage/icon_4.png"
 
 class Message extends React.Component {
     render() {
+        sessionStorage.setItem('ThemeForm', 'beautyMassage');
         return (
             <section className="massage">
                 <ScrollableAnchor id={'massage-start'}>
@@ -21,7 +23,7 @@ class Message extends React.Component {
                         className="massage_start"
                         strength={400}
                         bgImage={fone}
-                        bgImageStyle={{ height: '100vh', width: '100%', minWidth: '1920px' }}
+                        bgImageStyle={{ minHeight: '1024px', maxHeight: '2160px', minWidth: '1920px', maxWidth: '3840px' }}
                         style={{ height: '100vh', width: '100%' }}
                     >
                         <div className="massage_start__promo">
@@ -76,10 +78,28 @@ class Message extends React.Component {
                     </div>
                 </section>
 
-                <section class="massage_price">
-                    <div class="massage_price__inner">
-                        <h3 class="massage_price__title">Стоимость услуг</h3>
-                        <div class="massage_price__content">
+                <section className="massage_types">
+                    <div className="massage_types__item classic">
+                        <div className="massage_types__discription">
+                            Классический массаж не только снимает боль, отеки, спайки, нормализует функции органов и систем, но и ускоряет процессы регенерации травмированных тканей, восстанавливает тонус мышц, повышает работоспособность костно-мышечной системы, укрепляет суставно-связочный аппарат, оказывая общеукрепляющее действие на организм.                        </div>
+                        <h3 className="massage_types__title">КЛАССИЧЕСКИЙ</h3>
+                    </div>
+                    <div className="massage_types__item sport">
+                        <div className="massage_types__discription">
+                            Спортивный массаж необходим тем, для кого спорт является нормой жизни. Чтобы привести мускулатуру в тонус, усилить кровообращение перед тренировкой. Либо получить расслабления после тренировок, для того, чтобы Ваш опорно-двигательный аппарат мог лучше справляться с нагрузками и меньше травмироваться.                        </div>
+                        <h3 className="massage_types__title">СПОРТИВНЫЙ</h3>
+                    </div>
+                    <div className="massage_types__item fascial">
+                        <div className="massage_types__discription">
+                            Избавляет человека от миофасциального болевого синдрома (МБС), который проявляется спазмом мышц, и очень часто возникает вследствии перетренерованности. Из-за слишком большой нагрузки в мышечной ткани возникает сильное напряжение и активизируются триггерные точки (болезненные уплотнения).                        </div>
+                        <h3 className="massage_types__title">МИОФАСЦИАЛЬНЫЙ</h3>
+                    </div>
+                </section>
+
+                <section className="massage_price">
+                    <div className="massage_price__inner">
+                        <h3 className="massage_price__title">Стоимость услуг</h3>
+                        <div className="massage_price__content">
                             <p>Разовая процедура<span>3500</span></p>
                             <p>4 процедуры<span>12600 </span></p>
                             <p>8 процедур <span>23800</span></p>
@@ -89,8 +109,13 @@ class Message extends React.Component {
                             <p>Шейно-воротниковая зона<span>1500</span></p>
                         </div>
                     </div>
-                    <div class="massage_price__img"></div>
+                    <div className="massage_price__img"></div>
                 </section>
+
+
+
+
+                <Form />
             </section>
         );
     }

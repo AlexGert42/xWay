@@ -199,6 +199,102 @@
 
 
 
+.massage_types {
+    width: 100%;
+ 
+    position: relative;
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    @media (max-width:960px) {
+        flex-direction: column;
+    }
+    .massage_types__item {
+        cursor: pointer;
+        width: 33.3333%;
+        @media (max-width:960px) {
+            width: 100%;
+        }
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: #fff;
+        padding-bottom: 20px;
+        &.classic {
+            background-image: url('../../../img/massage/type_1.jpg');
+            background-color: #5B5B5B;
+        }
+        &.sport {
+            background-image: url('../../../img/massage/type_2.jpg');
+            background-color: #363636;
+        }
+        &.fascial {
+            background-image: url('../../../img/massage/type_3.jpg');
+            background-color: #262626;
+        }
+        .massage_types__discription {
+            font-size: 1.5rem;
+            padding: 30px;
+            opacity: 0;
+            @media (max-width:960px) {
+                padding: 30px 50px;
+            }
+            @media (max-width:420px) {
+                padding: 20px 10px;
+                font-size: 1.2rem;
+            }
+        }
+        .massage_types__title {
+            font-size: 1.5rem;
+            padding: 30px 30px 15px 30px;
+            font-family: Gilroy-Bold;
+            @media (max-width:960px) {
+                padding: 30px 50px 15px 50px;
+            }
+            @media (max-width:420px) {
+                padding: 20px 10px 15px 10px;
+                
+            }
+        }
+        &:hover {
+            &.classic {
+                background-image: none;
+            }
+            &.sport {
+                background-image: none;
+            }
+            &.fascial {
+                background-image: none;
+            }
+            .massage_types__discription {
+                transition: opacity 1s ease;
+                opacity: 1;
+            }
+            .massage_types__title {
+                border-bottom: 3px solid #fff;
+                padding: 30px 30px 12px 30px;
+                letter-spacing: 10px;
+                @media (max-width:1280px) {
+                    letter-spacing: 0px;
+                }
+                @media (max-width:960px) {
+                    padding: 30px 50px 12px 50px;
+                }
+                @media (max-width:420px) {
+                    padding: 20px 10px 12px 10px;
+                }
+                transition: letter-spacing .5s ease;
+            }
+        }
+    }
+}
+
+
+
+
 .massage_price {
     width: 100%;
     max-width: 1920px;

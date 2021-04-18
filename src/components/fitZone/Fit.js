@@ -31,7 +31,7 @@ class Fit extends React.Component {
             <Route path={"/fit/functional"} exact component={Functional} />
             <Route path={"/fit/workout"} exact component={Workout} />
           </Switch>
-
+   
          
 
         </main>

@@ -1,0 +1,130 @@
+.form {
+    .form__content {
+        width: 100%;
+        background-image: url('../../img/homeFit/form_fone.jpg');
+        background-size: cover;
+        min-height: 642px;
+        max-width: 1920px;
+        margin: 0 auto;
+        z-index: 3;
+        position: relative;
+        padding: 100px 20px;
+        display: flex;
+        box-shadow: 50px 50px 200px inset #000;
+        
+        .form__img {
+            width: 90%;
+            height: 110%;
+            z-index: 4;
+           
+            bottom: 0;
+            position: absolute;
+            background-image: url('../../img/homeFit/form_img.png');
+            background-repeat: no-repeat;
+            background-position: bottom 0 right ;
+            background-size: contain;
+            
+        }
+        .form__inner {
+           
+            position: relative;
+            z-index: 5;
+            float: left;
+            display: flex;
+            flex-direction: column;
+            
+            margin: 20px 70px 20px 160px;
+            
+            .from__title {
+                font-size: 36px;
+                font-family: Gilroy-Bold;
+                margin-bottom: 50px;
+                span {
+                    white-space: nowrap;
+                    font-family: Gilroy-Bold;
+                }
+            }
+            .form__input {
+                max-width: 700px;
+                color: #fff;
+                font-size: 20px;
+                background-color: rgba($color: #000000, $alpha: 0);
+                padding: 10px;
+                border-bottom: 2px solid #fff;
+                margin-bottom: 40px;
+                &::placeholder {
+                    color: #fff;
+                    font-size: 20px;
+                }
+            }
+           
+            .form__btn {
+                cursor: pointer;
+                display: inline-block;
+                padding: 20px;
+                background-color: #DC3A3E;
+                font-family: Gilroy-Bold;
+                color: #fff;
+                font-size: 1.5rem;
+                margin-top: 50px;
+                &:hover {
+                    box-shadow: 10px 10px 100px inset #520607;
+                    animation: formFitBtnActiveEms 1s ease;
+                }
+            }
+        }
+    }
+}
+
+
+
+@keyframes formFitBtnActiveEms {
+    0% {
+        box-shadow: none;
+    }
+    100% {
+        box-shadow: 10px 10px 100px inset #520607;
+    }
+}
+
+
+@media (max-width: 960px) {
+    .form {
+        .form__content {
+            .form__inner {
+                margin: 0;
+                width: 100%;
+                .form__input {
+                    max-width: 100%;
+                }
+            }
+        }
+        
+    }
+}
+
+@media (max-width: 420px) {
+    .form {
+        .form__content {
+            padding: 0;
+            .form__img {
+                width: 80%;
+                height: 100%;
+                background-position: bottom 0 right ;
+                background-size: cover;
+            }
+            .form__inner {
+                margin: 0;
+                width: 100%;
+                padding: 50px 10px;
+                background-color: rgba($color: #000000, $alpha: .5);
+                .from__title {
+                    font-size: 2.5rem;
+                }
+                .form__input {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}

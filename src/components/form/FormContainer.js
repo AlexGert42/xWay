@@ -4,13 +4,16 @@ import Form from "./Form"
 import { setNameInput, setPhoneInput, setClient, showRsponse } from "../../store/form/actions"
 
 import formHomeStyle from "./FormHome.module.scss"
+import formEmsStyle from "./FormEms.module.scss"
 import formStretchingStyle from "./FormStretching.module.scss"
 import formFightStyle from "./FormFight.module.scss"
 import formFunctionalStyle from "./FormFunctional.module.scss"
 import formWorkout from "./FormWorkout.module.scss"
 
+import formHomeBeauty from "./FormHomeBeauty.module.scss"
 import formDepilation from "./FormDepilation.module.scss"
-
+import formMassage from "./FormMsssage.module.scss"
+import formCosmetology from "./FormCosmetology.module.scss"
 
 
 
@@ -29,7 +32,12 @@ class FormContainer extends React.Component {
       return ({
         style: formHomeStyle,
       })
-    } else if (state.colorTheme === 'fitStretching') {
+    } else if (state.colorTheme === 'fitEms') {
+      return ({
+        style: formEmsStyle,
+      })
+    }
+    else if (state.colorTheme === 'fitStretching') {
       return ({
         style: formStretchingStyle,
       })
@@ -45,9 +53,21 @@ class FormContainer extends React.Component {
       return ({
         style: formWorkout,
       })
+    } else if (state.colorTheme === 'beautyHome') {
+      return ({
+        style: formHomeBeauty,
+      })
     } else if (state.colorTheme === 'beautyDepilation') {
       return ({
         style: formDepilation,
+      })
+    } else if (state.colorTheme === 'beautyMassage') {
+      return ({
+        style: formMassage,
+      })
+    } else if (state.colorTheme === 'beautyCosmetology') {
+      return ({
+        style: formCosmetology,
       })
     }
   }

@@ -8,7 +8,7 @@
         height: 100%;
         width: 100%;
         .stretchind__vidio {
-           
+            opacity: .5;
             position: absolute;
             top: 0;
             left: 0;
@@ -28,7 +28,7 @@
         }
         .stretching__promo {
             width: 40%;
-            background-image: url('../../../img/stretching/BMS_stretching.svg');
+            background-image: url('../../../img/stretching/BMS-Stretching.png');
             background-repeat: no-repeat;
             background-position: center center;
             background-size: contain;
@@ -175,7 +175,7 @@
 
 .stretching_about {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     
     .stretching_about__inner {
         padding: 100px 80px;
@@ -359,6 +359,7 @@
     .stretching_prices {
         box-shadow: 0 100px 300px inset #000;
         width: 100%;
+        height: 100%;
         background-image: url('../../../img/stretching/price_fone.jpg');
         background-size: cover;
         background-repeat: no-repeat;
@@ -570,56 +571,68 @@
 
 
 
-
-
-
-
-
 .stretching {
     .stretching_res {
         width: 100%;
-        height: 800px;
+        max-width: 1920px;
+        margin: 0 auto;
+        height: 100%;
         display: flex;
-        position: relative;
+        overflow: hidden;
+        @media (max-width: 1280px) {
+            flex-direction: column;
+        }
         .stretching_res__inner {
-            width: 60%;
-            padding: 100px 80px;
-            position: relative;
-            z-index: 2;
-            .stretching_res__title {
-                font-size: 6rem;
-                font-family: Gilroy-Bold;
-                margin-bottom: 50px;
-                padding-bottom: 15px;
-                border-bottom: 3px solid #fff;
+            padding: 100px;
+            width: 50%;
+            background-image: url('../../../img/Reviews.png');
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-position-y: 50px;
+            background-size: 100%;
+            @media (max-width: 1280px) {
+                width: 100%;
             }
-            .stretching_res__content {
-                .stretching_res__text { 
-                    font-size: 1.5rem;
+            @media (max-width: 960px) {
+                padding: 50px;
+            }
+            @media (max-width: 420px) {
+                padding: 50px 10px 30px 10px;
+            }
+            .stretching_res__title {
+                font-size: 3rem;
+                font-family: Gilroy-Bold;
+                margin-bottom: 35px;
+                padding-bottom: 15px;
+                border-bottom: 2px solid #fff;
+            }
+            .stretching_res__text {
+                font-size: 1.5rem;
+                line-height: 35px;
+                @media (max-width: 420px) {
+                    font-size: 1.2rem;
+                    line-height: 30px;
                 }
             }
         }
         .stretching_res__slider {
-            position: absolute;
-            width: 40%;
-            right: 0;
-            .stretching_res__back {
-                background-repeat: no-repeat;
-                background-size: 100% 100%;
+            width: 50%;
+            height: 100%;
+            @media (max-width: 1280px) {
                 width: 100%;
-                height: 800px;
-                border-left: 2px solid #000;
-                border-right: 2px solid #000;
-                box-shadow: 100px 0 100px 0  inset #000;
+            }
+            .stretching_res__back {
+                min-height: 60vmax;
+               background-size: cover;
                 &.img_1 {
                     background-image: url('../../../img/stretching/before_after_1.jpg'); 
                 }
                 &.img_2 {
-                    background-image: url('../../../img/stretching/before_after_2.jpg');
+                    background-image: url('../../../img/stretching/before_after_2.jpg'); 
                 }
-                &.img_3 {
-                    background-image: url('../../../img/stretching/before_after_3.jpg');
-                }
+                // &.img_3 {
+                //     background-image: url('../../../img/stretching/before_after_3.jpg'); 
+                // }
             }
         }
     }
@@ -627,97 +640,10 @@
 
 
 
-@media (max-width: 1280px) {
-    .stretching {
 
-        .stretching_res {
-            // height: 100%;
-            
-            .stretching_res__inner {
-               width: 50%;
-               padding: 50px 35px 0 35px;
-                margin-bottom: 50px;
-                .stretching_res__title {
 
-                }
-            }
-            .stretching_res__slider {
-                width: 50%;
-                
-                
-                .stretching_res__back {
-                    
-                    
-                    
-                    
-                   
-                }
-            }
-        }
-    }
-} 
-@media (max-width: 960px) {
-    .stretching {
 
-        .stretching_res {
-            height: 100%;
-            flex-direction: column;
-            .stretching_res__inner {
-                width: 100%;
-                
-                .stretching_res__title {
-                    font-size: 2.5rem;
-                }
-            }
-            .stretching_res__slider {
-                width: 100%;
-                position: relative;
-                box-shadow: none;
-                .stretching_res__back {
-                    margin-bottom: 50px;
-                    background-position: center;
-                    
-                    
-                    background-size: contain;
-                }
-            }
-        }
-    }
-} 
-@media (max-width: 420px) {
-    .stretching {
 
-        .stretching_res {
-           
-            .stretching_res__inner {
-                margin-bottom: 0;
-                padding: 0;
-                
-                
-                    .stretching_res__title {
-                        margin-top: 50px;
-                        
-                    }
-                
-                    .stretching_res__text {
-                       
-                        display: none;
-                    }
-                
-            }
-            .stretching_res__slider {
-                
-                
-                position: relative;
-                .stretching_res__back {
-                    box-shadow: none;
-                    height: 100vh;
-                    background-position: center;
-                   
-                    width: 100%;
-                    background-size: cover;
-                }
-            }
-        }
-    }
-} 
+
+
+

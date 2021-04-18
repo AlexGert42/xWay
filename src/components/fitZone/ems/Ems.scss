@@ -293,10 +293,10 @@ $colorText: #fff;
     position: relative;
     .ems_prices {
         width: 100%;
-        background-image: url('../../../img/ems/fone_price.jpeg');
+        background-image: url('../../../img/ems/fone_price.jpg');
         background-size: cover;
         background-repeat: no-repeat;
-        box-shadow: 0 100px 200px inset #000;
+        box-shadow: 0 200px 200px inset #000;
         .ems_prices__inner {
             padding: 100px;
             display: flex;
@@ -430,180 +430,84 @@ $colorText: #fff;
 
 
 
-
-
 .ems {
     .ems_res {
         width: 100%;
-        height: 800px;
+        max-width: 1920px;
+        margin: 0 auto;
+        height: 100%;
         display: flex;
-        position: relative;
+        overflow: hidden;
+        @media (max-width: 1280px) {
+            flex-direction: column;
+        }
         .ems_res__inner {
+            padding: 100px;
             width: 40%;
-            padding: 100px 80px;
-            position: relative;
-            z-index: 2;
-          
-            .ems_res__title {
-                font-size: 6rem;
-                font-family: Gilroy-Bold;
-                margin-bottom: 50px;
-                padding-bottom: 15px;
-                border-bottom: 3px solid #fff;
+            background-image: url('../../../img/Reviews.png');
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-position-y: 50px;
+            background-size: 100%;
+            @media (max-width: 1280px) {
+                width: 100%;
             }
-            .ems_res__content {
-                
-                
-                .ems_res__text {
-                   
-                    font-size: 1.5rem;
+            @media (max-width: 960px) {
+                padding: 50px;
+            }
+            @media (max-width: 420px) {
+                padding: 50px 10px 30px 10px;
+            }
+            .ems_res__title {
+                font-size: 3rem;
+                font-family: Gilroy-Bold;
+                margin-bottom: 35px;
+                padding-bottom: 15px;
+                border-bottom: 2px solid #fff;
+            }
+            .ems_res__text {
+                font-size: 1.5rem;
+                line-height: 35px;
+                @media (max-width: 420px) {
+                    font-size: 1.2rem;
+                    line-height: 30px;
                 }
             }
         }
         .ems_res__slider {
-            position: absolute;
             width: 60%;
-            right: 0;
-            .ems_res__back {
-                background-repeat: no-repeat;
-                background-size: cover;
+            height: 100%;
+            @media (max-width: 1280px) {
                 width: 100%;
-                height: 800px;
-                border-left: 2px solid #000;
-                border-right: 2px solid #000;
-                box-shadow: 200px 0 200px 0  inset #000;
+            }
+            .ems_res__back {
+               min-height: 60vmax;
+               background-size: cover;
                 &.img_1 {
                     background-image: url('../../../img/ems/before_after_1.jpg'); 
-                    
                 }
                 &.img_2 {
-                    background-image: url('../../../img/ems/before_after_2.jpg');
+                    background-image: url('../../../img/ems/before_after_2.jpg'); 
                 }
                 &.img_3 {
-                    background-image: url('../../../img/ems/before_after_3.JPG');
+                    background-image: url('../../../img/ems/before_after_3.JPG'); 
+                }
+                &.img_4 {
+                    background-image: url('../../../img/ems/before_after_4.jpg'); 
                 }
                 &.img_5 {
-                    background-image: url('../../../img/ems/before_after_5.jpg');
+                    background-image: url('../../../img/ems/before_after_5.jpg'); 
+                }
+                &.img_6 {
+                    background-image: url('../../../img/ems/before_after_6.jpg'); 
                 }
             }
-            
         }
     }
 }
 
 
-@media (max-width: 1800px) {
-    .ems {
 
-        .ems_res {
-            height: 100%;
-            flex-direction: column;
-            .ems_res__inner {
-                width: 100%;
-                .ems_res__title {
 
-                }
-            }
-            .ems_res__slider {
-                width: 100%;
-                position: relative;
-                .ems_res__back {
-                    box-shadow: none;
-                    
-                }
-            }
-        }
-    }
-} 
-@media (max-width: 1280px) {
-    .ems {
 
-        .ems_res {
-            height: 100%;
-            flex-direction: column;
-            .ems_res__inner {
-                width: 100%;
-                .ems_res__title {
-
-                }
-            }
-            .ems_res__slider {
-                
-                
-                position: relative;
-                .ems_res__back {
-                    box-shadow: none;
-                    
-                    height: 600px;
-                    width: 100%;
-                    background-size: cover;
-                }
-            }
-        }
-    }
-} 
-@media (max-width: 960px) {
-    .ems {
-
-        .ems_res {
-            height: 100%;
-            flex-direction: column;
-            .ems_res__inner {
-                width: 100%;
-                padding: 50px 35px 0 35px;
-                margin-bottom: 50px;
-                .ems_res__title {
-                    font-size: 2.5rem;
-                }
-            }
-            .ems_res__slider {
-                height: 400px;
-                
-                position: relative;
-                .ems_res__back {
-                    box-shadow: none;
-                    background-position: center;
-                    height: 400px;
-                    width: 100%;
-                    background-size: cover;
-                }
-            }
-        }
-    }
-} 
-@media (max-width: 420px) {
-    .ems {
-
-        .ems_res {
-           
-            .ems_res__inner {
-               
-                padding: 50px 0;
-                margin-bottom: -150px;
-                .ems_res__content {
-                    .ems_res__title {
-                        margin-bottom: 20px;
-                    }
-                
-                    .ems_res__text {
-                       
-                        font-size: 1.2rem;
-                    }
-                }
-            }
-            .ems_res__slider {
-                height: 500px;
-                
-                position: relative;
-                .ems_res__back {
-                    box-shadow: none;
-                    background-position: center;
-                    height: 600px;
-                    width: 100%;
-                    background-size: contain;
-                }
-            }
-        }
-    }
-} 
 

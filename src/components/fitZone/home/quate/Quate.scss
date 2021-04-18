@@ -155,7 +155,7 @@
             }
             .quate__list {
                 
-                min-height: 100vh;
+                min-height: 100%;
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-start;
@@ -174,7 +174,7 @@
                             height: 70px;
                         }
                         &.left {
-                            background-image: url('../../../../img/homeFit/qeats_arrow.svg');
+                            background-image: url('../../../../img/homeFit/arrow_white.png');
                             -webkit-transform: rotate(-90deg);
                             -moz-transform: rotate(-90deg);
                             -ms-transform: rotate(-90deg);
@@ -182,7 +182,7 @@
                             transform: rotate(-90deg);
                         }  
                         &.right {
-                            background-image: url('../../../../img/homeFit/qeats_arrow.svg');
+                            background-image: url('../../../../img/homeFit/arrow_white.png');
                             -webkit-transform: rotate(90deg);
                             -moz-transform: rotate(90deg);
                             -ms-transform: rotate(90deg);
@@ -225,6 +225,9 @@
                         padding: 0;
                         margin: 0 auto;
                         animation: quateShow 1s ease;
+                        video {
+                            width: 100%;
+                        }
                         &.active {
                             display: block;
                            

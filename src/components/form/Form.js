@@ -53,7 +53,7 @@ class FormFit extends React.Component {
                             onChange={this.setPhone}
                             value={this.props.phone}
                         />
-                        <button className={this.props.style.form__btn}>ПОСЕТИТЬ ПРОБНОЕ ЗАНЯТИЕ</button>
+                        <button className={this.props.style.form__btn}>ЗАПИСАТЬСЯ</button>
                     </form>
                     <div className={this.props.style.form__img} type="submit"></div>
 

@@ -165,7 +165,12 @@ $colorText: #fff;
     width: 100%;
     max-width: 1920px;
     margin: 0 auto;
+    
     .about__inner_one {
+        background-image: url('../../img/about/About.png');
+        background-repeat: no-repeat;
+        background-position: 100px 50px;
+        background-size: 37%;
         padding: 100px;
         background-color: $colorFone;
         display: flex;
@@ -175,7 +180,7 @@ $colorText: #fff;
             color: $colorText;
             font-size: 1.5rem;
             .about__title {
-                font-size: 2rem;
+                font-size: 5rem;
                 font-family: 'Gilroy-Bold';
                 margin-bottom: 40px;
                 padding: 10px;
@@ -190,63 +195,6 @@ $colorText: #fff;
             padding-left: 20px;
         }
     }
-    .about__inner_two {
-        background-color: $colorText;
-        display: flex;
-        justify-content: space-between;
-        .about__collage {
-            width: 70%;
-            display: grid;
-            grid-template-areas:    "img_1 img_1 img_1 img_2 img_2"
-                                    "img_1 img_1 img_1 img_3 img_3"
-                                    "img_4 img_4 img_5 img_5 img_5"
-                                    "img_4 img_4 img_5 img_5 img_5"                        
-            ;
-            padding: 100px 50px 100px 100px;
-            .about__img {
-                box-shadow: 3px 3px 10px #000;
-                background-size: cover;
-                width: 100%;
-                &.pic_1 {
-                    background-image: url('../../img/ems/card1.jpg');
-                    grid-area: img_1;
-                }
-                &.pic_2 {
-                    grid-area: img_2;
-                    background-image: url('../../img/ems/card2.jpg'); 
-                }
-                &.pic_3 {
-                    grid-area: img_3;
-                    background-image: url('../../img/ems/card1.jpg');  
-                }
-                &.pic_4 {
-                    grid-area: img_4;
-                    background-image: url('../../img/ems/card3.jpg');
-                }
-                &.pic_5 {
-                    grid-area: img_5;
-                    background-image: url('../../img/ems/card2.jpg');
-                } 
-            }
-        }
-        .about__text {
-            padding: 100px 100px 100px 50px;
-            width: 30%;
-            color: $colorFone;
-            font-size: 1.5rem;
-            
-            .about__title {
-                font-size: 2rem;
-                font-family: 'Gilroy-Bold';
-                margin-bottom: 40px;
-                padding: 10px;
-                border-bottom: 2px solid $colorFone ;
-            }
-            .about__discription {
-
-            }
-        }
-    }
 }
 @media (max-width: 1280px) {
     .about {
@@ -254,6 +202,8 @@ $colorText: #fff;
        .about__inner_one {
             padding: 50px;
             flex-direction: column;
+            background-size: 100%;
+            background-position: center top;
             .about__text {
                 padding-bottom: 20px;
                 width: 100%;
@@ -264,16 +214,6 @@ $colorText: #fff;
                 padding-top: 20px;
             }
        } 
-       .about__inner_two {
-            
-            .about__collage {
-                padding: 50px 25px 50px 50px;
-            }
-            .about__text {
-                padding: 50px 50px 50px 25px;
-            }
-
-       }
     }
 }
 
@@ -285,7 +225,6 @@ $colorText: #fff;
             
             .about__text {
                 padding-bottom: 20px;
-                width: 100%;
             }
             .about__slider {
                 max-width: 100%;
@@ -293,41 +232,7 @@ $colorText: #fff;
                 padding-top: 20px;
             }
         }
-        .about__inner_two {
-            
-            flex-direction: column-reverse;
-            .about__collage {
-                display: none;
-                width: 100%;
-                .about__img {
-                    
-                    &.pic_1 {
-                        min-width: none; 
-                        width: none;
-                    }
-                    &.pic_2 {
-                        min-width: none; 
-                        width: none;
-                    }
-                    &.pic_3 {
-                        min-width: none;
-                        width: none; 
-                    }
-                    &.pic_4 {
-                        min-width: none; 
-                        width: none;
-                    }
-                    &.pic_5 {
-                        min-width: none; 
-                        width: none;
-                    }
-                }
-            }
-            .about__text {
-                width: 100%;
-                padding: 50px;
-            }
-        }
+        
     }
 }
 @media (max-width: 420px) {
@@ -340,24 +245,13 @@ $colorText: #fff;
                 font-size: 1.2rem;
                 .about__title {
                     margin-bottom: 20px;
+                    font-size: 2rem;
                 }
             }
             .about__slider {
                 max-width: 100%;
                 padding: 0;
                 padding-top: 20px;
-            }
-        }
-        .about__inner_two {
-            
-            flex-direction: column-reverse;
-            
-            .about__text {
-                font-size: 1.2rem;
-                padding: 10px;
-                .about__title {
-                    margin-bottom: 20px;
-                }
             }
         }
     }

@@ -1,6 +1,5 @@
 import React from "react";
 import GoogleMapReact from 'google-map-react';
-import logo from "../../img/logoMap.svg"
 import { Carousel } from 'react-responsive-carousel';
 
 import metro from '../../img/contacts_img/metro-logo.svg'
@@ -16,8 +15,8 @@ class Contacts extends React.Component {
         super(props)
         this.state = {
             center: {
-                lat: 55.711493,
-                lng: 37.605840
+                lat: 55.710970,
+                lng: 37.610296
             },
             zoom: 16
         }
@@ -26,7 +25,7 @@ class Contacts extends React.Component {
 
     render() {
         return (
-            <div style={{ height: '100vh', width: '100%' }} className="contacts" >
+            <div className="contacts" >
                 <div className="contacts__block">
                     <div className="contacts__inner">
                         <h2 className="contacts__title">Контакты</h2>
@@ -35,17 +34,23 @@ class Contacts extends React.Component {
                             <div><img src={street} alt="street" /><p>Серпуховский Вал, 21/1</p></div>
                             <div><img src={time} alt="time" /><p>Ежедневно с 9.00 до 22.00</p></div>
                         </div>
+                        <Carousel className="contacts__img_list" showThumbs={false} autoPlay showStatus={false} showArrows={false} infiniteLoop interval={2000}>
+                            <div className="contacts__img one"></div>
+                            <div className="contacts__img two"></div>
+                            <div className="contacts__img three"></div>
+                        </Carousel>
                     </div>
                 </div>
                 <GoogleMapReact
+                    style={{width: '100%', height: '100vh'}}
                     bootstrapURLKeys={{ key: 'AIzaSyBFrNiy5_HzfxvOLzbHq9i7rJhBiEZL_lA' }}
                     defaultCenter={this.state.center}
                     defaultZoom={this.state.zoom}
                 >
                     <Marker
 
-                        lat={55.711493}
-                        lng={37.605840}
+                        lat={55.710970}
+                        lng={37.610296}
                         text=""
                     />
 

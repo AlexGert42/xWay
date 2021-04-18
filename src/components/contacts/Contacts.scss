@@ -1,11 +1,11 @@
 
 .contacts {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     position: relative;
-    z-index: 2;
-    background-color: #000;
-   
+    // z-index: 2;
+    background-color: #fcfcfc;
+    overflow: hidden;
     .marker {
         width: 50px;
         height: 50px;
@@ -17,13 +17,16 @@
         color: #fff;
         left: 10%;
         top: 50%;
-       
+        transform: translate(0, -50%);
         position: absolute;
         z-index: 1;
         background-color: #000;
 
         .contacts__inner {
             padding: 50px;
+            @media (max-width: 1280px) {
+                padding: 20px;
+            }
            
             .contacts__title {
                 font-size: 36px;
@@ -32,14 +35,24 @@
             }
             .contacts__content {
                 font-size: 1.5rem;
+                @media (max-width: 1280px) {
+                    font-size: 1.2rem;
+                }
                 div {
                     padding: 20px 0;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                     border-bottom: 2px solid #fff;
+                    @media (max-width: 1280px) {
+                        padding: 10px;
+                    }
                     img {
                         width: 40px;
+                        margin-right: 20px;
+                        @media (max-width: 1280px) {
+                            width: 30px;
+                        }
                     }
                     p {
                         text-align: end;
@@ -75,22 +88,26 @@
         height: 100%;
         display: flex;
         flex-direction: column;
-        .contacts__map {
-            display: block;
-            position: static;
-            width: 100%;
-            height: 60%;
-        }
         .contacts__block {
-            position: static;
+            position: unset;
             width: 100%;
-            height: 50%;
-           
+            transform: translate(0, 0%);
+            top: 0;
+            left: 0;
             .contacts__inner {
+                display: grid;
+                grid-template-areas: "head head head" "cont img img";
+                @media (max-width: 767px) {
+                    grid-template-areas: "head head head" "cont cont cont";
+                }
                 @media (max-width: 420px) {
                     padding: 50px 10px;
                 }
+                .contacts__title {
+                    grid-area: head;
+                }
                 .contacts__content {
+                    grid-area: cont;
                     @media (max-width: 420px) {
                         font-size: 1.2rem;
                         div {
@@ -102,7 +119,18 @@
                     
                 }
                 .contacts__img_list {
-                    display: none;
+                    margin: 0;
+                    padding: 0 50px;
+                    
+                    grid-area: img;
+                    @media (max-width: 767px) {
+                        display: none;
+                    }
+                    .contacts__img {
+                        min-width: 100%;
+                        height: 50;
+                    }
+                    
                 }
             }
         }

@@ -84,6 +84,24 @@ class Dipilation extends React.Component {
                                 </div>
                             </div>
                         </div>
+                        <div className="depilation__promo img_3" id={'xxx'}>
+                            <div className="container">
+                                <div className="depilation__promo_inner">
+                                    <h1 className="depilation__title">КРАСИВЫЕ БРОВИ И РЕCНИЦЫ</h1>
+                                    <div className="depilation__discription">
+                                        <p>
+                                            Красивая форма бровей делает женщину эффектнее,
+                                            а взгляд выразительнее.
+                                            Моделирование и коррекцию формы бровей доверьте специалистам X-WAY. Мастер подберет форму бровей, которая подойдет именно вам.
+                                        </p>
+                                        <p>
+                                            Окрашивание и ламинирование ресниц сделают взгляд сексуальным и манящим. Эти процедуры — прекрасная альтернатива туши!
+                                        </p>
+                                    </div>
+                                    <button className="depilation__king-btn" onClick={() => this.props.chengeStateModal(true)}>ЗАПИСАТЬСЯ</button>
+                                </div>
+                            </div>
+                        </div>
                     </Carousel>
                 </ScrollableAnchor>
 

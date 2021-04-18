@@ -1,21 +1,39 @@
 .form {
-    width: 100%;
-    background-color: rgba($color: #000000, $alpha: 0);
-    background-image: url('../../img/workout/form_fone.jpg');
     .form__content {
         width: 100%;
-        background-repeat: no-repeat;
-        background-position: top right 20%;
         background-size: cover;
         min-height: 642px;
         max-width: 1920px;
-        margin: 0 auto; 
+        margin: 0 auto;
+        z-index: 3;
+        position: relative;
         padding: 100px 20px;
         display: flex;
+        // box-shadow: 50px 50px 200px inset #000;
+        
+        .form__img {
+            width: 90%;
+            height: 110%;
+            z-index: 4;
+           
+            bottom: 0;
+            position: absolute;
+            background-image: url('../../img/workout/form_img.png');
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: contain;
+            
+        }
         .form__inner {
+           
+            position: relative;
+            z-index: 5;
+            float: left;
             display: flex;
             flex-direction: column;
+            
             margin: 20px 70px 20px 160px;
+            
             .from__title {
                 font-size: 36px;
                 font-family: Gilroy-Bold;
@@ -38,18 +56,19 @@
                     font-size: 20px;
                 }
             }
+           
             .form__btn {
                 cursor: pointer;
                 display: inline-block;
                 padding: 20px;
-                background: linear-gradient(87.83deg, #0084D3 0%, #CC2B5E 97.5%);
+                background-color: #DC3A3E;
                 font-family: Gilroy-Bold;
                 color: #fff;
                 font-size: 1.5rem;
                 margin-top: 50px;
                 &:hover {
-                    box-shadow: 1px 1px 50px rgb(80, 7, 109) inset;
-                    animation: formFitBtnActiveWorkout 1s ease;
+                    box-shadow: 10px 10px 100px inset #520607;
+                    animation: formFitBtnActiveEms 1s ease;
                 }
             }
         }
@@ -57,14 +76,16 @@
 }
 
 
-@keyframes formFitBtnActiveWorkout {
+
+@keyframes formFitBtnActiveEms {
     0% {
         box-shadow: none;
     }
     100% {
-        box-shadow: 1px 1px 50px rgb(80, 7, 109) inset;
+        box-shadow: 10px 10px 100px inset #520607;
     }
 }
+
 
 @media (max-width: 960px) {
     .form {
@@ -85,6 +106,12 @@
     .form {
         .form__content {
             padding: 0;
+            .form__img {
+                width: 80%;
+                height: 100%;
+                background-position: bottom 0 right ;
+                background-size: cover;
+            }
             .form__inner {
                 margin: 0;
                 width: 100%;
@@ -100,3 +127,4 @@
         }
     }
 }
+

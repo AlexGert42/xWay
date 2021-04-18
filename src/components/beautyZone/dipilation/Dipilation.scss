@@ -38,6 +38,34 @@
                     color: #fff;
                 }
             }
+            
+            &.img_3 {
+                background-image: url('../../../img/depilation/fone_3.jpg');
+                background-position-x: 60%;
+                .depilation__promo_inner {
+                    color: #fff;
+                    .depilation__title {
+                        font-size: 3rem;
+                    }
+                    @media (max-width: 420px) {
+                        background-color: rgba($color: #000, $alpha: .5);
+                        .depilation__title {
+                            font-size: 2rem;
+                        }
+                        .depilation__discription {
+                            p {
+                                &:nth-child(2) {
+                                    display: none;
+                                }
+                            }
+                           
+                        }
+                    } 
+                }
+                .depilation__king-btn {
+                    background: linear-gradient(180.07deg, rgba(221, 96, 137, 1) 1.78%, rgba(247, 185, 151, 1) 99.99%);
+                }
+            }
             .depilation__promo_inner {
                 width: 40%;
                 height: 100vh;
