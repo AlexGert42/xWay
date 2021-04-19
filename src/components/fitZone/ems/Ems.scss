@@ -1,513 +1,468 @@
 $colorFone: #000;
 $colorText: #fff;
 
-
 .ems {
+  .ems__fone {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
 
-    .ems__fone {
-        position: relative;
+    .ems__vidio {
+      opacity: 0.5;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: #000;
+      video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+      }
+    }
+    .ems__promo {
+      width: 40%;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      position: relative;
+      animation: showPromo 2s ease;
+      background-color: rgba($color: #000000, $alpha: 0.5);
+      background-image: url("../../../img/ems/Electrical\ Muscle\ Stimulation.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      @media (max-width: 1140px) {
+        width: 50%;
+      }
+      .ems__promo_inner {
+        height: 100vh;
+        padding: 0 50px 50px 50px;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100vh;
-        width: 100%;
-       
-        
-        .ems__vidio {
-            opacity: .5;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            background-color: #000;
-            video {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                min-width: 100%;
-                min-height: 100%;
-                object-fit: cover;
-            }
-        }
-        .ems__promo {
-            width: 40%;
-            top: 0;
-            left: 0;
-            z-index: 0;
-            position: relative;
-            animation: showPromo 2s ease;
-            background-color: rgba($color: #000000, $alpha: .5);
-            background-image: url('../../../img/ems/Electrical\ Muscle\ Stimulation.png');
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: contain;
-            @media (max-width: 1140px) {
-                width: 50%;
-            }
-            .ems__promo_inner {
-                height: 100vh;
-                padding: 0 50px 50px 50px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                flex-wrap: nowrap;
+        flex-wrap: nowrap;
 
-                box-shadow: 1px 1px 5px #000;
-               
-                .ems__title {
-                    font-size: 12.5rem;
-                    font-family: Gilroy-Bold;
-                    letter-spacing: 20px;
-                    text-align: center;
-                }
-                .ems__discription {
-                    font-size: 1.5rem;
-                    text-align: center;
-                    line-height: 40px;
-                    margin-bottom: 60px;
-                    
-                }
-                .ems__king_btn {
-                    cursor: pointer;
-                    padding: 25px;
-                    color: #fff;
-                    font-size: 1.5rem;
-                    font-family: Gilroy-Bold;
-                    background: #DC3A3E ;
-                    &:hover {
-                        animation: ems_btn 1s ease;
-                        box-shadow: 1px 1px 50px rgb(63, 2, 2) inset;
-                    }
-                }
-            }
+        box-shadow: 1px 1px 5px #000;
+
+        .ems__title {
+          font-size: 12.5rem;
+          font-family: Gilroy-Bold;
+          letter-spacing: 20px;
+          text-align: center;
         }
+        .ems__discription {
+          font-size: 1.5rem;
+          text-align: center;
+          line-height: 40px;
+          margin-bottom: 60px;
+        }
+        .ems__king_btn {
+          cursor: pointer;
+          padding: 25px;
+          color: #fff;
+          font-size: 1.5rem;
+          font-family: Gilroy-Bold;
+          background: #dc3a3e;
+          &:hover {
+            animation: ems_btn 1s ease;
+            box-shadow: 1px 1px 50px rgb(63, 2, 2) inset;
+          }
+        }
+      }
     }
-
-
+  }
 }
-
 
 @media (max-width: 960px) {
-    .ems {
-        .ems__fone {
+  .ems {
+    .ems__fone {
+      .ems__promo {
+        width: 70%;
 
-            .ems__promo {
-                width: 70%;
-                
-                .ems__promo_inner {
-                    
-                  
-                    .ems__title {
-                        margin: 0 0 20px 20px;;
-                    }
-                }
-            }
+        .ems__promo_inner {
+          .ems__title {
+            margin: 0 0 20px 20px;
+          }
         }
+      }
     }
+  }
 }
 
 @media (max-width: 767px) {
-    .ems {
-        .ems__fone {
-            background-position: 50% center;
-            background-size: contain;
-            .ems__promo {
-                
-                width: 100%;
-                
-                .ems__promo_inner {
-                    padding: 0;
-                    .ems__title {
-                        font-size: 7rem;
-                        
-                        margin: 0 0 20px 20px;
-                    }
-                    .ems__discription {
-                        font-size: 1.2rem;
-                        line-height: 30px;
-                    }
-                    .ems__king_btn {
-                        font-size: 1rem;
-                    }
-                }
-               
-            }
+  .ems {
+    .ems__fone {
+      background-position: 50% center;
+      background-size: contain;
+      .ems__promo {
+        width: 100%;
+
+        .ems__promo_inner {
+          padding: 0;
+          .ems__title {
+            font-size: 7rem;
+
+            margin: 0 0 20px 20px;
+          }
+          .ems__discription {
+            font-size: 1.2rem;
+            line-height: 30px;
+          }
+          .ems__king_btn {
+            font-size: 1rem;
+          }
         }
+      }
     }
+  }
 }
 @media (max-width: 420px) {
-    .ems {
-        .ems__fone {
-
-            .ems__promo {
-                width: 100%;
-                .ems__promo_inner {
-                    padding: 30px;
-                    .ems__title {
-                        font-size: 6rem;
-                        letter-spacing: 15px;
-                        margin: 0 0 20px 15px;
-                    }
-                    .ems__discription {
-                        margin: 0 10px 40px 10px;
-                        font-size: 1rem;
-
-                    }
-                    .ems__king_btn {
-                        padding: 15px;
-                        font-size: 1rem;
-                    }
-                }
-                
-            }
+  .ems {
+    .ems__fone {
+      .ems__promo {
+        width: 100%;
+        .ems__promo_inner {
+          padding: 30px;
+          .ems__title {
+            font-size: 6rem;
+            letter-spacing: 15px;
+            margin: 0 0 20px 15px;
+          }
+          .ems__discription {
+            margin: 0 10px 40px 10px;
+            font-size: 1rem;
+          }
+          .ems__king_btn {
+            padding: 15px;
+            font-size: 1rem;
+          }
         }
+      }
     }
+  }
 }
-
-
 
 @keyframes showPromo {
-    0% {
-        opacity: 0;
-        margin-left: -500px;
-    }
-    100% {
-        opacity: 1;
-        margin-left: 0;
-    }
+  0% {
+    opacity: 0;
+    margin-left: -500px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0;
+  }
 }
-
 
 @keyframes ems_btn {
-    0% {
-       box-shadow: none;
-    }
-    100% {
-        box-shadow: 1px 1px 50px rgb(63, 2, 2) inset;
-    }
+  0% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: 1px 1px 50px rgb(63, 2, 2) inset;
+  }
 }
 
-
-
 .ems {
+  .ems_about {
+    .ems_about__inner {
+      padding: 100px;
+      display: flex;
+      align-items: center;
+      @media (max-width: 1800px) {
+        flex-wrap: wrap;
+      }
+      .ems_about__text {
+        width: 50%;
+        margin-right: 70px;
+        @media (max-width: 1800px) {
+          width: 100%;
+          margin-right: 0;
+        }
+        .ems_about__title {
+          font-size: 38px;
+          margin-bottom: 50px;
+          text-align: center;
+          border-bottom: 2px solid #fff;
+          padding-bottom: 15px;
+          display: inline-block;
+          font-family: Gilroy-Bold;
+        }
+        .ems_about__abstract {
+          font-size: 1.5rem;
+          margin: 10px 0 30px 0;
+          line-height: 30px;
+        }
+      }
+      .ems_about__video {
+        min-width: 800px;
+        max-width: 50%;
+        margin: 40px 0 0 70px;
+        @media (max-width: 1800px) {
+          min-width: 100%;
+          margin: 40px 0 0 0;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .ems {
     .ems_about {
-      
-        .ems_about__inner {
-            padding: 100px;
-            display: flex;
-            align-items: center;
-            @media (max-width: 1800px) {
-                flex-wrap: wrap;
-            }
-            .ems_about__text {
-                width: 50%;
-                margin-right: 70px;
-                @media (max-width: 1800px) {
-                    width: 100%;
-                    margin-right: 0;
-                }
-                .ems_about__title {
-                    font-size: 38px;
-                    margin-bottom: 50px;
-                    text-align: center;
-                    border-bottom: 2px solid #fff;
-                    padding-bottom: 15px;
-                    display: inline-block;
-                    font-family: Gilroy-Bold;
-                }
-                .ems_about__abstract {
-                    font-size: 1.5rem;
-                    margin: 10px 0 30px 0;
-                    line-height: 30px;
-                }
-            }
-            .ems_about__video {
-                min-width: 800px;
-                max-width: 50%;
-                margin: 40px 0 0 70px;
-                @media (max-width: 1800px) {
-                   
-                    min-width: 100%;
-                    margin: 40px 0 0 0;
-                    
-                }
-               
-            }
+      .ems_about__inner {
+        padding: 50px 30px;
+        justify-content: center;
+        .ems_about__text {
+          .ems_about__abstract {
+            font-size: 1.2rem;
+          }
         }
+        .ems_about__video {
+          margin: 20px 0 0 0;
+        }
+      }
     }
-}
-@media (max-width: 767px) {
-    .ems {
-       .ems_about {
-           .ems_about__inner {
-               padding: 50px 30px;
-               justify-content: center;
-                .ems_about__text {
-                    
-
-                    .ems_about__abstract {
-                        font-size: 1.2rem;
-                    }
-                }
-               .ems_about__video {
-                    margin: 20px 0 0 0;
-               }
-           }
-       } 
-    }
+  }
 }
 @media (max-width: 420px) {
-    .ems {
-       .ems_about {
-           .ems_about__inner {
-               padding: 50px 0;
-               justify-content: center;
-                .ems_about__text {
-                    .ems_about__title {
-                        margin-bottom: 30px;
-                    }
+  .ems {
+    .ems_about {
+      .ems_about__inner {
+        padding: 50px 0;
+        justify-content: center;
+        .ems_about__text {
+          .ems_about__title {
+            margin-bottom: 30px;
+          }
 
-                    .ems_about__abstract {
-                        font-size: 1.2rem;
-                        line-height: 25px;
-                        &:last-child {
-                            display: none;
-                        }
-                    }
-                }
-               .ems_about__video {
-                    margin: 20px 0 0 0;
-               }
-           }
-       } 
+          .ems_about__abstract {
+            font-size: 1.2rem;
+            line-height: 25px;
+            &:last-child {
+              display: none;
+            }
+          }
+        }
+        .ems_about__video {
+          margin: 20px 0 0 0;
+        }
+      }
     }
+  }
 }
-
 
 .ems {
-    
-    position: relative;
-    .ems_prices {
+  position: relative;
+  .ems_prices {
+    width: 100%;
+    background-image: url("../../../img/ems/fone_price.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 200px 200px inset #000;
+    .ems_prices__inner {
+      padding: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @media (max-width: 1280px) {
+        padding: 100px 0;
+      }
+      .ems_prices__title {
+        display: block;
+        font-size: 2.5rem;
+        font-family: Gilroy-Bold;
+        padding-bottom: 15px;
+        border-bottom: 2px solid $colorText;
+        margin-bottom: 60px;
+      }
+      .ems_prices__cards {
         width: 100%;
-        background-image: url('../../../img/ems/fone_price.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        box-shadow: 0 200px 200px inset #000;
-        .ems_prices__inner {
-            padding: 100px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            @media (max-width: 1280px) {
-                 padding: 100px 0; 
-            }
-            .ems_prices__title {
-                display: block;
-                font-size: 2.5rem;
-                font-family: Gilroy-Bold;
-                padding-bottom: 15px;
-                border-bottom: 2px solid $colorText;
-                margin-bottom: 60px;
-            }
-            .ems_prices__cards {
-                width: 100%;
 
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-
-               
-                @media (max-width: 1280px) {
-                    flex-wrap: wrap; 
-                    justify-content: center;
-               }
-                .ems_card {
-                    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.63);
-                    width: 500px;
-                    min-width: 300px;
-                    &:nth-child(1) {
-                        margin: 0;
-                    }
-                    &:nth-child(2) {
-                        margin: 0 50px 0 50px;
-                        @media (max-width: 1280px) {
-                            margin: 20px;
-                        }
-                    }
-                    &:nth-child(3) {
-                        margin: 0;
-                    }
-                    .ems_card__img {
-                        width: 100%;
-                        height: 40vh;
-                        background-repeat: no-repeat;
-                        background-size: cover;
-                        &.ems_card__img_1 {
-                            background-image: url('../../../img/ems/card1.jpg');
-                        }
-                        &.ems_card__img_2 {
-                            background-image: url('../../../img/ems/card2.jpg');
-                        }
-                        &.ems_card__img_3 {
-                            background-image: url('../../../img/ems/card3.jpg');
-                        }
-                    }
-                    .ems_card__discription {
-                        padding: 60px 80px;
-                        font-size: 2rem;
-                        background-color: $colorFone;
-                        text-align: center;
-                        line-height: 50px;
-                        .ems_card__num {
-                            font-family: Gilroy-Bold;
-                            background-image: url('../../../img/ems/Vector.svg');
-                            background-repeat: no-repeat;
-                            background-position: 30px -3px;
-                            padding: 15px 0;
-                        }
-                        .ems_card__cost {
-                            font-family: Gilroy-Bold;
-                        }
-                        .ems_card__one_session {
-                            font-family: Gilroy-Bold;
-                            background: linear-gradient(-90deg, #3A3A3A 0%, #FFFFFF 100%);
-                            -webkit-background-clip: text;
-                            -webkit-text-fill-color: transparent;
-                            
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 767px) {
-    .ems {
-        .ems_prices {
-            
-            .ems_prices__inner {
-
-                .ems_prices__cards {
-
-                    .ems_card {
-                        width: 500px;
-                        min-width: 300px;
-                        &:nth-child(2) {
-                            margin: 20px 0;
-                         }
-                    }
-                }
-            }
-        }
-    }
-}
-@media (max-width: 420px) {
-    .ems {
-        .ems_prices {
-            .ems_prices__inner {
-
-                .ems_prices__cards {
-
-                    .ems_card {
-                        
-                        min-width: none;
-                        .ems_card__discription {
-                            padding: 20px;
-                            font-size: 1.5rem;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-
-
-
-.ems {
-    .ems_res {
-        width: 100%;
-        max-width: 1920px;
-        margin: 0 auto;
-        height: 100%;
         display: flex;
-        overflow: hidden;
+        justify-content: space-between;
+        align-items: center;
+
         @media (max-width: 1280px) {
-            flex-direction: column;
+          flex-wrap: wrap;
+          justify-content: center;
         }
-        .ems_res__inner {
-            padding: 100px;
-            width: 40%;
-            background-image: url('../../../img/Reviews.png');
+        .ems_card {
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.63);
+          width: 500px;
+          min-width: 300px;
+          &:nth-child(1) {
+            margin: 0;
+          }
+          &:nth-child(2) {
+            margin: 0 50px 0 50px;
+            @media (max-width: 1280px) {
+              margin: 20px;
+            }
+          }
+          &:nth-child(3) {
+            margin: 0;
+          }
+          .ems_card__img {
+            width: 100%;
+            height: 40vh;
             background-repeat: no-repeat;
-            background-position-x: center;
-            background-position-y: 50px;
-            background-size: 100%;
-            @media (max-width: 1280px) {
-                width: 100%;
+            background-size: cover;
+            &.ems_card__img_1 {
+              background-image: url("../../../img/ems/card1.jpg");
             }
-            @media (max-width: 960px) {
-                padding: 50px;
+            &.ems_card__img_2 {
+              background-image: url("../../../img/ems/card2.jpg");
             }
-            @media (max-width: 420px) {
-                padding: 50px 10px 30px 10px;
+            &.ems_card__img_3 {
+              background-image: url("../../../img/ems/card3.jpg");
             }
-            .ems_res__title {
-                font-size: 3rem;
-                font-family: Gilroy-Bold;
-                margin-bottom: 35px;
-                padding-bottom: 15px;
-                border-bottom: 2px solid #fff;
+          }
+          .ems_card__discription {
+            padding: 60px 80px;
+            font-size: 2rem;
+            background-color: $colorFone;
+            text-align: center;
+            line-height: 50px;
+            .ems_card__num {
+              font-family: Gilroy-Bold;
+              background-image: url("../../../img/ems/Vector.svg");
+              background-repeat: no-repeat;
+              background-position: 30px -3px;
+              padding: 15px 0;
             }
-            .ems_res__text {
-                font-size: 1.5rem;
-                line-height: 35px;
-                @media (max-width: 420px) {
-                    font-size: 1.2rem;
-                    line-height: 30px;
-                }
+            .ems_card__cost {
+              font-family: Gilroy-Bold;
             }
+            .ems_card__one_session {
+              font-family: Gilroy-Bold;
+              background: linear-gradient(-90deg, #3a3a3a 0%, #ffffff 100%);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+          }
         }
-        .ems_res__slider {
-            width: 60%;
-            height: 100%;
-            @media (max-width: 1280px) {
-                width: 100%;
-            }
-            .ems_res__back {
-               min-height: 60vmax;
-               background-size: cover;
-                &.img_1 {
-                    background-image: url('../../../img/ems/before_after_1.jpg'); 
-                }
-                &.img_2 {
-                    background-image: url('../../../img/ems/before_after_2.jpg'); 
-                }
-                &.img_3 {
-                    background-image: url('../../../img/ems/before_after_3.JPG'); 
-                }
-                &.img_4 {
-                    background-image: url('../../../img/ems/before_after_4.jpg'); 
-                }
-                &.img_5 {
-                    background-image: url('../../../img/ems/before_after_5.jpg'); 
-                }
-                &.img_6 {
-                    background-image: url('../../../img/ems/before_after_6.jpg'); 
-                }
-            }
-        }
+      }
     }
+  }
 }
 
+@media (max-width: 767px) {
+  .ems {
+    .ems_prices {
+      .ems_prices__inner {
+        .ems_prices__cards {
+          .ems_card {
+            width: 500px;
+            min-width: 300px;
+            &:nth-child(2) {
+              margin: 20px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 420px) {
+  .ems {
+    .ems_prices {
+      .ems_prices__inner {
+        .ems_prices__cards {
+          .ems_card {
+            min-width: none;
+            .ems_card__discription {
+              padding: 20px;
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
-
-
-
-
+.ems {
+  .ems_res {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    @media (max-width: 1280px) {
+      flex-direction: column;
+    }
+    .ems_res__inner {
+      padding: 100px;
+      width: 40%;
+      background-image: url("../../../img/Reviews.png");
+      background-repeat: no-repeat;
+      background-position-x: center;
+      background-position-y: 50px;
+      background-size: 100%;
+      @media (max-width: 1280px) {
+        width: 100%;
+      }
+      @media (max-width: 960px) {
+        padding: 50px;
+      }
+      @media (max-width: 420px) {
+        padding: 50px 10px 30px 10px;
+      }
+      .ems_res__title {
+        font-size: 3rem;
+        font-family: Gilroy-Bold;
+        margin-bottom: 35px;
+        padding-bottom: 15px;
+        border-bottom: 2px solid #fff;
+      }
+      .ems_res__text {
+        font-size: 1.5rem;
+        line-height: 35px;
+        @media (max-width: 420px) {
+          font-size: 1.2rem;
+          line-height: 30px;
+        }
+      }
+    }
+    .ems_res__slider {
+      width: 60%;
+      height: 100%;
+      @media (max-width: 1280px) {
+        width: 100%;
+      }
+      .ems_res__back {
+        min-height: 60vmax;
+        background-size: cover;
+        &.img_1 {
+          background-image: url("../../../img/ems/before_after_1.jpg");
+        }
+        &.img_2 {
+          background-image: url("../../../img/ems/before_after_2.jpg");
+        }
+        &.img_3 {
+          background-image: url("../../../img/ems/before_after_3.JPG");
+        }
+        &.img_4 {
+          background-image: url("../../../img/ems/before_after_4.jpg");
+        }
+        &.img_5 {
+          background-image: url("../../../img/ems/before_after_5.jpg");
+        }
+        &.img_6 {
+          background-image: url("../../../img/ems/before_after_6.jpg");
+        }
+      }
+    }
+  }
+}

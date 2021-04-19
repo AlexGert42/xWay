@@ -1,19 +1,11 @@
-
-
 $colorFone: #000;
 $colorText: #fff;
 $colorAlert: #f70202;
 $colorShadow: #292929;
-$background: rgba(0, 0, 0, .2);
-
+$background: rgba(0, 0, 0, 0.2);
 
 .modal {
-   
-
-    
-    
     .modal__overlay {
-        
         z-index: 1000;
         position: relative;
         position: fixed;
@@ -25,42 +17,36 @@ $background: rgba(0, 0, 0, .2);
 
         animation: showModal 1s ease;
         opacity: 1;
-    
-        
+
         .modal__window {
-                padding: 10px;
-                max-width: 600px;
-                min-height: 300px;
-                background-color: $colorFone;
-                margin: 20vh auto;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                font-family: Geneva, Tahoma, sans-serif;
-                box-shadow: 0 0 10px 5px $colorShadow;
-                animation: showModalWindow .5s ease-in;
-                .modal__title {
-                    width: 285px;
-                    margin: 35px auto;
+            padding: 10px;
+            max-width: 600px;
+            min-height: 300px;
+            background-color: $colorFone;
+            margin: 20vh auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-family: Geneva, Tahoma, sans-serif;
+            box-shadow: 0 0 10px 5px $colorShadow;
+            animation: showModalWindow 0.5s ease-in;
+            .modal__title {
+                width: 285px;
+                margin: 35px auto;
 
-                    img {
-                        width: 100%;
-                    }
+                img {
+                    width: 100%;
                 }
-                .modal__discription {
-                    font-size: 1.5rem;
-                    color: $colorText;
-                    text-align: center;
-                    font-family: 'Gilroy-Bold';
-                }
-
-          
+            }
+            .modal__discription {
+                font-size: 1.5rem;
+                color: $colorText;
+                text-align: center;
+                font-family: "Gilroy-Bold";
+            }
         }
     }
 }
-
-
-
 
 @keyframes showModal {
     0% {
