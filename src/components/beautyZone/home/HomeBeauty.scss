@@ -1,695 +1,754 @@
-
 .home-beauty {
-
-    .home-beauty__promo {
-        animation: blureFone .5s ease;
-        width: 100%;
-        height: 100%;
-        .home-beauty__fone {
-            background-image: url('../../../img/homeBeauty/foneBeauty.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position-x: right;
-            background-position-y: top;
-            height: 100vh;
-            width: 100%;
-           margin-top: -30px;
-            .home-beauty__promo-text {
-                width: 60%;
-                height: 100%;
-                margin: 30px 20px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                
-                .home-beauty__title {
-                    margin: 10px;
-                    display: block;
-                    text-align: center;
-                    font-size: 2rem;
-                    font-family: 'Gilroy-Bold';
-                    span {
-                        margin: 40px 40px 30px 40px;
-                        max-width: 500px;
-                        display: block;
-                       img {
-                           width: 100%;
-                       }
-                    }
-                }
-                .home-beauty__discription {
-                    margin: 10px;
-                    text-align: center;
-                    display: block;
-                    font-size: 2rem;
-                    font-family: 'Gilroy-Bold';
-                }
-                .home-beauty__king-btn {
-                    cursor: pointer;
-                    text-transform: uppercase;
-                    min-width: 380px;
-                    margin: 50px 10px;
-                    padding: 25px;
-                    font-family: 'Gilroy-Bold';
-                    font-size: 1.5rem;
-                    background: linear-gradient(90deg, #DD5E89 0%, #F7BB97 100%);
-                    border-radius: 50px;
-                    color: #fff;
-                    box-shadow: none;
-                    &:hover {
-                        animation: homeBeautyBtn 1s ease;
-                        box-shadow: 1px 1px 50px #DD5E89 inset; 
-                    }
-                }
+  .home-beauty__promo {
+    animation: blureFone 0.5s ease;
+    width: 100%;
+    height: 100%;
+    .home-beauty__fone {
+      .home-beauty__promo-text {
+        width: 60%;
+        padding-top: 200px;
+        margin: 30px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .home-beauty__title {
+          margin: 10px;
+          display: block;
+          text-align: center;
+          font-size: 2rem;
+          font-family: "Gilroy-Bold";
+          span {
+            margin: 40px 40px 30px 40px;
+            max-width: 500px;
+            display: block;
+            img {
+              width: 100%;
             }
+          }
         }
-       
+        .home-beauty__discription {
+          margin: 10px;
+          text-align: center;
+          display: block;
+          font-size: 2rem;
+          font-family: "Gilroy-Bold";
+        }
+        .home-beauty__king-btn {
+          cursor: pointer;
+          text-transform: uppercase;
+          min-width: 380px;
+          margin: 50px 10px;
+          padding: 25px;
+          font-family: "Gilroy-Bold";
+          font-size: 1.5rem;
+          background: linear-gradient(90deg, #dd5e89 0%, #f7bb97 100%);
+          border-radius: 50px;
+          color: #fff;
+          box-shadow: none;
+          &:hover {
+            animation: homeBeautyBtn 1s ease;
+            box-shadow: 1px 1px 50px #dd5e89 inset;
+          }
+        }
+      }
     }
+  }
 }
 @keyframes homeBeautyBtn {
-    0% {
-        box-shadow: none;
-    }
-    100% {
-        box-shadow: 1px 1px 50px #DD5E89 inset; 
-    }
+  0% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: 1px 1px 50px #dd5e89 inset;
+  }
 }
-
 
 @media (max-width: 960px) {
-    .home-beauty {
-        .home-beauty__promo {
-            .home-beauty__fone {
-                .home-beauty__promo-text {
-                    width: 100%;
-                    margin: 0 auto;
-                }
-            }
-        } 
+  .home-beauty {
+    .home-beauty__promo {
+      .home-beauty__fone {
+        .home-beauty__promo-text {
+          width: 100%;
+          margin: 0 auto;
+        }
+      }
     }
+  }
 }
 @media (max-width: 420px) {
-    .home-beauty {
-        .home-beauty__promo {
-            .home-beauty__fone {
-                padding: 0 10px;
-                .home-beauty__promo-text {
-                    background-color: rgba(255, 255, 255, 0.292);
-                    .home-beauty__title {
-                        font-size: 1.5rem;
-                        span {
-                            margin: 20px;
-                            max-width: 500px;
-                            display: block;
-                           img {
-                               width: 100%;
-                           }
-                        }
-                    }
-                    .home-beauty__discription {
-                        margin: 20px 10px;
-                        text-align: center;
-                        display: block;
-                        font-size: 2rem;
-                        font-family: 'Gilroy-Bold';
-                    }
-                    .home-beauty__king-btn {
-                        font-size: 1.2rem;
-                        min-width: 300px;
-                    }
-                }
+  .home-beauty {
+    .home-beauty__promo {
+      .home-beauty__fone {
+        padding: 0 10px;
+        .home-beauty__promo-text {
+          background-color: rgba(255, 255, 255, 0.292);
+          padding-top: 150px;
+          .home-beauty__title {
+            font-size: 1.5rem;
+            span {
+              margin: 20px;
+              max-width: 500px;
+              display: block;
+              img {
+                width: 100%;
+              }
             }
+          }
+          .home-beauty__discription {
+            margin: 20px 10px;
+            text-align: center;
+            display: block;
+            font-size: 2rem;
+            font-family: "Gilroy-Bold";
+          }
+          .home-beauty__king-btn {
+            font-size: 1.2rem;
+            min-width: 300px;
+          }
         }
+      }
     }
+  }
 }
 
-
-
 .home-beauty {
-
-    .home-beauty_advantage {
-        background-color: #FAFAFA;
-        .home-beauty_advantage__inner {
-            padding: 100px 80px;
-            .home-beauty_advantage__list {
-                overflow: auto;
-                display: flex;
-                justify-content: space-between;
-                @media (max-width: 1280px) {
-                    overflow: hidden;
-                    overflow-x: scroll;
-                    min-width: 100%;
-                    justify-content: flex-start;
-                }
-                .home-beauty_advantage__item {
-                    max-width: 400px;
-                    min-width: 300px;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: space-between;
-                    @media (max-width: 960px) {
-                        min-width: 40vh;
-                        margin: 0 10%;
-                    }
-                    @media (max-width: 420px) {
-                        min-width: 50vh;
-                        margin: 0 5%;
-                    }
-                    .home-beauty_advantage__img {
-                        width: 80px;
-                        height: 80px;
-                        img {
-                            width: 100%;
-                        }
-                    }
-                    .home-beauty_advantage__title {
-                        font-size: 1.5rem;
-                        font-family: 'Gilroy-Bold';
-                        margin: 20px 10px;
-                        background: linear-gradient(90deg, #DD5E89 0%, #F7BB97 100%);
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                        color: #DD5E89;
-                        text-align: center;
-                    }
-                    .home-beauty_advantage__text {
-                        text-align: center;
-                        font-size: 20px;
-                        p {
-                            font-size: 1.2rem;
-                            margin: 10px;
-                        }
-                        
-                    }
-                }
-            }
+  .home-beauty_advantage {
+    background-color: #fafafa;
+    .home-beauty_advantage__inner {
+      padding: 100px 80px;
+      .home-beauty_advantage__list {
+        overflow: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        @media (max-width: 1280px) {
+          overflow: hidden;
+          overflow-x: scroll;
+          min-width: 100%;
+          justify-content: flex-start;
         }
+        .home-beauty_advantage__item {
+          max-width: 400px;
+          min-width: 300px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-start;
+          @media (max-width: 960px) {
+            min-width: 40vh;
+            margin: 0 10%;
+          }
+          @media (max-width: 420px) {
+            min-width: 50vh;
+            margin: 0 5%;
+          }
+          .home-beauty_advantage__img {
+            width: 80px;
+            height: 80px;
+            img {
+              width: 100%;
+            }
+          }
+          .home-beauty_advantage__title {
+            font-size: 1.5rem;
+            font-family: "Gilroy-Bold";
+            margin: 20px 10px;
+            background: linear-gradient(90deg, #dd5e89 0%, #f7bb97 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: #dd5e89;
+            text-align: center;
+          }
+          .home-beauty_advantage__text {
+            text-align: center;
+            font-size: 20px;
+            p {
+              font-size: 1.2rem;
+              margin: 10px;
+            }
+          }
+        }
+      }
     }
+  }
 }
 
 @media (max-width: 1400px) {
-    .home-beauty {
-        .home-beauty_advantage {
-            .home-beauty_advantage__inner{
-                padding: 50px 35px;
-                .home-beauty_advantage__list {
-                    width: 100%;
-                    .home-beauty_advantage__item {
-                        margin: 0 50px;
-                    }
-                }
-            }
+  .home-beauty {
+    .home-beauty_advantage {
+      .home-beauty_advantage__inner {
+        padding: 50px 35px;
+        .home-beauty_advantage__list {
+          width: 100%;
+          .home-beauty_advantage__item {
+            margin: 0 50px;
+          }
         }
+      }
     }
+  }
 }
 @media (max-width: 960px) {
-    .home-beauty {
-        .home-beauty_advantage {
-            .home-beauty_advantage__inner{
-                padding: 50px 0;
-                .home-beauty_advantage__list {
-                    
-                    .home-beauty_advantage__item {
-                        min-width: 50vh;
-                        margin: 0 5%;
-                    }
-                }
-            }
+  .home-beauty {
+    .home-beauty_advantage {
+      .home-beauty_advantage__inner {
+        padding: 50px 0;
+        .home-beauty_advantage__list {
+          .home-beauty_advantage__item {
+            min-width: 50vh;
+            margin: 0 5%;
+          }
         }
+      }
     }
+  }
 }
 
-
-
-
-
-
-
 .home-beauty {
-    .home-beauty_services {
-        width: 100%;
-        height: 100%;
-        background-image: url('../../../img/homeBeauty/Beauty_text.png');
-        background-repeat: no-repeat;
-        background-position: 150px 0;
-        background-size: 70%;
-        .home-beauty_services__inner {
-            padding: 100px 80px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            @media (max-width: 1600px) {padding: 100px 0;}
-            .home-beauty_services__title {
-                font-size: 56px;
-                font-family: 'Gilroy-Bold';
-                background: linear-gradient(90deg, #DD5E89 0%, #F7BB97 60%);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                display: inline-block;
-                letter-spacing: 10px;
-                padding-bottom: 15px;
-                border-bottom: 3px solid #DD5E89;
-                margin-bottom: 100px;
+  .home-beauty_services {
+    width: 100%;
+    height: 100%;
+    background-image: url("../../../img/homeBeauty/Beauty_text.png");
+    background-repeat: no-repeat;
+    background-position: 150px 0;
+    background-size: 70%;
+    .home-beauty_services__inner {
+      padding: 100px 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @media (max-width: 1600px) {
+        padding: 100px 0;
+      }
+      .home-beauty_services__title {
+        font-size: 56px;
+        font-family: "Gilroy-Bold";
+        background: linear-gradient(90deg, #dd5e89 0%, #f7bb97 60%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline-block;
+        letter-spacing: 10px;
+        padding-bottom: 15px;
+        border-bottom: 3px solid #dd5e89;
+        margin-bottom: 100px;
+      }
+      .home-beauty_services__cards {
+        min-width: 100%;
+        height: 35vmax;
+        position: relative;
+        overflow: hidden;
+        .home-beauty_services__card {
+          cursor: pointer;
+          .home-beauty_services__img {
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: cover;
+            &.massage {
+              top: 15%;
+              left: 8%;
+              background: linear-gradient(
+                180.07deg,
+                rgba(221, 96, 137, 1) 1.78%,
+                rgba(247, 185, 151, 1) 99.99%
+              );
+              background-image: url("../../../img/homeBeauty/card_1.jpg");
+              width: 480px;
+              height: 465px;
+              .home-beauty_services__subtitle {
+                bottom: -80px;
+              }
+              @media (max-width: 1800px) {
+                left: 6%;
+              }
+              @media (max-width: 1600px) {
+                left: 4%;
+              }
             }
-            .home-beauty_services__cards {
-                min-width: 100%;
-                height: 70vh;
-                position: relative;
-                overflow: hidden;
-                .home-beauty_services__card {
-                    cursor: pointer;
-                    .home-beauty_services__img {
-                        position: absolute;
-                        background-repeat: no-repeat;
-                        background-size: cover;
-                        &.massage {
-                            top: 15%;
-                            left: 8%;
-                            background: linear-gradient(180.07deg, rgba(221, 96, 137, 1) 1.78%, rgba(247, 185, 151, 1) 99.99%);
-                            background-image: url('../../../img/homeBeauty/card_1.jpg');
-                            width: 480px;
-                            height: 465px;
-                            .home-beauty_services__subtitle {
-                                bottom: -80px;
-                            }
-                            @media (max-width: 1800px) {left: 6%;}
-                            @media (max-width: 1600px) {left: 4%;}
-                        }
-                        &.cosmetology {
-                            top: 50px;
-                            left: 33%;
-                            background-image: url('../../../img/homeBeauty/card_2.jpg');
-                            width: 553px;
-                            height: 614px;
-                            .home-beauty_services__subtitle {
-                                top: -50px;
-                            }
-                        }
-                        &.depilation {
-                            right: 8%;
-                            top: 13%;
-                            background-image: url('../../../img/homeBeauty/card_3.jpg');
-                            width: 462px;
-                            height: 387px;
-                            bottom: 80px;
-                            .home-beauty_services__subtitle {
-                                bottom: -80px;
-                                right: 0;
-                            }
-                            @media (max-width: 1800px) {right: 6%;}
-                            @media (max-width: 1600px) {right: 4%;}
-                        }
-                        &:hover {
-                            z-index: 10;
-                            background: linear-gradient(180.07deg, rgba(221, 96, 137, 1) 1.78%, rgba(247, 185, 151, 1) 99.99%);
-                            opacity: 1;
-                            animation: chengeServicesCard 1s ease;
-                            .home-beauty_services__discription {
-                                opacity: 1;
-                                transition: all 1s ease;
-
-                            }
-                        }
-                        .home-beauty_services__subtitle {
-                            position: absolute;
-                            font-size: 25px;
-                            font-family: 'Gilroy-Bold';
-                            display: inline-block;
-                            margin-bottom: 30px;
-                            display: flex;
-                            align-items: center;
-                            span {
-                                margin: 0 10px;
-                                width: 100px;
-                                height: 3px;
-                                background-color: #000;
-                            }
-                        }
-                        .home-beauty_services__discription {
-                            font-size: 1.5rem;
-                            opacity: 0;
-                            padding: 100px 10px 20px 10px;
-                            text-align: center;
-                            position: relative;
-                            .home-beauty_services__more {
-                                position: absolute;
-                                left: 50%;
-                                transform: translate(-50%, -0%);
-                                font-size: 1.5rem;
-                                font-family: 'Gilroy-Bold';
-                                color: #000;
-                                background-image: url('../../../img/homeBeauty/White_arrow.png');
-                                background-repeat: no-repeat;
-                                background-position-x: right;
-                                background-position-y: center;
-                                padding: 15px 20px 15px 0;
-                                border-bottom: 3px solid #000;
-                                opacity: .7;
-                                bottom: -50px;
-                                &:hover {
-                                    opacity: 1;
-                                    animation: homeMoreBtn 1s infinite;
-                                }
-                            }
-                        }
-                    }
+            &.cosmetology {
+              top: 50px;
+              left: 33%;
+              background-image: url("../../../img/homeBeauty/card_2.jpg");
+              width: 553px;
+              height: 614px;
+              .home-beauty_services__subtitle {
+                top: -50px;
+              }
+            }
+            &.depilation {
+              right: 8%;
+              top: 13%;
+              background-image: url("../../../img/homeBeauty/card_3.jpg");
+              width: 462px;
+              height: 387px;
+              bottom: 80px;
+              .home-beauty_services__subtitle {
+                bottom: -80px;
+                right: 0;
+              }
+              @media (max-width: 1800px) {
+                right: 6%;
+              }
+              @media (max-width: 1600px) {
+                right: 4%;
+              }
+            }
+            &:hover {
+              z-index: 10;
+              background: linear-gradient(
+                180.07deg,
+                rgba(221, 96, 137, 1) 1.78%,
+                rgba(247, 185, 151, 1) 99.99%
+              );
+              opacity: 1;
+              animation: chengeServicesCard 1s ease;
+              .home-beauty_services__discription {
+                opacity: 1;
+                transition: all 1s ease;
+              }
+            }
+            .home-beauty_services__subtitle {
+              position: absolute;
+              font-size: 25px;
+              font-family: "Gilroy-Bold";
+              display: inline-block;
+              margin-bottom: 30px;
+              display: flex;
+              align-items: center;
+              span {
+                margin: 0 10px;
+                width: 100px;
+                height: 3px;
+                background-color: #000;
+              }
+            }
+            .home-beauty_services__discription {
+              font-size: 1.5rem;
+              opacity: 0;
+              padding: 100px 10px 20px 10px;
+              text-align: center;
+              position: relative;
+              .home-beauty_services__more {
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%, -0%);
+                font-size: 1.5rem;
+                font-family: "Gilroy-Bold";
+                color: #000;
+                background-image: url("../../../img/homeBeauty/White_arrow.png");
+                background-repeat: no-repeat;
+                background-position-x: right;
+                background-position-y: center;
+                padding: 15px 20px 15px 0;
+                border-bottom: 3px solid #000;
+                opacity: 0.7;
+                bottom: -50px;
+                &:hover {
+                  opacity: 1;
+                  animation: homeMoreBtn 1s infinite;
                 }
+              }
             }
+          }
         }
+      }
     }
+  }
 }
 
 @keyframes chengeServicesCard {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-        background: linear-gradient(180.07deg, rgba(221, 96, 137, 1) 1.78%, rgba(247, 185, 151, 1) 99.99%);
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    background: linear-gradient(
+      180.07deg,
+      rgba(221, 96, 137, 1) 1.78%,
+      rgba(247, 185, 151, 1) 99.99%
+    );
+  }
 }
 @media (max-width: 1400px) {
-    .home-beauty {
-        .home-beauty_services {
-            .home-beauty_services__inner {
-                padding: 100px 80px;
-                @media (max-width: 1140px) {padding: 50px 35px;}
-                .home-beauty_services__title {
-                    
-                }
-                .home-beauty_services__cards {
-                    display: flex;
-                    justify-content: space-between;
-                    .home-beauty_services__card {
-                        .home-beauty_services__img {
-                            position: relative;
-                            background-size: cover;
-                            background-position: center;
-                            top: 0;
-                            &.massage {
-                                max-width: 320px;
-                                height: 400px;
-                                top: 0;
-                                left: 0;
-                                @media (max-width: 1140px) {max-width: 280px;}
-                            }
-                            &.cosmetology {
-                                max-width: 320px;
-                                height: 450px;
-                                top: 50px;
-                                left: 50%;
-                                transform: translate(-50%, -0%);
-                                @media (max-width: 1140px) {max-width: 280px;}
-                            }
-                            &.depilation {
-                                max-width: 320px;
-                                height: 400px;
-                                top: 0;
-                                right: 0;
-                                @media (max-width: 1140px) {max-width: 280px;}
-                            }
-                            .home-beauty_services__subtitle {
-                                position: absolute;
-                                font-size: 1.2rem;
-                                padding-bottom: 20px;
-                            }
-                            .home-beauty_services__discription {
-                                font-size: 1.2rem;
-                                .home-beauty_services__more {
-                                    margin: 50px auto;
-                                    bottom: -100px;
-                                    
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+  .home-beauty {
+    .home-beauty_services {
+      .home-beauty_services__inner {
+        padding: 100px 80px;
+        @media (max-width: 1140px) {
+          padding: 50px 35px;
         }
+        .home-beauty_services__title {
+        }
+        .home-beauty_services__cards {
+          display: flex;
+          justify-content: space-between;
+          .home-beauty_services__card {
+            .home-beauty_services__img {
+              position: relative;
+              background-size: cover;
+              background-position: center;
+              top: 0;
+              &.massage {
+                max-width: 320px;
+                height: 400px;
+                top: 0;
+                left: 0;
+                @media (max-width: 1140px) {
+                  max-width: 280px;
+                }
+              }
+              &.cosmetology {
+                max-width: 320px;
+                height: 450px;
+                top: 50px;
+                left: 50%;
+                transform: translate(-50%, -0%);
+                @media (max-width: 1140px) {
+                  max-width: 280px;
+                }
+              }
+              &.depilation {
+                max-width: 320px;
+                height: 400px;
+                top: 0;
+                right: 0;
+                @media (max-width: 1140px) {
+                  max-width: 280px;
+                }
+              }
+              .home-beauty_services__subtitle {
+                position: absolute;
+                font-size: 1.2rem;
+                padding-bottom: 20px;
+              }
+              .home-beauty_services__discription {
+                font-size: 1.2rem;
+                .home-beauty_services__more {
+                  margin: 50px auto;
+                  bottom: -100px;
+                }
+              }
+            }
+          }
+        }
+      }
     }
+  }
 }
 @media (max-width: 960px) {
-    .home-beauty {
-        .home-beauty_services {
-            background-position: center 10px;
-            background-size: 90%;
-            .home-beauty_services__inner {
-                @media (max-width: 420px) {
-                    padding: 50px 0;
-                }
-                .home-beauty_services__title {
-                    
-                }
-                .home-beauty_services__cards {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    height: 100%;
-                    .home-beauty_services__card {
-                        margin-bottom: 50px;
-                        .home-beauty_services__img {
-                            position: static;
-                            &.massage {
-                                background-size: cover;
-                                min-width: 100%;
-                                .home-beauty_services__subtitle {
-                                    top: -1350px;
-                                    left: 50px;
-                                } 
-                            }
-                            &.cosmetology {
-                                min-width: 100%;
-                                left: 0%;
-                                transform: translate(-0%, -0%);
-                                .home-beauty_services__subtitle {
-                                    bottom: -400px;
-                                    left: 0;
-                                }
-                            }
-                            &.depilation {
-                                min-width: 100%;
-                                .home-beauty_services__subtitle {
-                                    bottom: 30px;
-                                    left: 0;
-                                }
-                            }
-                            &:hover {
-                                .home-beauty_services__subtitle {
-                                    opacity: 0;
-                                }
-                            }
-                            .home-beauty_services__subtitle {
-                                position: absolute;
-                                font-size: 2rem;
-                                text-shadow: 1px 1px 2px #fff;
-                                span {
-                                    box-shadow: 1px 1px 2px #fff; 
-                                }
-                                @media (max-width: 767px) {
-                                    font-size: 1.5rem;
-                                }
-                            }
-                            .home-beauty_services__discription {
-                                font-size: 1.4rem;
-                                @media (max-width: 420px) {
-                                    font-size: 1.2rem;
-                                }
-                                .home-beauty_services__more {
-                                    margin: 50px auto;
-                                    bottom: -100px;
-                                    
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+  .home-beauty {
+    .home-beauty_services {
+      background-position: center 10px;
+      background-size: 90%;
+      .home-beauty_services__inner {
+        @media (max-width: 420px) {
+          padding: 50px 0;
         }
+        .home-beauty_services__title {
+        }
+        .home-beauty_services__cards {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 100%;
+          .home-beauty_services__card {
+            margin-bottom: 50px;
+            .home-beauty_services__img {
+              position: static;
+              &.massage {
+                background-size: cover;
+                min-width: 100%;
+                .home-beauty_services__subtitle {
+                  top: -1350px;
+                  left: 50px;
+                }
+              }
+              &.cosmetology {
+                min-width: 100%;
+                left: 0%;
+                transform: translate(-0%, -0%);
+                .home-beauty_services__subtitle {
+                  bottom: -400px;
+                  left: 0;
+                }
+              }
+              &.depilation {
+                min-width: 100%;
+                .home-beauty_services__subtitle {
+                  bottom: 30px;
+                  left: 0;
+                }
+              }
+              &:hover {
+                .home-beauty_services__subtitle {
+                  opacity: 0;
+                }
+              }
+              .home-beauty_services__subtitle {
+                position: absolute;
+                font-size: 2rem;
+                text-shadow: 1px 1px 2px #fff;
+                span {
+                  box-shadow: 1px 1px 2px #fff;
+                }
+                @media (max-width: 767px) {
+                  font-size: 1.5rem;
+                }
+              }
+              .home-beauty_services__discription {
+                font-size: 1.4rem;
+                @media (max-width: 420px) {
+                  font-size: 1.2rem;
+                }
+                .home-beauty_services__more {
+                  margin: 50px auto;
+                  bottom: -100px;
+                }
+              }
+            }
+          }
+        }
+      }
     }
+  }
 }
 
 @keyframes homeMoreBtn {
-    0% {
-        opacity: .7;
-        padding: 15px 20px 15px 0;
-    }
-    50% {
-        opacity: 1;
-        padding: 15px 40px 15px 0;
-    }
-    100% {
-        opacity: .7;
-        padding: 15px 20px 15px 0;
-    }
+  0% {
+    opacity: 0.7;
+    padding: 15px 20px 15px 0;
+  }
+  50% {
+    opacity: 1;
+    padding: 15px 40px 15px 0;
+  }
+  100% {
+    opacity: 0.7;
+    padding: 15px 20px 15px 0;
+  }
 }
 
+.home-beauty_eyes {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  max-width: 1920px;
+  margin: 0 auto;
+  background-image: url("../../../img/homeBeauty/card_fone.png");
+  background-repeat: no-repeat;
+  background-position: right;
 
+  @media (max-width: 1140px) {
+    flex-direction: column;
+  }
+  .home-beauty_eyes__img {
+    position: relative;
+    z-index: 2;
+    width: 70%;
+    background-position: center bottom;
+    background-image: url("../../../img/homeBeauty/card_4.png");
+    background-size: cover;
+    @media (max-width: 1140px) {
+      width: 100%;
+      height: 40vh;
+    }
+  }
+  .home-beauty_eyes__text {
+    width: 50%;
+    z-index: 10;
 
-
-
-
-
-
-
+    @media (max-width: 1140px) {
+      width: 100%;
+    }
+    .home-beauty_eyes__inner {
+      @media (max-width: 767px) {
+        padding: 50px;
+      }
+      @media (max-width: 420px) {
+        padding: 50px 10px;
+      }
+      padding: 100px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+      .home-beauty_eyes__disctiption {
+        font-size: 1.5rem;
+        font-family: "Gilroy-Bold";
+        text-align: center;
+        margin-bottom: 50px;
+        line-height: 35px;
+        @media (max-width: 767px) {
+          margin-bottom: 0;
+        }
+      }
+      .home-beauty_eyes__more {
+        cursor: pointer;
+        text-transform: uppercase;
+        min-width: 380px;
+        text-align: center;
+        margin: 50px 10px;
+        padding: 25px;
+        font-family: "Gilroy-Bold";
+        font-size: 1.5rem;
+        background: linear-gradient(90deg, #ff512f 0%, #dd2476 100%);
+        border-radius: 50px;
+        color: #fff;
+        box-shadow: none;
+        @media (max-width: 767px) {
+          min-width: 300px;
+        }
+        @media (max-width: 420px) {
+          margin: 30px 10px;
+          padding: 15px 25px;
+        }
+        &:hover {
+          animation: homeBeautyBtn 1s ease;
+          box-shadow: 1px 1px 50px #dd5e89 inset;
+        }
+      }
+    }
+  }
+}
 
 .home-beauty {
-    .home-beauty_quate {
-        background-image: url('../../../img/homeBeauty/quate/fone.jpg');
-        background-size: cover;
-        box-shadow: 0 10px 80px inset #fff;
-        .home-beauty_quate__inner {
-            width: 100%;
-            padding: 100px 80px 50px 80px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-            .home-beauty_quate__title {
-                font-size: 36px;
-                font-family: 'Gilroy-Bold';
-                padding: 0 10px 20px 10px;
-                border-bottom: 3px solid #fff;
-                color: #fff;
-                margin-bottom: 40px;
-                letter-spacing: 10px;
+  .home-beauty_quate {
+    background-image: url("../../../img/homeBeauty/quate/fone.jpg");
+    background-size: cover;
+    box-shadow: 0 10px 80px inset #fff;
+    .home-beauty_quate__inner {
+      width: 100%;
+      padding: 100px 80px 50px 80px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      .home-beauty_quate__title {
+        font-size: 36px;
+        font-family: "Gilroy-Bold";
+        padding: 0 10px 20px 10px;
+        border-bottom: 3px solid #fff;
+        color: #fff;
+        margin-bottom: 40px;
+        letter-spacing: 10px;
+      }
+      .home-beauty_quate__list {
+        width: 100%;
+        .home-beauty_quate__content {
+          display: flex;
+          justify-content: center;
+          .home-beauty_quate__block {
+            max-width: 60%;
+            position: relative;
+            background-color: #fff;
+            padding: 0 25px 50px 25px;
+            &:nth-child(1) {
+              margin: 0 25px 100px 1px;
             }
-            .home-beauty_quate__list {
-                width: 100%;
-                .home-beauty_quate__content {
-                    display: flex;
-                    justify-content: center;
-                    .home-beauty_quate__block {
-                        max-width: 60%;
-                        position: relative;
-                        background-color: #fff;
-                        padding: 0 25px 50px 25px;
-                        &:nth-child(1) {
-                            margin: 0 25px 100px 1px;
-                        }
-                        &:nth-child(2) {
-                            margin: 0 0 100px 25px;
-                        }
-                        
-                        .home-beauty_quate__text {
-                            padding: 20px;
-                            font-size: 1.5rem;
-                        }
-                        .home-beauty_quate__name {
-                            position: absolute;
-                            font-size: 2rem;
-                            bottom: -50px;
-                            left: 50px;
-                        }
-                        .home-beauty_quate__circle {
-                            position: absolute;
-                            bottom: -50px;
-                            right: 50px;
-                            width: 100px;
-                            height: 100px;
-                            background-color: rgb(90, 90, 90);
-                            border-radius: 50%;
-                            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.315);
-                        }
-                    }
-                }
-            } 
+            &:nth-child(2) {
+              margin: 0 0 100px 25px;
+            }
+
+            .home-beauty_quate__text {
+              padding: 20px;
+              font-size: 1.5rem;
+            }
+            .home-beauty_quate__name {
+              position: absolute;
+              font-size: 2rem;
+              bottom: -50px;
+              left: 50px;
+            }
+            .home-beauty_quate__circle {
+              position: absolute;
+              bottom: -50px;
+              right: 50px;
+              width: 100px;
+              height: 100px;
+              background-color: rgb(90, 90, 90);
+              border-radius: 50%;
+              box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.315);
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: #fff;
+              font-family: "Gilroy-Bold";
+              font-size: 3rem;
+            }
+          }
         }
+      }
     }
+  }
 }
 
 @media (max-width: 1280px) {
-    .home-beauty {
-        .home-beauty_quate {
-            .home-beauty_quate__inner {
-                padding: 50px 35px;
-                .home-beauty_quate__list {
-                    .home-beauty_quate__content {
-                        @media (max-width: 960px) {
-                            flex-direction: column;
-                            justify-content: space-between;
-                            align-items: center;
-                        }
-                        .home-beauty_quate__block {
-                            max-width: 50%;
-                            padding: 10px 10px 20px 10px;
-                            @media (max-width: 960px) {
-                                max-width: 100%;
-                                &:nth-child(1) {
-                                    margin: 0 0 100px 0;
-                                }
-                                &:nth-child(2) {
-                                    margin: 0 0 100px 0;
-                                }
-                            }
-                            .home-beauty_quate__text {
-                                padding: 0;
-                                font-size: 1.5rem;
-                            }
-                            .home-beauty_quate__name {
-                                left: 10px;
-                            }
-                            .home-beauty_quate__circle {
-                                right: 10px;
-                                bottom: -75px;
-                            }
-                           
-                        }
-                    }
-                }
+  .home-beauty {
+    .home-beauty_quate {
+      .home-beauty_quate__inner {
+        padding: 50px 35px;
+        .home-beauty_quate__list {
+          .home-beauty_quate__content {
+            @media (max-width: 960px) {
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: center;
             }
+            .home-beauty_quate__block {
+              max-width: 50%;
+              padding: 10px 10px 20px 10px;
+              @media (max-width: 960px) {
+                max-width: 100%;
+                &:nth-child(1) {
+                  margin: 0 0 100px 0;
+                }
+                &:nth-child(2) {
+                  margin: 0 0 100px 0;
+                }
+              }
+              .home-beauty_quate__text {
+                padding: 0;
+                font-size: 1.5rem;
+              }
+              .home-beauty_quate__name {
+                left: 10px;
+              }
+              .home-beauty_quate__circle {
+                right: 10px;
+                bottom: -75px;
+              }
+            }
+          }
         }
+      }
     }
+  }
 }
 @media (max-width: 420px) {
-    .home-beauty {
-        .home-beauty_quate {
-            .home-beauty_quate__inner {
-                padding: 50px 0;
-                .home-beauty_quate__list {
-                    .home-beauty_quate__content {
-                        .home-beauty_quate__block {
-                            .home-beauty_quate__text {
-                                padding: 0;
-                                font-size: 1.2rem;
-                            }
-                            .home-beauty_quate__name {
-                                left: 10px;
-                                font-size: 1.5rem;
-                            }
-                            .home-beauty_quate__circle {
-                                right: 10px;
-                                bottom: -75px;
-                            }
-                           
-                        }
-                    }
-                }
+  .home-beauty {
+    .home-beauty_quate {
+      .home-beauty_quate__inner {
+        padding: 50px 0;
+        .home-beauty_quate__list {
+          .home-beauty_quate__content {
+            .home-beauty_quate__block {
+              .home-beauty_quate__text {
+                padding: 0;
+                font-size: 1.2rem;
+              }
+              .home-beauty_quate__name {
+                left: 10px;
+                font-size: 1.5rem;
+              }
+              .home-beauty_quate__circle {
+                right: 10px;
+                bottom: -75px;
+              }
             }
+          }
         }
+      }
     }
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

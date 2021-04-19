@@ -1,23 +1,20 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 
-
 import HeaderContainer from "../header/HeaderContainer";
-import ModalWindowContainer from '../modalWindow/ModalWindowContainer';
-import FooterContainer from '../footer/FooterContainer';
-
-
+import ModalWindowContainer from "../modalWindow/ModalWindowContainer";
+import FooterContainer from "../footer/FooterContainer";
 
 import HomeFit from "./home/HomeFit";
 import Ems from "./ems/Ems";
 import Stretching from "./stretching/Stretching";
 import Fight from "./fight/Fight";
 import Functional from "./functional/Functional";
-import Workout from "./workout/Workout"
+import Workout from "./workout/Workout";
 
 class Fit extends React.Component {
   render() {
-    sessionStorage.setItem('Theme', 'fitZone');
+    sessionStorage.setItem("Theme", "fitZone");
     return (
       <>
         <ModalWindowContainer />
@@ -31,9 +28,6 @@ class Fit extends React.Component {
             <Route path={"/fit/functional"} exact component={Functional} />
             <Route path={"/fit/workout"} exact component={Workout} />
           </Switch>
-
-         
-
         </main>
         <FooterContainer />
       </>

@@ -1,289 +1,268 @@
 .quate {
-    background-image: url('../../../../img/homeFit/quate.jpg');
-    background-size: cover;
-    width: 100%;
-   
-    .quate__inner {
-        padding: 100px 80px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .quate__title {
-            font-size: 36px;
-            font-family: 'Gilroy-Bold';
-            text-align: center;
-            display: inline-block;
-            border-bottom: 2px solid #fff;
-            padding: 0 5px 15px 5px;
-        }
-        .quate__list {
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-                .quate__nav {
-                    display: none;
-                }
-                .quate__block_0 {
-                    margin: 20px;
-                  
-                    max-width: 500px;
-                    height: 300px;
-                    .quate__block_inner {
-                        font-size: 18px;
-                        background-position: 60px 250px;
-                        background-repeat: no-repeat;
-                        text-shadow: 1px 1px 1px #000;
-                        .quate__block_title {
-                            padding: 70px 20px 20px 0;
-                            color: #000;
-                            font-family: 'Gilroy-Bold';
-                            background-image: url('../../../../img/homeFit/slide/qutes.png');
-                            background-repeat: no-repeat;
-                        }
-                        .quate__block_text {
-                            padding: 20px;
-                            background-color: #000;
-                            
-                            box-shadow: 1px 1px 2px #000;
-                        }
-                        .quate__block_name {
-                            padding: 30px 20px 20px 0 ;
-                            color: #000;
-                            font-family: 'Gilroy-Bold';
-                        }
-                    }
-                }
-              
-                .quate__block_1 {
-                    margin: 10px;
-                   
-                    max-width: 350px;
-                    box-shadow: 1px 1px 10px #000;
-                }
-                .quate__block_2 {
-                    margin: 10px;
-                   
-                    max-width: 400px;
-                    box-shadow: 1px 1px 10px #000;
-                }
-               
-                .quate__block_3 {
-                    margin: 10px;
-                   
-                    max-width: 400px;
-                    .quate__block_inner {
-                        font-size: 18px;
-                        background-position: 60px 445px;
-                        background-repeat: no-repeat;
-                        .quate__block_title {
-                            padding: 70px 20px 20px 0;
-                            text-shadow: 1px 1px 1px #000;
-                            color: #000;
-                            font-family: 'Gilroy-Bold';
-                            background-image: url('../../../../img/homeFit/slide/qutes.png');
-                            background-repeat: no-repeat;
-                        }
-                        .quate__block_text {
-                            padding: 20px;
-                            background-color: #000;
-                            
-                            box-shadow: 1px 1px 2px #000;
-                        }
-                        .quate__block_name {
-                            padding: 30px 20px 20px 0 ;
-                            color: #000;
-                            font-family: 'Gilroy-Bold';
-                            text-shadow: 1px 1px 1px #000;
-                        }
-                    }
-                }
-                .quate__block_4 {
-                   
-                    max-width: 500px;
-                    margin: 10px;
-                    .quate__block_inner {
-                        color: #fff;
-                        font-size: 18px;
-                        
-                        background-position: 60px 345px;
-                        background-repeat: no-repeat;
-                        .quate__block_title {
-                            padding: 70px 20px 20px 0;
-                            background-image: url('../../../../img/homeFit/slide/quots_white.png');
-                            background-repeat: no-repeat;
-                            font-family: 'Gilroy-Bold';
-                            
-                        }
-                        .quate__block_text {
-                            padding: 20px;
-                            background-color: #fff;
-                            color: #000;
-                            box-shadow: 1px 1px 2px #fff;
-                        }
-                        .quate__block_name {
-                            padding: 30px 20px 20px 0 ;
-                        
-                            font-family: 'Gilroy-Bold';
-                        }
-                    }
-                }
-                .quate__block_5 {
-                    margin: 10px;
-                   
-                    max-width: 400px;
-                    box-shadow: 1px 1px 10px #000;
-                }
-           }
-            
-        
-    }
-}
+  background-image: url("../../../../img/homeFit/quate.jpg");
+  background-size: cover;
+  width: 100%;
 
+  .quate__inner {
+    padding: 100px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .quate__title {
+      font-size: 36px;
+      font-family: "Gilroy-Bold";
+      text-align: center;
+      display: inline-block;
+      border-bottom: 2px solid #fff;
+      padding: 0 5px 15px 5px;
+    }
+    .quate__list {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      .quate__nav {
+        display: none;
+      }
+      .quate__block_0 {
+        margin: 20px;
+
+        max-width: 500px;
+        height: 300px;
+        .quate__block_inner {
+          font-size: 18px;
+          background-position: 60px 250px;
+          background-repeat: no-repeat;
+          text-shadow: 1px 1px 1px #000;
+          .quate__block_title {
+            padding: 70px 20px 20px 0;
+            color: #000;
+            font-family: "Gilroy-Bold";
+            background-image: url("../../../../img/homeFit/slide/qutes.png");
+            background-repeat: no-repeat;
+          }
+          .quate__block_text {
+            padding: 20px;
+            background-color: #000;
+
+            box-shadow: 1px 1px 2px #000;
+          }
+          .quate__block_name {
+            padding: 30px 20px 20px 0;
+            color: #000;
+            font-family: "Gilroy-Bold";
+          }
+        }
+      }
+
+      .quate__block_1 {
+        margin: 10px;
+
+        max-width: 350px;
+        box-shadow: 1px 1px 10px #000;
+      }
+      .quate__block_2 {
+        margin: 10px;
+
+        max-width: 400px;
+        box-shadow: 1px 1px 10px #000;
+      }
+
+      .quate__block_3 {
+        margin: 10px;
+
+        max-width: 400px;
+        .quate__block_inner {
+          font-size: 18px;
+          background-position: 60px 445px;
+          background-repeat: no-repeat;
+          .quate__block_title {
+            padding: 70px 20px 20px 0;
+            text-shadow: 1px 1px 1px #000;
+            color: #000;
+            font-family: "Gilroy-Bold";
+            background-image: url("../../../../img/homeFit/slide/qutes.png");
+            background-repeat: no-repeat;
+          }
+          .quate__block_text {
+            padding: 20px;
+            background-color: #000;
+
+            box-shadow: 1px 1px 2px #000;
+          }
+          .quate__block_name {
+            padding: 30px 20px 20px 0;
+            color: #000;
+            font-family: "Gilroy-Bold";
+            text-shadow: 1px 1px 1px #000;
+          }
+        }
+      }
+      .quate__block_4 {
+        max-width: 500px;
+        margin: 10px;
+        .quate__block_inner {
+          color: #fff;
+          font-size: 18px;
+
+          background-position: 60px 345px;
+          background-repeat: no-repeat;
+          .quate__block_title {
+            padding: 70px 20px 20px 0;
+            background-image: url("../../../../img/homeFit/slide/quots_white.png");
+            background-repeat: no-repeat;
+            font-family: "Gilroy-Bold";
+          }
+          .quate__block_text {
+            padding: 20px;
+            background-color: #fff;
+            color: #000;
+            box-shadow: 1px 1px 2px #fff;
+          }
+          .quate__block_name {
+            padding: 30px 20px 20px 0;
+
+            font-family: "Gilroy-Bold";
+          }
+        }
+      }
+      .quate__block_5 {
+        margin: 10px;
+
+        max-width: 400px;
+        box-shadow: 1px 1px 10px #000;
+      }
+    }
+  }
+}
 
 @media (max-width: 1280px) {
-    .quate {
-        
-        .quate__inner {
-            padding: 50px 0;
-           
-           
-            .quate__title {
-               
-               
+  .quate {
+    .quate__inner {
+      padding: 50px 0;
+
+      .quate__title {
+      }
+      .quate__list {
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        .quate__nav {
+          display: flex;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+          .quate__nav_item {
+            display: block;
+            margin: 30px 15px;
+            width: 60px;
+            height: 60px;
+            background-repeat: no-repeat;
+            &:active {
+              width: 70px;
+              height: 70px;
             }
-            .quate__list {
-                
-                min-height: 100vh;
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-start;
-                .quate__nav {
-                    display: flex;
-                    flex-wrap: nowrap;
-                    justify-content: space-between;
-                    .quate__nav_item {
-                        display: block;
-                        margin: 30px 15px;
-                        width: 60px;
-                        height: 60px;
-                        background-repeat: no-repeat;
-                        &:active {
-                            width: 70px;
-                            height: 70px;
-                        }
-                        &.left {
-                            background-image: url('../../../../img/homeFit/qeats_arrow.svg');
-                            -webkit-transform: rotate(-90deg);
-                            -moz-transform: rotate(-90deg);
-                            -ms-transform: rotate(-90deg);
-                            -o-transform: rotate(-90deg);
-                            transform: rotate(-90deg);
-                        }  
-                        &.right {
-                            background-image: url('../../../../img/homeFit/qeats_arrow.svg');
-                            -webkit-transform: rotate(90deg);
-                            -moz-transform: rotate(90deg);
-                            -ms-transform: rotate(90deg);
-                            -o-transform: rotate(90deg);
-                            transform: rotate(90deg);
-                        }
-                    }
-                }
-                
-                    .quate__block_0 {
-                        display: none;
-                        padding: 0;
-                        margin: 0;
-                        animation: quateShow 1s ease;
-                        .quate__block_inner {
-                            font-size: 1rem;
-                        }
-                        &.active {
-                            display: block;
-
-                        }
-                    }
-                    .quate__block_1 {
-                        display: none;
-                        padding: 0;
-                        margin: 0;
-                        animation: quateShow 1s ease;
-                        min-width: 100%;
-                        video {
-                            width: 100%;
-                        }
-                        &.active {
-                            display: block;
-                            
-                        }
-                    }
-                    .quate__block_2 {
-                        // min-width: 100%;
-                        display: none;
-                        padding: 0;
-                        margin: 0 auto;
-                        animation: quateShow 1s ease;
-                        &.active {
-                            display: block;
-                           
-                        }
-                    }
-                    .quate__block_3 {
-                        padding: 0;
-                        margin: 0;
-                        display: none;
-                        animation: quateShow 1s ease;
-                        &.active {
-                            display: block;
-                            
-                        }
-                    }
-                    .quate__block_4 {
-                        padding: 0;
-                        margin: 0;
-                        display: none;
-                        animation: quateShow 1s ease;
-                        &.active {
-                            display: block;
-                            
-                        }
-                    }
-                    .quate__block_5 {
-                        min-width: 100%;
-                        padding: 0;
-                        margin: 0;
-                        display: none;
-                        animation: quateShow 1s ease;
-                        &.active {
-                            display: block;
-                            
-                        }
-                    }
-                   
-                }
-
-                
-            
+            &.left {
+              background-image: url("../../../../img/homeFit/arrow_white.png");
+              -webkit-transform: rotate(-90deg);
+              -moz-transform: rotate(-90deg);
+              -ms-transform: rotate(-90deg);
+              -o-transform: rotate(-90deg);
+              transform: rotate(-90deg);
+            }
+            &.right {
+              background-image: url("../../../../img/homeFit/arrow_white.png");
+              -webkit-transform: rotate(90deg);
+              -moz-transform: rotate(90deg);
+              -ms-transform: rotate(90deg);
+              -o-transform: rotate(90deg);
+              transform: rotate(90deg);
+            }
+          }
         }
+
+        .quate__block_0 {
+          display: none;
+          padding: 0;
+          margin: 0;
+          animation: quateShow 1s ease;
+          .quate__block_inner {
+            font-size: 1rem;
+          }
+          &.active {
+            display: block;
+          }
+        }
+        .quate__block_1 {
+          display: none;
+          padding: 0;
+          margin: 0;
+          animation: quateShow 1s ease;
+          min-width: 100%;
+          video {
+            width: 100%;
+          }
+          &.active {
+            display: block;
+          }
+        }
+        .quate__block_2 {
+          // min-width: 100%;
+          display: none;
+          padding: 0;
+          margin: 0 auto;
+          animation: quateShow 1s ease;
+          video {
+            width: 100%;
+          }
+          &.active {
+            display: block;
+          }
+        }
+        .quate__block_3 {
+          padding: 0;
+          margin: 0;
+          display: none;
+          animation: quateShow 1s ease;
+          &.active {
+            display: block;
+          }
+        }
+        .quate__block_4 {
+          padding: 0;
+          margin: 0;
+          display: none;
+          animation: quateShow 1s ease;
+          &.active {
+            display: block;
+          }
+        }
+        .quate__block_5 {
+          min-width: 100%;
+          padding: 0;
+          margin: 0;
+          display: none;
+          animation: quateShow 1s ease;
+          &.active {
+            display: block;
+          }
+        }
+      }
     }
+  }
 }
-
-
 
 @keyframes quateShow {
-    0% {
-        margin-top: -1000px;
-        opacity: 0;
-    }
-    75% {
-        opacity: .3;
-    }
-    100% {
-        margin-top: 0;
-        opacity: 1;
-    }
+  0% {
+    margin-top: -1000px;
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.3;
+  }
+  100% {
+    margin-top: 0;
+    opacity: 1;
+  }
 }
-
-

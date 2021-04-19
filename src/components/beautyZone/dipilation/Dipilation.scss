@@ -1,486 +1,505 @@
-
 .depilation {
-
-    .depilation__fone {
-
-        .depilation__promo {
-            width: 100%;
-            height: 100vh;
-            background-repeat: no-repeat;
-            background-size: cover;
-            &.img_1 {
-                background-image: url('../../../img/depilation/fone_1.jpg');
-                background-position-x: 60%;
-                .depilation__promo_inner {
-                    @media (max-width: 420px) {
-                        background-color: rgba($color: #ffffff, $alpha: .5);
-                    } 
-                }
-                .depilation__king-btn {
-                    background: linear-gradient(180.07deg, rgba(221, 96, 137, 1) 1.78%, rgba(247, 185, 151, 1) 99.99%);
-                }
-            }
-            &.img_2 {
-                background-image: url('../../../img/depilation/fone_2.jpg');
-                background-position-x: 40%;
-                .depilation__promo_inner {
-                    @media (max-width: 420px) {
-                        background-color: rgba($color: #000000, $alpha: .5);
-                    } 
-                }
-                .depilation__king-btn {
-                    background: linear-gradient(90deg, #BDC3C7 0%, #2C3E50 100%);
-                }
-                .depilation__title {
-                    color: #fff;
-                }
-                .depilation__discription {
-                    color: #fff;
-                }
-            }
-            .depilation__promo_inner {
-                width: 40%;
-                height: 100vh;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                flex-wrap: nowrap;
-                &.right {
-                    float: right;
-                }
-                @media (max-width: 1800px) {
-                    width: 50%;
-                }
-                @media (max-width: 1140px) {
-                    width: 60%;
-                }
-                @media (max-width: 960px) {
-                    width: 70%;
-                }
-                @media (max-width: 767px) {
-                    width: 100%;
-                }
-                .depilation__title {
-                    font-size: 5rem;
-                    font-family: Gilroy-Bold;
-                    margin: 10px 20px 40px 20px;
-                    @media (max-width: 767px) {
-                        font-size: 2rem;
-                        margin: 10px 20px 10px 20px;
-                        
-                    }
-                }
-                .depilation__discription {
-                    font-size: 1.5rem;
-                    text-align: center;
-                    line-height: 40px;
-                    margin: 10px 10px 50px 10px;
-                    @media (max-width: 767px) {
-                        font-size: 1.2rem;
-                        line-height: 25px;
-                        margin: 10px 10px 30px 10px;
-                    }
-                }
-                .depilation__king-btn {
-                    cursor: pointer;
-                    padding: 25px 120px;
-                    color: #fff;
-                    border-radius: 40px;
-                    font-size: 1.5rem;
-                    font-family: Gilroy-Bold;
-                    @media (max-width: 767px) {
-                        padding: 25px 120px;
-                        font-size: 1.2rem;
-                        margin: 0 10px;
-                    } 
-                    @media (max-width: 420px) {
-                        padding: 20px 50px;
-                    } 
-                }
-            }
+  .depilation__fone {
+    .depilation__promo {
+      width: 100%;
+      height: 100vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+      &.img_1 {
+        background-image: url("../../../img/depilation/fone_1.jpg");
+        background-position-x: 60%;
+        .depilation__promo_inner {
+          @media (max-width: 420px) {
+            background-color: rgba($color: #ffffff, $alpha: 0.5);
+          }
         }
-    }
+        .depilation__king-btn {
+          background: linear-gradient(
+            180.07deg,
+            rgba(221, 96, 137, 1) 1.78%,
+            rgba(247, 185, 151, 1) 99.99%
+          );
+        }
+      }
+      &.img_2 {
+        background-image: url("../../../img/depilation/fone_2.jpg");
+        background-position-x: 40%;
+        .depilation__promo_inner {
+          @media (max-width: 420px) {
+            background-color: rgba($color: #000000, $alpha: 0.5);
+          }
+        }
+        .depilation__king-btn {
+          background: linear-gradient(90deg, #bdc3c7 0%, #2c3e50 100%);
+        }
+        .depilation__title {
+          color: #fff;
+        }
+        .depilation__discription {
+          color: #fff;
+        }
+      }
 
-    .depilation_advantage {
-        max-width: 1920px;
-        width: 100%;
+      &.img_3 {
+        background-image: url("../../../img/depilation/fone_3.jpg");
+        background-position-x: 60%;
+        .depilation__promo_inner {
+          color: #fff;
+          .depilation__title {
+            font-size: 3rem;
+          }
+          @media (max-width: 420px) {
+            background-color: rgba($color: #000, $alpha: 0.5);
+            .depilation__title {
+              font-size: 2rem;
+            }
+            .depilation__discription {
+              p {
+                &:nth-child(2) {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+        .depilation__king-btn {
+          background: linear-gradient(
+            180.07deg,
+            rgba(221, 96, 137, 1) 1.78%,
+            rgba(247, 185, 151, 1) 99.99%
+          );
+        }
+      }
+      .depilation__promo_inner {
+        width: 40%;
+        height: 100vh;
         display: flex;
-        margin: 0 auto;
-        .depilation_advantage__content {
-            width: 50%;
-            background-image: url('../../../img/depilation/advantage_text.png');
-            background-repeat: no-repeat;
-            background-size: 100%;
-            background-position: center bottom 25%;
-            @media (max-width: 960px) {
-                width: 100%;
-            }
-            @media (max-width: 420px) {
-                background-position: center top 25%;
-            }
-            .depilation_advantage__inner {
-                padding: 100px 80px 0 100px;
-                @media (max-width: 1280px) {
-                    padding: 100px 40px 10px 50px;
-                }
-                @media (max-width: 960px) {
-                    padding: 100px 50px;
-                }
-                @media (max-width: 420px) {
-                    padding: 50px 10px;
-                }
-                .depilation_advantage__title {
-                    font-size: 36px;
-                    font-family: Gilroy-Bold;
-                    background: linear-gradient(90deg, #DD5E89 0%, #F7BB97 60%);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    span {
-                        margin: 20px 0 35px 0;
-                        display: block;
-                        width: 100%;
-                        height: 3px;
-                        background: linear-gradient(180.07deg, rgba(221, 96, 137, 1) 1.78%, rgba(247, 185, 151, 1) 99.99%);
-                    }
-                }
-                .depilation_advantage__text {
-                    font-size: 1.5rem;
-                    line-height: 35px;
-                    p {
-                        &:nth-child(2) {
-                            margin-top: 30px;
-                        }
-                    }
-                   
-                }
-            }
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        &.right {
+          float: right;
         }
-        .depilation_advantage__img {
-            background-image: url('../../../img/depilation/advantage.jpg');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-
-            width: 50%;
-            height: 100vh;
-            @media (max-width: 960px) {
-                display: none;
-            }
+        @media (max-width: 1800px) {
+          width: 50%;
         }
+        @media (max-width: 1140px) {
+          width: 60%;
+        }
+        @media (max-width: 960px) {
+          width: 70%;
+        }
+        @media (max-width: 767px) {
+          width: 100%;
+        }
+        .depilation__title {
+          font-size: 5rem;
+          font-family: Gilroy-Bold;
+          margin: 10px 20px 40px 20px;
+          @media (max-width: 767px) {
+            font-size: 2rem;
+            margin: 10px 20px 10px 20px;
+          }
+        }
+        .depilation__discription {
+          font-size: 1.5rem;
+          text-align: center;
+          line-height: 40px;
+          margin: 10px 10px 50px 10px;
+          @media (max-width: 767px) {
+            font-size: 1.2rem;
+            line-height: 25px;
+            margin: 10px 10px 30px 10px;
+          }
+        }
+        .depilation__king-btn {
+          cursor: pointer;
+          padding: 25px 120px;
+          color: #fff;
+          border-radius: 40px;
+          font-size: 1.5rem;
+          font-family: Gilroy-Bold;
+          @media (max-width: 767px) {
+            padding: 25px 120px;
+            font-size: 1.2rem;
+            margin: 0 10px;
+          }
+          @media (max-width: 420px) {
+            padding: 20px 50px;
+          }
+          &:hover {
+            animation: homeBeautyBtn 1s ease;
+            box-shadow: 1px 1px 50px #dd5e89 inset;
+          }
+        }
+      }
     }
+  }
 
+  .depilation_advantage {
+    max-width: 1920px;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    .depilation_advantage__content {
+      width: 50%;
+      background-image: url("../../../img/depilation/advantage_text.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: center bottom 25%;
+      @media (max-width: 960px) {
+        width: 100%;
+      }
+      @media (max-width: 420px) {
+        background-position: center top 25%;
+      }
+      .depilation_advantage__inner {
+        padding: 100px 80px 0 100px;
+        @media (max-width: 1280px) {
+          padding: 100px 40px 10px 50px;
+        }
+        @media (max-width: 960px) {
+          padding: 100px 50px;
+        }
+        @media (max-width: 420px) {
+          padding: 50px 10px;
+        }
+        .depilation_advantage__title {
+          font-size: 36px;
+          font-family: Gilroy-Bold;
+          background: linear-gradient(90deg, #dd5e89 0%, #f7bb97 60%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          span {
+            margin: 20px 0 35px 0;
+            display: block;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(
+              180.07deg,
+              rgba(221, 96, 137, 1) 1.78%,
+              rgba(247, 185, 151, 1) 99.99%
+            );
+          }
+        }
+        .depilation_advantage__text {
+          font-size: 1.5rem;
+          line-height: 35px;
+          p {
+            &:nth-child(2) {
+              margin-top: 30px;
+            }
+          }
+        }
+      }
+    }
+    .depilation_advantage__img {
+      background-image: url("../../../img/depilation/advantage.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
 
-
+      width: 50%;
+      height: 100vh;
+      @media (max-width: 960px) {
+        display: none;
+      }
+    }
+  }
 }
-
-
-
 
 .depilation_price {
-    width: 100%;
-    max-width: 1920px;
-    margin: 0 auto;
-    height: 50vw;
-    .depilation_price__content {
-        display: flex;
-        height: 100%;
-        .depilation_price__block {
-            width: 100%;
-            display: flex;
-            height: 100%;
-            .depilation_price__img {
-                position: relative;
-                
-                .depilation_price__title {
-                    font-size: 36px;
-                    width: 100%;
-                    display: flex;
-                    justify-content: center;
-                    position: absolute;
-                    bottom: 0;
-                    padding: 30px;
-                    background-color: rgba(255, 255, 255, 0.432);
-                }
-            }
-            &.openShe {
-                
-                .depilation_price__img {
-                    width: 100%;
-            
-                }
-                .depilation_price__text {
-                    width: 100%;
-                    
-                    .depilation_price__inner {
-                        overflow-y: auto;
-                        display: block;
-                    }
-                }
-            }
-            &.openHe {
-                flex-direction: row-reverse;
-                .depilation_price__img {
-                    width: 100%;
-                }
-                .depilation_price__text {
-                    width: 100%;
-                    .depilation_price__inner {
-                        overflow-y: auto;
-                        display: block;
-                    }
-                }
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  height: 50vw;
+  .depilation_price__content {
+    display: flex;
+    height: 100%;
+    .depilation_price__block {
+      width: 100%;
+      display: flex;
+      height: 100%;
+      .depilation_price__img {
+        position: relative;
 
-            }
-            &.hideHe {
-                display: none;
-            }
-            &.hideShe {
-                display: none;
-            }
-            .depilation_price__img {
-                cursor: pointer;
-                background-size: cover;
-                &.she {
-                    width: 100%;
-                    height: 100%;
-                    background-image: url('../../../img/depilation/prace_she.jpg');
-                }
-                &.he {
-                    width: 100%;
-                    height: 100%;
-                    background-image: url('../../../img/depilation/prace_he.jpg');
-                }
-            }
-
-            .depilation_price__text {
-               
-                .depilation_price__inner {
-                    display: none;
-                    padding: 50px 50px 50px 50px;
-                    height: 100%;
-                    animation: DepilationShowPrice 1s ease;
-                    p {
-                        width: 100%;
-                        display: grid;
-                        font-size: 1.2rem;
-                        grid-template-columns: 1.5fr 1fr 1fr;
-                        padding: 15px 5px;
-                        border-bottom: 2px solid rgba(0, 0, 0, 0.164);
-                    }
-                }
-            }
-            
+        .depilation_price__title {
+          font-size: 36px;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          position: absolute;
+          bottom: 0;
+          padding: 30px;
+          background-color: rgba(255, 255, 255, 0.432);
         }
+      }
+      &.openShe {
+        .depilation_price__img {
+          width: 100%;
+        }
+        .depilation_price__text {
+          width: 100%;
+
+          .depilation_price__inner {
+            overflow-y: auto;
+            display: block;
+          }
+        }
+      }
+      &.openHe {
+        flex-direction: row-reverse;
+        .depilation_price__img {
+          width: 100%;
+        }
+        .depilation_price__text {
+          width: 100%;
+          .depilation_price__inner {
+            overflow-y: auto;
+            display: block;
+          }
+        }
+      }
+      &.hideHe {
+        display: none;
+      }
+      &.hideShe {
+        display: none;
+      }
+      .depilation_price__img {
+        cursor: pointer;
+        background-size: cover;
+        &.she {
+          width: 100%;
+          height: 100%;
+          background-image: url("../../../img/depilation/prace_she.jpg");
+        }
+        &.he {
+          width: 100%;
+          height: 100%;
+          background-image: url("../../../img/depilation/prace_he.jpg");
+        }
+      }
+
+      .depilation_price__text {
+        .depilation_price__inner {
+          display: none;
+          padding: 50px 50px 50px 50px;
+          height: 100%;
+          animation: DepilationShowPrice 1s ease;
+          p {
+            width: 100%;
+            display: grid;
+            font-size: 1.2rem;
+            grid-template-columns: 1.5fr 1fr 1fr;
+            padding: 15px 5px;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.164);
+          }
+        }
+      }
     }
+  }
 }
 
-
 @media (max-width: 960px) {
-    .depilation_price {
-        height: 100%;
-        .depilation_price__content {
-            flex-direction: column;
-            .depilation_price__block {
-                flex-direction: column;
-                .depilation_price__img {
-                    .depilation_price__title {
-                        position: relative;
-                        padding: 100px 30px;
-                        @media (max-width: 420px) {
-                            padding: 60px 30px;
-                        }
-                    }
-                }
-                &.openHe {
-                    flex-direction: column;
-                }
-                .depilation_price__text {
-                    .depilation_price__inner {
-                        padding: 30px;
-                        p {
-                            grid-template-columns: 2fr 1fr 1fr;
-                            @media (max-width: 767px) {
-                                font-size: 1rem;
-                            }
-                        }
-                        @media (max-width: 420px) {
-                            padding: 30px 10px;
-                            p {
-                                font-size: .8rem;  
-                            }
-                        }
-                    }
-                }
+  .depilation_price {
+    height: 100%;
+    .depilation_price__content {
+      flex-direction: column;
+      .depilation_price__block {
+        flex-direction: column;
+        .depilation_price__img {
+          .depilation_price__title {
+            position: relative;
+            padding: 100px 30px;
+            @media (max-width: 420px) {
+              padding: 60px 30px;
             }
+          }
         }
+        &.openHe {
+          flex-direction: column;
+        }
+        .depilation_price__text {
+          .depilation_price__inner {
+            padding: 30px;
+            p {
+              grid-template-columns: 2fr 1fr 1fr;
+              @media (max-width: 767px) {
+                font-size: 1rem;
+              }
+            }
+            @media (max-width: 420px) {
+              padding: 30px 10px;
+              p {
+                font-size: 0.8rem;
+              }
+            }
+          }
+        }
+      }
     }
+  }
 }
 
 @keyframes DepilationShowPrice {
-    0% {
-        width: 0;
-        opacity: 0;
-        background-color: rgba(255, 255, 255, 0);    
-    }
-    100% {
-        width: 100%;
-        opacity: 1;
-        background-color: rgba(255, 255, 255, 100);  
-    }
+  0% {
+    width: 0;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 100);
+  }
 }
 
-
-
-
-
 .lamination {
-    width: 100%;
-    max-width: 1920px;
-    margin: 0 auto;
-    display: flex;
-    max-height: 100%;
-    overflow: hidden;
-    .lamination__img {
-        width: 50%;
-        background-image: url('../../../img/depilation/lamination_price.jpg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        max-width: 836px;
-        min-width: 500px;
-        height: 100vh;
-        margin-right: 100px;
-        @media (max-width: 1380px) {
-            margin-right: 50px;
-        }
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  max-height: 100%;
+  overflow: hidden;
+  .lamination__img {
+    width: 50%;
+    background-image: url("../../../img/depilation/lamination_price.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 836px;
+    min-width: 500px;
+    height: 100vh;
+    margin-right: 100px;
+    @media (max-width: 1380px) {
+      margin-right: 50px;
     }
-    .lamination__content {
-        min-width: 50%;
-        .lamination__inner {
-            padding: 100px;
-            @media (max-width: 1380px) {
-                padding: 100px 100px 100px 50px;
-            }
-            .lamination__title {
-                font-size: 36px;
-                font-family: Gilroy-Bold;
-                background: linear-gradient(90deg, #DD5E89 0%, #F7BB97 60%);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                text-align: center;
-                span {
-                    margin-top: 20px;
-                    width: 100%;
-                    height: 3px;
-                    background: linear-gradient(90deg, #DD5E89 0%, #F7BB97 60%);
-                    display: block;
-                    margin-bottom: 50px;
-                }
-            }
-            .lamination__price {
-                display: flex;
-                justify-content: center;
-                
-                &.bottom {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    .lamination__price_block {
-                        display: grid;
-                        grid-template-columns: 2fr 1fr;
-                        margin: 0;
-                        padding: 15px 0;
-                        border-bottom: 2px solid #0000002a;
-                        span {
-                            padding: 0;
-                            margin: 0;
-                            border: none;
-                        }
-                    }
-                }
-                .lamination__price_block {
-                    margin: 10px;
-                    display: flex;
-                    flex-direction: column;
-                    text-align: center;
-                    font-size: 1.5rem;
-                    line-height: 35px;
-                    span {
-                        border-top: 2px solid #0000002a;
-                        padding: 10px;
-                        margin-top: 10px;
-                        display: block;
-                        border-bottom: 2px solid #0000002a;
-                        white-space: nowrap;
-                    }
-                }
-            }
+  }
+  .lamination__content {
+    min-width: 50%;
+    .lamination__inner {
+      padding: 100px;
+      @media (max-width: 1380px) {
+        padding: 100px 100px 100px 50px;
+      }
+      .lamination__title {
+        font-size: 36px;
+        font-family: Gilroy-Bold;
+        background: linear-gradient(90deg, #dd5e89 0%, #f7bb97 60%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        span {
+          margin-top: 20px;
+          width: 100%;
+          height: 3px;
+          background: linear-gradient(90deg, #dd5e89 0%, #f7bb97 60%);
+          display: block;
+          margin-bottom: 50px;
         }
+      }
+      .lamination__price {
+        display: flex;
+        justify-content: center;
+
+        &.bottom {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          .lamination__price_block {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            margin: 0;
+            padding: 15px 0;
+            border-bottom: 2px solid #0000002a;
+            span {
+              padding: 0;
+              margin: 0;
+              border: none;
+            }
+          }
+        }
+        .lamination__price_block {
+          margin: 10px;
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          font-size: 1.5rem;
+          line-height: 35px;
+          span {
+            border-top: 2px solid #0000002a;
+            padding: 10px;
+            margin-top: 10px;
+            display: block;
+            border-bottom: 2px solid #0000002a;
+            white-space: nowrap;
+          }
+        }
+      }
     }
+  }
 }
 
 @media (max-width: 1280px) {
-    .lamination {
-        flex-direction: column;
-        .lamination__img {
-            width: 100%;
-            max-width: 100%;
-            height: 30vmax;
-            background-position-y: 30%;
-            @media (max-width: 960px) {
-                display: none;
-            }
-        }
-        .lamination__content {
-            .lamination__inner {
-                padding: 100px;
-                .lamination__title {
-                    padding-top: 50px;
-                    font-size: 2rem;
-                }
-                @media (max-width: 960px) {
-                    padding: 0 50px 50px 50px;
-                }
-                @media (max-width: 420px) {
-                    padding: 0 10px 50px 10px;
-                }
-                .lamination__price {
-                    flex-direction: column;
-                    .lamination__price_block {
-                        margin: 0;
-                        flex-wrap: nowrap;
-                        flex-direction: row;
-                        justify-content: space-between;
-                        border-top: none;
-                        border-bottom: 2px solid #0000002a;
-                        text-align: start;
-                        span {
-                            border-bottom: none;
-                            border-top: none;
-                        }
-                    }
-                    &.bottom {
-                        align-items: flex-start;
-                        justify-content: flex-start;
-                        
-                        .lamination__price_block {
-                            display: flex;
-                            width: 100%;
-                            justify-content: space-between;
-                            
-                        }
-                        
-                    }
-                    .lamination__price_block {
-                        font-size: 1.2rem;
-                        @media (max-width: 420px) {
-                            font-size: 1rem;
-                        }
-                    }
-                }
-            }
-        }
+  .lamination {
+    flex-direction: column;
+    .lamination__img {
+      width: 100%;
+      max-width: 100%;
+      height: 30vmax;
+      background-position-y: 30%;
+      @media (max-width: 960px) {
+        display: none;
+      }
     }
-    
+    .lamination__content {
+      .lamination__inner {
+        padding: 100px;
+        .lamination__title {
+          padding-top: 50px;
+          font-size: 2rem;
+        }
+        @media (max-width: 960px) {
+          padding: 0 50px 50px 50px;
+        }
+        @media (max-width: 420px) {
+          padding: 0 10px 50px 10px;
+        }
+        .lamination__price {
+          flex-direction: column;
+          .lamination__price_block {
+            margin: 0;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            justify-content: space-between;
+            border-top: none;
+            border-bottom: 2px solid #0000002a;
+            text-align: start;
+            span {
+              border-bottom: none;
+              border-top: none;
+            }
+          }
+          &.bottom {
+            align-items: flex-start;
+            justify-content: flex-start;
+
+            .lamination__price_block {
+              display: flex;
+              width: 100%;
+              justify-content: space-between;
+            }
+          }
+          .lamination__price_block {
+            font-size: 1.2rem;
+            @media (max-width: 420px) {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
 }
