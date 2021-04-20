@@ -76,9 +76,7 @@ class HomeBeauty extends React.Component {
                       за своей внешностью, а именно за своей кожей. У нас
                       работают только профессионалы с проверенной годами
                       репутацией и чуткостью к потребностям наших клиенток.
-                      Вы можете нам доверять.
                     </p>
-                    <p>Вы можете нам доверять.</p>
                   </div>
                 </li>
                 <li className="home-beauty_advantage__item">
@@ -96,7 +94,6 @@ class HomeBeauty extends React.Component {
                       подобрать средства для домашнего ухода, подходящие именно
                       вашему типу кожи.
                     </p>
-                    <p>Вы можете нам доверять.</p>
                   </div>
                 </li>
                 <li className="home-beauty_advantage__item">
@@ -113,7 +110,6 @@ class HomeBeauty extends React.Component {
                       обмениваются знаниями с коллегами и получают самую свежую
                       информацию в области медицинской косметологии.
                     </p>
-                    <p>Вы можете нам доверять.</p>
                   </div>
                 </li>
                 <li className="home-beauty_advantage__item">
@@ -130,7 +126,6 @@ class HomeBeauty extends React.Component {
                       нехирургическую подтяжку и позволяет предотвратить
                       процессы старения путём поддержания лицевых мышц в тонусе.
                     </p>
-                    <p>Вы можете нам доверять.</p>
                   </div>
                 </li>
               </ul>
@@ -271,7 +266,7 @@ class HomeBeauty extends React.Component {
                         успокоили, предупредили, что ничего страшного. Я очень
                         довольна их работой.{" "}
                       </div>
-                      <p className="home-beauty_quate__name">Нина Кельш</p>
+                      <p className="home-beauty_quate__name">Нина К.</p>
                       <div className="home-beauty_quate__circle">Н</div>
                     </div>
                   </div>
@@ -283,7 +278,7 @@ class HomeBeauty extends React.Component {
                         своего дела 🤍
                       </div>
                       <p className="home-beauty_quate__name">
-                        - ​Аделина Симка
+                        - ​Аделина С.
                       </p>
                       <div className="home-beauty_quate__circle">
                         <p>A</p>
@@ -298,7 +293,7 @@ class HomeBeauty extends React.Component {
                         этом: подготовила кожу, комментировала все этапы и
                         интересовалась самочувствием. Все прошло отлично.
                       </div>
-                      <p className="home-beauty_quate__name">Вероничка П</p>
+                      <p className="home-beauty_quate__name">Вероничка П.</p>
                       <div className="home-beauty_quate__circle">
                         <p>В</p>
                       </div>
@@ -318,7 +313,7 @@ class HomeBeauty extends React.Component {
                         приходите не пожалеете :){" "}
                       </div>
                       <p className="home-beauty_quate__name">
-                        Кристина Григорьева
+                        Кристина Г.
                       </p>
                       <div className="home-beauty_quate__circle">К</div>
                     </div>
@@ -346,7 +341,7 @@ class HomeBeauty extends React.Component {
                         каждой процедурой моя кожа выглядит всё лучше и лучше.{" "}
                       </div>
                       <p className="home-beauty_quate__name">
-                        Мария Марусобель
+                        Мария М.
                       </p>
                       <div className="home-beauty_quate__circle">М</div>
                     </div>
@@ -358,7 +353,7 @@ class HomeBeauty extends React.Component {
                         и кровообращение улучшилось, и цвет лица похорошел.
                         Однозначно рекомендую!
                       </div>
-                      <p className="home-beauty_quate__name">Евгения</p>
+                      <p className="home-beauty_quate__name">Евгения Л.</p>
                       <div className="home-beauty_quate__circle">Е</div>
                     </div>
                   </div>

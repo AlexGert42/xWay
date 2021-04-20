@@ -458,7 +458,7 @@
     background-position-x: 70%;
     box-shadow: 0 50px 150px inset #000;
     background-image: url("../../../img/stretching/adv_fone.jpg");
-    box-shadow: 50px -50px 200px inset #d2cccc;
+    box-shadow: 50px -50px 200px inset #000;
 
     .stretching_advantage__inner {
       padding: 100px 80px;
@@ -534,7 +534,7 @@
     height: 100%;
     display: flex;
     overflow: hidden;
-    @media (max-width: 1280px) {
+    @media (max-width: 960px) {
       flex-direction: column;
     }
     .stretching_res__inner {
@@ -545,11 +545,9 @@
       background-position-x: center;
       background-position-y: 50px;
       background-size: 100%;
-      @media (max-width: 1280px) {
-        width: 100%;
-      }
       @media (max-width: 960px) {
         padding: 50px;
+        width: 100%;
       }
       @media (max-width: 420px) {
         padding: 50px 10px 30px 10px;
@@ -573,12 +571,16 @@
     .stretching_res__slider {
       width: 50%;
       height: 100%;
-      @media (max-width: 1280px) {
+      @media (max-width: 960px) {
         width: 100%;
       }
       .stretching_res__back {
         min-height: 60vmax;
-        background-size: cover;
+        background-size: contain;
+        background-repeat: no-repeat;
+        @media (max-width: 960px) {
+          background-position: center;
+        }
         &.img_1 {
           background-image: url("../../../img/stretching/before_after_1.jpg");
         }
