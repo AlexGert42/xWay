@@ -123,6 +123,7 @@
   .cosmetology {
     .cosmetology_start {
       .cosmetology_start__promo {
+        height: 100vh;
         padding: 100px 10px 50px 10px;
         .cosmetology_start__title {
           font-size: 2rem;
@@ -223,7 +224,6 @@
           }
           &.img_6 {
             background-image: url("../../../img/cosmetology/card_6.jpg");
-
             box-shadow: 105px 6px 53px -25px #fff inset;
           }
           &.img_7 {
@@ -437,12 +437,14 @@
         .cosmetology_price__discription {
           flex-wrap: wrap;
           width: 100%;
+          
           @media (max-width: 768px) {
             flex-direction: column;
             animation: cosmetologyShowBlock 1s ease;
             &.close {
               display: none;
               opacity: 0;
+              
             }
             .cosmetology_price__cost {
               margin: 0 auto;

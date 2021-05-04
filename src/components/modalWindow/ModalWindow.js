@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../../img/logo_text.png";
+import '../form/checkboxStyle.scss'
 
 class modalWindow extends React.Component {
   constructor(props) {
@@ -10,7 +11,7 @@ class modalWindow extends React.Component {
 
       placeholderName: "Введите Имя",
       placeholderPhone: "Введите Номер Телефона",
-
+      checked: false,
       errorData: "",
     };
   }
@@ -18,7 +19,7 @@ class modalWindow extends React.Component {
   handleSubmit = (e) => {
     e.preventDefault();
     const reg = /(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?/;
-    if (this.props.name.length > 0 && reg.test(String(this.props.phone))) {
+    if (this.props.name.length > 0 && reg.test(String(this.props.phone)) && this.state.checked) {
       this.props.setClient({
         name: this.props.name,
         phone: this.props.phone,
@@ -116,6 +117,10 @@ class modalWindow extends React.Component {
                 onChange={this.phone}
                 value={this.props.phone}
               />
+              <input 
+              
+              onClick={() => !this.state.checked ? this.setState({checked: true}) : this.setState({checked: false})}
+              checked={this.state.checked} type="checkbox" id="cb1"/> <label style={{color: '#fff', marginTop: '20px'}} for="cb1">Даю согласие на обработку персональных данных</label>
               <button className={this.props.style.modal__action} type="submit">
                 Заказать Звонок
               </button>

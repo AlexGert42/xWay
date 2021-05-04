@@ -1,20 +1,29 @@
 import React from "react";
+import './checkboxStyle.scss'
 
 class FormFit extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      checked: false,
+      errorData: ''
+    }
+  }
   setName = (e) => this.props.setNameInput(e.target.value);
   setPhone = (e) => this.props.setPhoneInput(e.target.value);
   handleSubmit = (e) => {
     e.preventDefault();
     const reg = /(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?/;
-    if (this.props.name.length > 0 && reg.test(String(this.props.phone))) {
+    if (this.props.name.length > 0 && reg.test(String(this.props.phone)) && this.state.checked ) {
       this.props.setClient({
         name: this.props.name,
         phone: this.props.phone,
         date: JSON.stringify(new Date()),
       });
       this.props.showRsponse(true);
+      this.setState({ errorData: "" });
     } else {
-      this.setState({ errorData: "Некоректные данные" });
+      this.setState({ errorData: "Некоректные данные ввода" });
     }
   };
 
@@ -29,7 +38,7 @@ class FormFit extends React.Component {
             <h3 className={this.props.style.from__title}>
               Стань лучшей версией себя с <span>X-WAY!</span>
             </h3>
-
+            
             <input
               className={this.props.style.form__input}
               placeholder="Имя"
@@ -44,9 +53,13 @@ class FormFit extends React.Component {
               onChange={this.setPhone}
               value={this.props.phone}
             />
-            <button className={this.props.style.form__btn}>ЗАПИСАТЬСЯ</button>
+            <input 
+            onClick={() => !this.state.checked ? this.setState({checked: true}) : this.setState({checked: false})}
+            checked={this.state.checked} type="checkbox" id="cb1"/> <label for="cb1">Даю согласие на обработку персональных данных</label>
+            <button className={this.props.style.form__btn} type="submit">ЗАПИСАТЬСЯ</button>
+            <div className="form__error">{this.state.errorData}</div>
           </form>
-          <div className={this.props.style.form__img} type="submit"></div>
+          <div className={this.props.style.form__img} ></div>
         </div>
       </section>
     );
