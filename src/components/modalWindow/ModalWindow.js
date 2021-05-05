@@ -1,6 +1,5 @@
 import React from "react";
 import logo from "../../img/logo_text.png";
-import '../form/checkboxStyle.scss'
 
 class modalWindow extends React.Component {
   constructor(props) {
@@ -118,9 +117,9 @@ class modalWindow extends React.Component {
                 value={this.props.phone}
               />
               <input 
-              
+               className={this.props.style.form__let}
               onClick={() => !this.state.checked ? this.setState({checked: true}) : this.setState({checked: false})}
-              checked={this.state.checked} type="checkbox" id="cb1"/> <label style={{color: '#fff', marginTop: '20px'}} for="cb1">Даю согласие на обработку персональных данных</label>
+              checked={this.state.checked} type="checkbox" id="cb1"/> <label className={this.props.style.form__lable} for="cb1">Даю согласие на обработку персональных данных</label>
               <button className={this.props.style.modal__action} type="submit">
                 Заказать Звонок
               </button>

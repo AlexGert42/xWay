@@ -165,6 +165,10 @@ $colorText: #fff;
           background-image: url("../../../img/homeFit/work_pic.jpg");
           background-position: 50% 0;
         }
+        &.online_home {
+          background-image: url("../../../img/homeFit/online_pic.jpg");
+          background-position: 50% 0;
+        }
       }
       .card__text {
         padding: 20px 20px 50px 20px;
@@ -276,6 +280,9 @@ $colorText: #fff;
         &:nth-child(5) {
           flex-direction: column;
         }
+        &:nth-child(6) {
+          flex-direction: column-reverse;
+        }
         .card__text {
           margin: 0;
           padding: 30px 0 50px 0;
@@ -310,6 +317,9 @@ $colorText: #fff;
           }
           &.work_home {
             background-position: center;
+          }
+          &.online_home {
+            background-position: left;
           }
         }
         .card__text {

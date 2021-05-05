@@ -733,6 +733,9 @@
         .home-beauty_quate__list {
           .home-beauty_quate__content {
             .home-beauty_quate__block {
+              &:nth-child(2) {
+                display: none;
+              }
               .home-beauty_quate__text {
                 padding: 0;
                 font-size: 1.2rem;

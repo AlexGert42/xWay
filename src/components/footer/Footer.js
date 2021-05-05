@@ -66,11 +66,11 @@ class Footer extends React.Component {
                 <div className={this.props.style.footer__social}>
                   <a
                     className={`${this.props.style.footer__link} ${this.props.style.instagram}`}
-                    href="#"
+                    href="https://instagram.com/xway.st?igshid=13dknte6dlzw4"
                   ></a>
                   <a
                     className={`${this.props.style.footer__link} ${this.props.style.whatsapp}`}
-                    href="#"
+                    href="https://wa.me/79999998283"
                   ></a>
                 </div>
               </div>

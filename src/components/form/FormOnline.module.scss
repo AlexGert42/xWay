@@ -1,39 +1,21 @@
 .form {
+  width: 100%;
   .form__content {
     width: 100%;
-    background-image: url("../../img/homeFit/form_fone.jpg");
+    background-image: url("../../img/online/form_fone.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-    min-height: 642px;
     max-width: 1920px;
     margin: 0 auto;
-    z-index: 3;
-    position: relative;
     padding: 100px 20px;
     display: flex;
-    box-shadow: 50px 50px 200px inset #000;
-
-    .form__img {
-      width: 90%;
-      height: 110%;
-      z-index: 4;
-
-      bottom: 0;
-      position: absolute;
-      background-image: url("../../img/homeFit/form_img.png");
-      background-repeat: no-repeat;
-      background-position: bottom 0 right;
-      background-size: contain;
-    }
     .form__inner {
-      position: relative;
-      z-index: 5;
-      float: left;
       display: flex;
       flex-direction: column;
-
-      margin: 20px 70px 20px 160px;
-
+      margin: 100px 70px 20px 100px;
       .from__title {
+        color: #fff;
         font-size: 36px;
         font-family: Gilroy-Bold;
         margin-bottom: 50px;
@@ -60,32 +42,35 @@
         cursor: pointer;
         display: inline-block;
         padding: 20px;
-        background-color: #dc3a3e;
+        width: 70%;
+        margin: 0 auto;
+        background: linear-gradient(90deg, #DA4453 0%, #89216B 100%);
         font-family: Gilroy-Bold;
         color: #fff;
         font-size: 1.5rem;
-        margin-top: 50px;
+        margin-top: 40px;
         &:hover {
-          box-shadow: 10px 10px 100px inset #520607;
-          animation: formFitBtnActiveEms 1s ease;
+          box-shadow: 10px 10px 100px inset #8a1971;
+          animation: formFitBtnActiveStr 1s ease;
         }
       }
     }
   }
 }
 
-@keyframes formFitBtnActiveEms {
+@keyframes formFitBtnActiveStr {
   0% {
     box-shadow: none;
   }
   100% {
-    box-shadow: 10px 10px 100px inset #520607;
+    box-shadow: 10px 10px 100px inset #8a1971;
   }
 }
 
 @media (max-width: 960px) {
   .form {
     .form__content {
+      background-position: right;
       .form__inner {
         margin: 0;
         width: 100%;
@@ -101,27 +86,26 @@
   .form {
     .form__content {
       padding: 0;
-      .form__img {
-        width: 80%;
-        height: 100%;
-        background-position: bottom 0 right;
-        background-size: cover;
-      }
+      background-position: 90%;
       .form__inner {
         margin: 0;
         width: 100%;
         padding: 50px 10px;
-        background-color: rgba($color: #000000, $alpha: 0.5);
+        background-color: rgba($color: #000, $alpha: 0.5);
         .from__title {
           font-size: 2.5rem;
         }
         .form__input {
           max-width: 100%;
         }
+        .form__btn {
+          width: 100%;
+        }
       }
     }
   }
 }
+
 
 .form__let[type="checkbox"]:checked,
 .form__let[type="checkbox"]:not(:checked) {
@@ -136,6 +120,7 @@
 	padding-left: 28px;
 	line-height: 20px;
 	cursor: pointer;
+  color: #fff
 }
 
 .form__let[type="checkbox"]:checked + .form__lable:before,
@@ -149,6 +134,7 @@
 	border: 1px solid #fff;
 	background-color: rgba(0, 0, 0, 0);
 	user-select: none;
+ 
 }
 
 .form__let[type="checkbox"]:checked + .form__lable:after,
@@ -200,4 +186,3 @@
 	margin-top: 10px;
 	color: #9b0d0f;
 }
-

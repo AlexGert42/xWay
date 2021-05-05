@@ -164,6 +164,7 @@ class Dipilation extends React.Component {
 
         <section className="depilation_price">
           <div className="depilation_price__content">
+            <h3 className="depilation_price__cost"/>
             <div
               className={`depilation_price__block ${this.state.openPriceShe}`}
               onClick={this.openPriceShe}
@@ -313,7 +314,7 @@ class Dipilation extends React.Component {
                     Ботокс ресниц<span>3 000</span>
                   </div>
                 </div>
-                <h2 className="lamination__title">
+                <h2 className="lamination__title two">
                   Оформление бровей и ресниц
                   <span />
                 </h2>

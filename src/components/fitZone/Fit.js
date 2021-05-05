@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
+import './fit.scss'
 
 import HeaderContainer from "../header/HeaderContainer";
 import ModalWindowContainer from "../modalWindow/ModalWindowContainer";
@@ -11,6 +12,8 @@ import Stretching from "./stretching/Stretching";
 import Fight from "./fight/Fight";
 import Functional from "./functional/Functional";
 import Workout from "./workout/Workout";
+import Online from "./online/Online";
+
 
 class Fit extends React.Component {
   render() {
@@ -27,6 +30,7 @@ class Fit extends React.Component {
             <Route path={"/fit/fight"} exact component={Fight} />
             <Route path={"/fit/functional"} exact component={Functional} />
             <Route path={"/fit/workout"} exact component={Workout} />
+            <Route path={"/fit/online"} exact component={Online} />
           </Switch>
         </main>
         <FooterContainer />

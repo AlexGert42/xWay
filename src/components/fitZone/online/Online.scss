@@ -1,0 +1,278 @@
+.online_fit {
+
+    .online_fit__promo {
+        color: #000;
+      animation: blureFone 0.5s ease;
+      width: 100%;
+      height: 100%;
+      .online_fit__fone {
+        .online_fit__promo-text {
+          width: 40%;
+          float: right;
+          padding-top: 200px;
+          margin: 30px 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          @media (max-width: 1280px) {
+            width: 50%;
+          }
+          .online_fit__title {
+            margin: 10px;
+            display: block;
+            text-align: center;
+            font-size: 5rem;
+            font-family: "Gilroy-Bold";
+          }
+          .online_fit__discription {
+            margin: 10px;
+            text-align: center;
+            display: block;
+            font-size: 1.5rem;
+          }
+          .online_fit__king-btn {
+              min-width: 300px;
+              margin-top: 50px;
+            cursor: pointer;
+            padding: 25px;
+            color: #fff;
+            font-size: 1.5rem;
+            font-family: Gilroy-Bold;
+            background: linear-gradient(90deg, #DA4453 0%, #89216B 100%);
+            &:hover {
+              animation: ems_btn 1s ease;
+              box-shadow: 1px 1px 50px rgb(63, 2, 2) inset;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 960px) {
+    .online_fit {
+      .online_fit__promo {
+        .online_fit__fone {
+          .online_fit__promo-text {
+            width: 100%;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 420px) {
+    .online_fit {
+      .online_fit__promo {
+          
+        .online_fit__fone {
+          padding: 0 10px;
+          .online_fit__promo-text {
+            height: 100vh;
+            background-color: rgba(255, 255, 255, 0.292);
+            padding-top: 100px;
+            .online_fit__title {
+              font-size: 3rem;
+            }
+            .online_fit__discription {
+              margin: 20px 10px;
+              text-align: center;
+              display: block;
+              font-size: 1.2rem;
+            }
+            .online_fit__king-btn {
+              font-size: 1.2rem;
+              min-width: 300px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+.online_advantage {
+  background-image: url('../../../img/online/21324432432.jpg');
+  background-size: cover;
+  background-position-x: 40%;
+  width: 100%;
+  .online_advantage__inner {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 100px;
+    font-size: 1.5rem;
+    text-align: center;
+    @media (max-width: 767px) {
+      padding: 50px;
+    }
+    @media (max-width: 420px) {
+      padding: 50px 20px;
+      font-size: 1.2rem;
+    }
+    .online_advantage__subtitle {
+      margin-bottom: 30px;
+    }
+    .online_advantage__text {
+      margin-bottom: 20px;
+    }
+    .online_advantage__list {
+      li {
+        padding: 5px 0;
+        font-family: Gilroy-Bold;
+        text-transform: capitalize;
+      }
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .online_prices {
+    width: 100%;
+    background-image: url("../../../img/online/price_fone.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 200px 200px inset #000;
+    .online_prices__inner {
+      padding: 100px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      @media (max-width: 1280px) {
+        padding: 100px 0;
+      }
+      .online_prices__one {
+        font-size: 1.2rem;
+        width: 100%;
+        text-align: start;
+        margin: 50px 0 10px 0;
+        font-family: Gilroy-Bold;
+        span {
+            white-space: nowrap;
+        }
+      }
+      .online_prices__title {
+        display: inline-block;
+        font-size: 2.5rem;
+        font-family: Gilroy-Bold;
+        padding-bottom: 15px;
+        border-bottom: 2px solid $colorText;
+        margin-bottom: 60px;
+        text-align: center;
+      }
+      .online_prices__cards {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-itonline: center;
+        @media (max-width: 1280px) {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+        .online_card {
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.63);
+          width: 500px;
+          min-width: 300px;
+          &:nth-child(1) {
+            margin: 0;
+          }
+          &:nth-child(2) {
+            margin: 0 50px 0 50px;
+            
+            
+            
+            
+          }
+          &:nth-child(3) {
+            @media (max-width: 1280px) {
+                margin-top: 20px;
+            }
+          }
+          .online_card__img {
+            width: 100%;
+            height: 40vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            &.online_card__img_1 {
+              background-image: url("../../../img/online/card1.jpg");
+            }
+            &.online_card__img_2 {
+              background-image: url("../../../img/online/card2.jpg");
+            }
+            &.online_card__img_3 {
+              background-image: url("../../../img/online/card3.jpg");
+            }
+          }
+          .online_card__discription {
+            padding: 60px 80px;
+            font-size: 2rem;
+            background-color: $colorFone;
+            text-align: center;
+            line-height: 50px;
+            .online_card__num {
+              font-family: Gilroy-Bold;
+              background-image: url("../../../img/ems/Vector.svg");
+              background-repeat: no-repeat;
+              background-position: 30px -3px;
+              padding: 15px 0;
+            }
+            .online_card__cost {
+              font-family: Gilroy-Bold;
+            }
+            .online_card__one_session {
+              font-family: Gilroy-Bold;
+              background: linear-gradient(-90deg, #3a3a3a 0%, #ffffff 100%);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 767px) {
+      .online_prices {
+        .online_prices__inner {
+          .online_prices__cards {
+            .online_card {
+              width: 500px;
+              min-width: 300px;
+              &:nth-child(2) {
+                margin: 20px 0;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  @media (max-width: 420px) {
+
+      .online_prices {
+        .online_prices__inner {
+          .online_prices__cards {
+            .online_card {
+              min-width: none;
+              .online_card__discription {
+                padding: 20px;
+                font-size: 1.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  
+  

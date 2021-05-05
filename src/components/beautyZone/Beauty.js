@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
+import './Beauty.scss'
 
 import HeaderContainer from "../header/HeaderContainer";
 import ModalWindowContainer from "../modalWindow/ModalWindowContainer";

@@ -216,7 +216,21 @@
   height: 50vw;
   .depilation_price__content {
     display: flex;
+    position: relative;
     height: 100%;
+    .depilation_price__cost {
+      background-image: url('../../../img/depilation/Group\ 35.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 250px;
+      height: 120px;
+      position: absolute;
+      z-index: 3;
+      font-size: 3.5rem;
+      color: #fff;
+      left: 50%;
+      transform: translate(-50%, 20px);
+    }
     .depilation_price__block {
       width: 100%;
       display: flex;
@@ -307,6 +321,11 @@
     height: 100%;
     .depilation_price__content {
       flex-direction: column;
+      .depilation_price__cost {
+        transform: translate(-50%, 120%);
+        height: 100px;
+        background-size: cover;
+      }
       .depilation_price__block {
         flex-direction: column;
         .depilation_price__img {
@@ -391,6 +410,9 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         text-align: center;
+        &.two {
+          padding-top: 100px;
+        }
         span {
           margin-top: 20px;
           width: 100%;

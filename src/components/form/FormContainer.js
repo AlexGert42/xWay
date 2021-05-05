@@ -14,6 +14,7 @@ import formStretchingStyle from "./FormStretching.module.scss";
 import formFightStyle from "./FormFight.module.scss";
 import formFunctionalStyle from "./FormFunctional.module.scss";
 import formWorkout from "./FormWorkout.module.scss";
+import formOnline from "./FormOnline.module.scss";
 
 import formHomeBeauty from "./FormHomeBeauty.module.scss";
 import formDepilation from "./FormDepilation.module.scss";
@@ -53,6 +54,11 @@ class FormContainer extends React.Component {
     } else if (state.colorTheme === "fitWorkout") {
       return {
         style: formWorkout,
+      };
+    }
+    else if (state.colorTheme === "fitOnline") {
+      return {
+        style: formOnline,
       };
     } else if (state.colorTheme === "beautyHome") {
       return {

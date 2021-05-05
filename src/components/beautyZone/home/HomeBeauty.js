@@ -16,6 +16,7 @@ import imgAdvantage3 from "../../../img/homeBeauty/icon_3.svg";
 import imgAdvantage4 from "../../../img/homeBeauty/icon_4.svg";
 
 import quate_1 from "../../../img/vid/WhatsApp Video 2021-04-16 at 14.18.46.mp4";
+import quate from "../../../img/homeBeauty/quate/Frame83.png"
 
 class HomeBeauty extends React.Component {
   render() {
@@ -88,7 +89,7 @@ class HomeBeauty extends React.Component {
                   </h3>
                   <div className="home-beauty_advantage__text">
                     <p>
-                      Косметологи нашей клиники используют только
+                      Косметологи нашей студии используют только
                       профессиональную косметику, отличающуюся особой
                       эффективностью и безопасностью. Мы также поможем вам
                       подобрать средства для домашнего ухода, подходящие именно
@@ -105,7 +106,7 @@ class HomeBeauty extends React.Component {
                   </h3>
                   <div className="home-beauty_advantage__text">
                     <p>
-                      Сотрудники клиники постоянно совершенствуют своё
+                      Сотрудники студии постоянно совершенствуют своё
                       мастерство: участвуют в конференциях и семинарах,
                       обмениваются знаниями с коллегами и получают самую свежую
                       информацию в области медицинской косметологии.
@@ -303,19 +304,12 @@ class HomeBeauty extends React.Component {
                   <div className="home-beauty_quate__content">
                     <div className="home-beauty_quate__block">
                       <div className="home-beauty_quate__text">
-                        Хотела к Евгении на ламинирование ресниц, все очень
-                        понравилось. Очень красивая светлая студия. В кабинетах
-                        чисто и уютно, используются премиум материалы для всех
-                        процедур. Евгения, очень вежливая приятная девушка, все
-                        делает максимально аккуратно, спрашивает все ли
-                        комфортно, не больно ли. Результатом довольная на 100%,
-                        очень рада, что нашла такую студию, теперь всем советую,
-                        приходите не пожалеете :){" "}
+                        <img src={quate} alt="quate"/>
                       </div>
                       <p className="home-beauty_quate__name">
-                        Кристина Г.
+                        @good6ye
                       </p>
-                      <div className="home-beauty_quate__circle">К</div>
+                      <div className="home-beauty_quate__circle">G</div>
                     </div>
                     <div className="home-beauty_quate__block">
                       <div className="home-beauty_quate__text">

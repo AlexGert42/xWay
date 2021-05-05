@@ -97,6 +97,7 @@ class Ems extends React.Component {
                   </div>
                 </div>
               </div>
+              <div className="ems_prices__one">Стоимость одной тренировки <span>5000 ₽</span></div>
             </div>
           </div>
         </section>

@@ -1,5 +1,5 @@
 import React from "react";
-import './checkboxStyle.scss'
+// import './checkboxStyle.scss'
 
 class FormFit extends React.Component {
   constructor(props) {
@@ -54,10 +54,11 @@ class FormFit extends React.Component {
               value={this.props.phone}
             />
             <input 
+            className={this.props.style.form__let}
             onClick={() => !this.state.checked ? this.setState({checked: true}) : this.setState({checked: false})}
-            checked={this.state.checked} type="checkbox" id="cb1"/> <label for="cb1">Даю согласие на обработку персональных данных</label>
+            checked={this.state.checked} type="checkbox" id="cb1"/> <label className={this.props.style.form__lable} for="cb1">Даю согласие на обработку персональных данных</label>
             <button className={this.props.style.form__btn} type="submit">ЗАПИСАТЬСЯ</button>
-            <div className="form__error">{this.state.errorData}</div>
+            <div className={this.props.style.form__error}>{this.state.errorData}</div>
           </form>
           <div className={this.props.style.form__img} ></div>
         </div>
