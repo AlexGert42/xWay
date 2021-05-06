@@ -1,5 +1,5 @@
 import React from "react";
-
+import Deposit from "../../deposit/DepositContainer"
 import Form from "../../form/FormContainer";
 
 import { chengeStateModal } from "../../../store/form/actions";
@@ -278,10 +278,11 @@ class Stretching extends React.Component {
                   </div>
                 </div>
               </div>
+              <div className="prices__one">Стоимость одной тренировки <span>5000 ₽</span></div>
             </div>
           </div>
         </section>
-
+        <Deposit />
         <section className="stretching_res">
           <div className="stretching_res__inner">
             <h3 className="stretching_res__title">До После</h3>

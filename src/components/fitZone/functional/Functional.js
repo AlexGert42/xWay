@@ -1,6 +1,6 @@
 import React from "react";
 import Form from "../../form/FormContainer";
-
+import Deposit from "../../deposit/DepositContainer"
 import { chengeStateModal } from "../../../store/form/actions";
 import { connect } from "react-redux";
 import ScrollableAnchor from "react-scrollable-anchor";
@@ -174,10 +174,11 @@ class Functional extends React.Component {
                   </div>
                 </div>
               </div>
+              <div className="prices__one">Стоимость одной тренировки <span>5000 ₽</span></div>
             </div>
           </div>
         </section>
-
+       <Deposit/>
         <Form />
       </section>
     );

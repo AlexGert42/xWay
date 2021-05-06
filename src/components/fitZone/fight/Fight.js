@@ -1,5 +1,5 @@
 import React from "react";
-
+import Deposit from "../../deposit/DepositContainer"
 import { chengeStateModal } from "../../../store/form/actions";
 import { connect } from "react-redux";
 
@@ -291,10 +291,12 @@ class Fight extends React.Component {
                   </div>
                 </div>
               </div>
+              <div className="prices__one">Стоимость одной тренировки <span>5000 ₽</span></div>
+
             </div>
           </div>
         </section>
-
+        <Deposit/>
         <Form />
       </section>
     );

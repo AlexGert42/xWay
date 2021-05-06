@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Deposit from "../../deposit/DepositContainer"
 import logo from "../../../img/homeBeauty/logoBeauty.png";
 import { chengeStateModal } from "../../../store/form/actions";
 import { connect } from "react-redux";
@@ -208,11 +209,12 @@ class HomeBeauty extends React.Component {
                 </div>
               </div>
             </div>
-            <div class="home-beauty_eyes">
-              <div class="home-beauty_eyes__img" />
-              <div class="home-beauty_eyes__text">
-                <div class="home-beauty_eyes__inner">
-                  <p class="home-beauty_eyes__disctiption">
+            <Deposit/>
+            <div className="home-beauty_eyes">
+              <div className="home-beauty_eyes__img" />
+              <div className="home-beauty_eyes__text">
+                <div className="home-beauty_eyes__inner">
+                  <p className="home-beauty_eyes__disctiption">
                     Красивая форма бровей, окрашивание и ламинирование ресниц
                     сделают ваш взгляд сексуальным и манящим.
                   </p>

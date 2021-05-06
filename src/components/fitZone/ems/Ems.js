@@ -1,4 +1,5 @@
 import React from "react";
+import Deposit from "../../deposit/DepositContainer"
 
 import Form from "../../form/FormContainer";
 
@@ -97,11 +98,12 @@ class Ems extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="ems_prices__one">Стоимость одной тренировки <span>5000 ₽</span></div>
+              <div className="prices__one">Стоимость одной тренировки <span>5000 ₽</span></div>
+              
             </div>
           </div>
         </section>
-
+        <Deposit/>
         <section className="ems_res">
           <div className="ems_res__inner">
             <h3 className="ems_res__title">До После</h3>
