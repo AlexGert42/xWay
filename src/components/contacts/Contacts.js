@@ -51,9 +51,9 @@ class Contacts extends React.Component {
               infiniteLoop
               interval={2000}
             >
-              <div className="contacts__img one"></div>
-              <div className="contacts__img two"></div>
-              <div className="contacts__img three"></div>
+              <div className="contacts__img one"/>
+              <div className="contacts__img two"/>
+              <div className="contacts__img three"/>
             </Carousel>
           </div>
         </div>

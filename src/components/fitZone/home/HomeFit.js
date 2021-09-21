@@ -35,12 +35,6 @@ class HomeFit extends React.Component {
 									<img src={logo} alt="logo" />
 								</span>
 							</h1>
-							<div className="home-fit__discription">
-								это не просто новая концепция фитнеса, <br />
-								это инновационный подход к Вашему телу. <br />
-								Персональные тренировки, нацеленные на 100%
-								результат <br />
-							</div>
 							<button
 								className="home-fit__king-btn"
 								onClick={() =>
@@ -57,18 +51,18 @@ class HomeFit extends React.Component {
 					<div className="container">
 						<div className="services">
 							<div className="services__card card">
-								<div className="card__img ems_home"></div>
+								<div className="card__img ems_home"/>
 								<div className="card__text">
-									<h2 className="card__title">EMS</h2>
+									<NavLink to="/fit/ems/#ems-start"><h2 className="card__title">EMS</h2></NavLink>
 									<p className="card__dicription">
 										EMS - самые эффективные тренировки
-										в мире! Почему? С помощью тренажера ЭМС
-										Вы можете заниматься любым фитнес
+										в мире! Почему? С помощью тренажера EMS
+										Вы можете заниматься любым фитнес
 										направлением или реабилитацией
-										и получать результат на 70-100% больше.
-										Тренажер посылает импульс в костюм ЭМС,
+										и получать результат на 70-100% больше.
+										Тренажер посылает импульс в костюм EMS,
 										который заставляет сокращаться
-										и расслабляться около 90% мышц в теле
+										и расслабляться около 90% мышц в теле
 										человека, тем самым затрачивая
 										максимальное количество энергии. Поэтому
 										набрать мышечную массу и похудеть можно
@@ -84,15 +78,17 @@ class HomeFit extends React.Component {
 							</div>
 							<div className="services__card card">
 								<div className="card__text">
-									<h2 className="card__title">STRETCHING</h2>
+									<NavLink to="/fit/stretching/#stretching-start">
+										<h2 className="card__title">STRETCHING</h2>
+									</NavLink>
 									<p className="card__dicription">
 										Инновационные BMS -тренировки
-										с использованием тренажера «Бизон-вибро»
-										и пилатес — это то, что вам нужно, если
-										вы хотите за максимально короткое время
-										освоить продольный и поперечный шпагат,
+										с использованием тренажера «Бизон-вибро»
+										и пилатес — это то, что вам нужно, если
+										вы хотите за максимально короткое время
+										освоить продольный и поперечный шпагат,
 										укрепить спину, улучшить подвижность
-										позвоночника, шеи и повысить гибкость
+										позвоночника, шеи и повысить гибкость
 										всего тела.
 									</p>
 									<NavLink
@@ -102,21 +98,22 @@ class HomeFit extends React.Component {
 										ПОДРОБНЕЕ
 									</NavLink>
 								</div>
-								<div className="card__img bms_home"></div>
+								<div className="card__img bms_home"/>
 							</div>
+
 							<div className="services__card card">
-								<div className="card__img mma_home"></div>
+								<div className="card__img mma_home"/>
 								<div className="card__text">
-									<h2 className="card__title">
-										ЕДИНОБОРСТВА
-									</h2>
+									<NavLink to="/fit/fight/#fight-start">
+										<h2 className="card__title">ЕДИНОБОРСТВА</h2>
+									</NavLink>
 									<p className="card__dicription">
 										Лучшие программы единоборств (бокс, муай
 										тай, айкидо, грэпплинг, смешанные
-										единобоства и т. д.) Тренировки для
-										взростых и детей, профессиональных
-										спортсменов и новичков. Мы ждем вас
-										в нашей студии! Время быть сильным!
+										единобоства и т. д.) Тренировки для
+										взростых и детей, профессиональных
+										спортсменов и новичков. Мы ждем вас
+										в нашей студии! Время быть сильным!
 									</p>
 									<NavLink
 										className="card__link"
@@ -128,9 +125,9 @@ class HomeFit extends React.Component {
 							</div>
 							<div className="services__card card">
 								<div className="card__text">
-									<h2 className="card__title">
+									<NavLink to="/fit/functional/#functional-start"><h2 className="card__title">
 										ФУНКЦИОНАЛЬНЫЕ ТРЕНИРОВКИ
-									</h2>
+									</h2></NavLink>
 									<p className="card__dicription">
 										Функциональный фитнес — это микс
 										из кардионагрузки и силовых упражнений,
@@ -149,12 +146,12 @@ class HomeFit extends React.Component {
 										ПОДРОБНЕЕ
 									</NavLink>
 								</div>
-								<div className="card__img str_home"></div>
+								<div className="card__img str_home"/>
 							</div>
 							<div className="services__card card">
-								<div className="card__img work_home"></div>
+								<div className="card__img work_home"/>
 								<div className="card__text">
-									<h2 className="card__title">WORK OUT</h2>
+									<NavLink to="/fit/workout/#workout-start"><h2 className="card__title">WORK OUT</h2></NavLink>
 									<p className="card__dicription">
 										Тренировки на улице — это идеальный вид
 										физической активности в теплое время
@@ -173,7 +170,7 @@ class HomeFit extends React.Component {
 							<div className="services__card card">
 								
 								<div className="card__text">
-									<h2 className="card__title">Online Тренировки</h2>
+									<NavLink to="/fit/online/#online-start"><h2 className="card__title">Online Тренировки</h2></NavLink>
 									<p className="card__dicription">
 										С развитием интернет-сервиса заниматься спортом можно в комфортных условиях, дома и в отпуске по индивидуальной программе. Online тренировки не ограничиваются фитнесом, а предполагают силовые и кардионагрузки при наличии минимального инвентаря. Наши тренеры не оставят без внимания сложные элементы, проконсультируют насчет питания и интенсивности нагрузок.
 									</p>
@@ -184,7 +181,7 @@ class HomeFit extends React.Component {
 										ПОДРОБНЕЕ
 									</NavLink>
 								</div>
-                				<div className="card__img online_home"></div>
+                				<div className="card__img online_home"/>
 							</div>
 						</div>
 					</div>

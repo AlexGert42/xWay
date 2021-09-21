@@ -21,7 +21,7 @@ class Fight extends React.Component {
         <ScrollableAnchor id={"fight-start"}>
           <Carousel
             className="fight__fone"
-            showThumbs={false}
+            showThumbs={true}
             autoPlay
             showStatus={false}
             showArrows={false}
@@ -261,7 +261,7 @@ class Fight extends React.Component {
               <div className="fight_prices__title">Наши абонементы и цены</div>
               <div className="fight_prices__cards">
                 <div className="fight_card">
-                  <div className="fight_card__img fight_card__img_1"></div>
+                  <div className="fight_card__img fight_card__img_1"/>
                   <div className="fight_card__discription">
                     <p className="fight_card__num">4 ТРЕНИРОВКИ</p>
                     <p className="fight_card__cost">16200 ₽</p>
@@ -271,7 +271,7 @@ class Fight extends React.Component {
                   </div>
                 </div>
                 <div className="fight_card">
-                  <div className="fight_card__img fight_card__img_2"></div>
+                  <div className="fight_card__img fight_card__img_2"/>
                   <div className="fight_card__discription">
                     <p className="fight_card__num">8 ТРЕНИРОВОК</p>
                     <p className="fight_card__cost">30600 ₽</p>
@@ -281,7 +281,7 @@ class Fight extends React.Component {
                   </div>
                 </div>
                 <div className="fight_card">
-                  <div className="fight_card__img fight_card__img_3"></div>
+                  <div className="fight_card__img fight_card__img_3"/>
                   <div className="fight_card__discription">
                     <p className="fight_card__num">12 ТРЕНИРОВОК</p>
                     <p className="fight_card__cost">40500 ₽</p>

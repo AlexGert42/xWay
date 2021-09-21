@@ -19,7 +19,7 @@ class modalWindow extends React.Component {
     e.preventDefault();
     const reg = /(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?/;
     if (this.props.name.length > 0 && reg.test(String(this.props.phone)) && this.state.checked) {
-      this.props.setClient({
+      this.props.setClientThunk({
         name: this.props.name,
         phone: this.props.phone,
       });

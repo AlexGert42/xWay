@@ -24,16 +24,27 @@ export const setPhoneInput = (num) => ({
 
 export const CHENGE_CLIENT = "CHENGE_CLIENT";
 
+
+
+const instance = axios.create({
+  baseURL: 'https://xway.mx-tech.org/api/v1/form/',
+  withCredentials: true,
+
+  headers: {
+    // "API-KEY": '9708f55c-7c56-4108-a0bf-76b37c22e7d1',
+    'Access-Control-Allow-Origin': 'https://xway.mx-tech.org/api/v1/form/'
+  }
+})
+
+
 export const setClient = (client) => {
   console.log(client);
-  axios
-    .post(url, client)
-    .then((response) => {
-      console.log(response);
+
+  instance.post('https://xway.mx-tech.org/api/v1/form/', client)
+    .then(res => {
+      console.log(res);
     })
-    .catch((error) => {
-      console.log(error);
-    });
+
   return {
     type: CHENGE_CLIENT,
     payload: client,
@@ -46,3 +57,14 @@ export const showRsponse = (state) => ({
   type: SUCCESS_RESPONSE,
   payload: state,
 });
+
+
+export const setClientThunk = (client) => (dispatch) => {
+  console.log('++')
+  instance.post('https://xway.mx-tech.org/api/v1/form/', client)
+      .then(res => {
+        console.log(res);
+        dispatch(setClient(client))
+      })
+}
+

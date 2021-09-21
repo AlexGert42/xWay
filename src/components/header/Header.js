@@ -76,7 +76,7 @@ class Header extends React.Component {
               </div>
             </div>
             <div className={this.state.stateBurger} onClick={this.clickBurger}>
-              <span></span>
+              <span/>
             </div>
           </div>
         </div>

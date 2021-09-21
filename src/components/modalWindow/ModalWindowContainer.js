@@ -5,8 +5,7 @@ import {
   chengeStateModal,
   setNameInput,
   setPhoneInput,
-  setClient,
-  showRsponse,
+  showRsponse, setClientThunk,
 } from "../../store/form/actions";
 
 import ModalSuccess from "./ModalSuccess";
@@ -52,7 +51,7 @@ class ModalWindowContainer extends React.Component {
           phone={this.props.phone}
           setNameInput={this.props.setNameInput}
           setPhoneInput={this.props.setPhoneInput}
-          setClient={this.props.setClient}
+          setClientThunk={this.props.setClientThunk}
           showRsponse={this.props.showRsponse}
         />
       );
@@ -80,7 +79,7 @@ const mapDispatchToProps = {
   chengeStateModal,
   setNameInput,
   setPhoneInput,
-  setClient,
+  setClientThunk,
   showRsponse,
 };
 

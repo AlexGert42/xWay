@@ -69,10 +69,15 @@ $colorFone: linear-gradient(180deg, #000000 20%, rgba(0, 0, 0, 0) 100%);
       z-index: 3;
       margin: 5px 90px;
       flex: 0 0 100px;
-
       img {
         max-width: 100%;
         display: block;
+        &:hover {
+          transition: .3s transform;
+          filter: drop-shadow(0px 1px 25px #fff);
+          transform: translate(-5%, -5%);
+          transform: scale(1.1);
+        }
       }
     }
     //CONTACT

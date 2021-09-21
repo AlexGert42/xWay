@@ -5,7 +5,7 @@ import {
   setNameInput,
   setPhoneInput,
   setClient,
-  showRsponse,
+  showRsponse, setClientThunk,
 } from "../../store/form/actions";
 
 import formHomeStyle from "./FormHome.module.scss";
@@ -87,7 +87,8 @@ class FormContainer extends React.Component {
         phone={this.props.phone}
         setNameInput={this.props.setNameInput}
         setPhoneInput={this.props.setPhoneInput}
-        setClient={this.props.setClient}
+        // setClient={this.props.setClient}
+        setClientThunk={this.props.setClientThunk}
         showRsponse={this.props.showRsponse}
       />
     );
@@ -106,6 +107,7 @@ const mapDispatchToProps = {
   setNameInput,
   setPhoneInput,
   setClient,
+  setClientThunk,
   showRsponse,
 };
 

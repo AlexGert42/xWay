@@ -125,22 +125,7 @@ $colorText: #fff;
     overflow: hidden;
     .services__card {
       display: flex;
-      opacity: 0.7;
-
-      &:hover {
-        opacity: 1;
-        .card__img {
-          min-width: 60%;
-          min-height: 60vh;
-          transition: all 0.5s ease;
-        }
-        .card__text {
-          .card__dicription {
-            animation: homeFitShowText 1s ease;
-            opacity: 1;
-          }
-        }
-      }
+      opacity: 1;
       .card__img {
         min-width: 50%;
         min-height: 40vh;
@@ -175,6 +160,7 @@ $colorText: #fff;
         margin: auto;
 
         .card__title {
+          color: #fff;
           font-size: 3rem;
           margin-bottom: 40px;
           font-family: Gilroy-Bold;
@@ -187,7 +173,7 @@ $colorText: #fff;
           padding-bottom: 30px;
           line-height: 28px;
           letter-spacing: 0.2px;
-          opacity: 0;
+          opacity: 1;
         }
         .card__link {
           cursor: pointer;

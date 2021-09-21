@@ -1,6 +1,6 @@
 import React from "react";
 import Form from "../../form/FormContainer";
-import Deposit from "../../deposit/DepositContainer"
+import Deposit from "../../deposit/DepositContainer";
 import { chengeStateModal } from "../../../store/form/actions";
 import { connect } from "react-redux";
 import ScrollableAnchor from "react-scrollable-anchor";
@@ -20,7 +20,7 @@ class Functional extends React.Component {
         <ScrollableAnchor id={"functional-start"}>
           <section className="functional__fone">
             <div className="functional__vidio">
-              <video src={foneVideo} autoPlay muted loop></video>
+              <video src={foneVideo} autoPlay muted loop playsInline/>
             </div>
             <div className="container">
               <div className="functional__promo">

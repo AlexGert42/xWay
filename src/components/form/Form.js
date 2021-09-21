@@ -1,5 +1,5 @@
 import React from "react";
-// import './checkboxStyle.scss'
+
 
 class FormFit extends React.Component {
   constructor(props) {
@@ -9,13 +9,15 @@ class FormFit extends React.Component {
       errorData: ''
     }
   }
+
   setName = (e) => this.props.setNameInput(e.target.value);
   setPhone = (e) => this.props.setPhoneInput(e.target.value);
+
   handleSubmit = (e) => {
     e.preventDefault();
     const reg = /(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?/;
     if (this.props.name.length > 0 && reg.test(String(this.props.phone)) && this.state.checked ) {
-      this.props.setClient({
+      this.props.setClientThunk({
         name: this.props.name,
         phone: this.props.phone,
         date: JSON.stringify(new Date()),
@@ -60,7 +62,7 @@ class FormFit extends React.Component {
             <button className={this.props.style.form__btn} type="submit">ЗАПИСАТЬСЯ</button>
             <div className={this.props.style.form__error}>{this.state.errorData}</div>
           </form>
-          <div className={this.props.style.form__img} ></div>
+          <div className={this.props.style.form__img}/>
         </div>
       </section>
     );

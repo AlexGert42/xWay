@@ -66,6 +66,12 @@ $colorFone: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 145.74%);
       img {
         max-width: 100%;
         display: block;
+        &:hover {
+          transition: .3s transform;
+          filter: drop-shadow(0px 1px 25px rgba(0, 0, 0, 0.14));
+          transform: translate(-5%, -5%);
+          transform: scale(1.1);
+        }
       }
     }
     .header__contacts {
