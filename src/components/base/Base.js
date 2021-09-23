@@ -14,12 +14,12 @@ const Base = () => {
                             Fit <br/> Zone
                         </div>
                     </NavLink>
-                    <NavLink className="fone__medium" exact to="/team/#home-team">
-                        <div className="logo__right"/>
-                        <div className="team-zone">
-                            Team <br/> Zone
-                        </div>
-                    </NavLink>
+                    {/*<NavLink className="fone__medium" exact to="/team/#home-team">*/}
+                    {/*    <div className="logo__right"/>*/}
+                    {/*    <div className="team-zone">*/}
+                    {/*        Team <br/> Zone*/}
+                    {/*    </div>*/}
+                    {/*</NavLink>*/}
                     <NavLink className="fone__right" exact to="/beauty/#home-beauty">
                         <div className="logo__right"/>
                         <div className="beauty-zone">
