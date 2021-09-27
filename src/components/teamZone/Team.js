@@ -8,7 +8,7 @@ export const Team = () => {
         <div className={s.team}>
             <ScrollableAnchor id={"home-team"}>
                 <section className={s.team__king_screen}>
-                    Team
+                    Teams
                 </section>
             </ScrollableAnchor>
             <section>
